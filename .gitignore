@@ -1,3 +1,4 @@
 .vscode
 _pyvenv
+__pycache__
 db.sqlite3
