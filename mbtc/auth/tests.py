@@ -17,14 +17,14 @@ class AuthTests(APITestCase):
         Test if we can create a new user with a valid token
         """
         data = {
-            'username': 'test',
-            'email': 'test@example.com',
+            'username': 'adam',
+            'email': 'foo@bar.com',
             'password': 'examplepassword',
         }
 
-        res = self.client.post(self.create_url, data, foramt='json')
+        res = self.client.post(self.create_url, data, format='json')
         self.assertEqual(User.objects.count(), 2)
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         self.assertEqual(res.data['username'], data['username'])
         self.assertEqual(res.data['email'], data['email'])
-        self.assertEqual('password' in res.data)
+        self.assertFalse('password' in res.data)
