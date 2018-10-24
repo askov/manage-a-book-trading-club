@@ -82,10 +82,10 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mbtc',
-        'USER': 'mbtc_user',
+        'NAME': 'postgres',
+        'USER': 'postgres',
         'PASSWORD': 'mbtc_password',
-        'HOST': '127.0.0.1',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
