@@ -1,4 +1,5 @@
 .vscode
+.idea
 _pyvenv
 __pycache__
 db.sqlite3
