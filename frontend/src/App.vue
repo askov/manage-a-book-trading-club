@@ -8,9 +8,7 @@
       </router-link>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="ml-auto">
-          <router-link to="/signup">
-            <b-nav-item>Signup</b-nav-item>
-          </router-link>
+          <router-link to="/signup" class="nav-link">Signup</router-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

@@ -10,6 +10,8 @@ Vue.config.productionTip = false;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
+// 123
+
 // Plugins
 Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';

@@ -1,7 +1,6 @@
-FROM node
-RUN mkdir /app
-WORKDIR /app
-COPY package*.json ./
+FROM node:slim
+RUN mkdir /frontend
+WORKDIR /frontend
+ADD . /frontend/
 RUN npm i
-ADD . /app/
 EXPOSE 8080

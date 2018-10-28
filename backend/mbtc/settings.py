@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'mbtc_password',
-        'HOST': 'db',
+        'HOST': 'mbtc.postgres',
         'PORT': '5432',
     }
 }
