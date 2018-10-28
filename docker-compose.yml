@@ -16,3 +16,13 @@ services:
       - "8000:8000"
     depends_on:
       - db
+
+  mbtc.frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    command: npm run serve
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - "8080:8080"
