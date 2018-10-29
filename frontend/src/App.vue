@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <!-- primary, success, info, warning, danger, dark, or light. -->
-    <b-navbar toggleable="md" type="dark" variant="success">
+  <div id="app" class="container-fluid">
+    <b-navbar toggleable="md" type="dark" variant="success" class="row">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <router-link to="/">
         <b-navbar-brand>Book trading club</b-navbar-brand>
