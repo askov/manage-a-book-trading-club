@@ -1,5 +1,5 @@
 <template>
-  <b-form @submit="onSubmit" novalidate class="needs-validation" autocomplete="off">
+  <b-form @submit.prevent="onSubmit" novalidate class="needs-validation" autocomplete="off">
     <b-form-group id="signupFormName" label="Name:" label-for="signupFormName">
       <b-form-input
         id="signupFormName"
@@ -52,6 +52,9 @@
 <script lang="ts">
 import Vue from 'vue';
 
+interface Event {
+  preventDefault: () => void;
+}
 export default Vue.extend({
   name: 'SignupForm',
   data() {
@@ -65,9 +68,17 @@ export default Vue.extend({
     };
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    onSubmit(evt: Event): void {
+      // alert(JSON.stringify(this.form));
+      this.$store
+        .dispatch('newUser', this.form)
+        .then((user) => {
+          // console.log('#new user!');
+          // do something after the new user was successfull created
+        })
+        .catch((error) => {
+          // do something when something goes wrong
+        });
     },
   },
 });
