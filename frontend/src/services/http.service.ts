@@ -1,4 +1,5 @@
 import axios from 'axios';
+// const axios = require('axios');
 
 const baseUrl = 'http://127.0.0.1:8000';
 
