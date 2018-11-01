@@ -4,14 +4,21 @@ services:
   db:
     container_name: mbtc.postgres
     image: postgres
+    healthcheck:
+      test: "pg_isready -h localhost -p 5432 -q -U postgres"
+      interval: 3s
+      timeout: 5s
+      retries: 5
     ports:
-      - "5431:5431"
+      - "5433:5432"
   web:
     container_name: mbtc.backend
     build:
       context: ./backend
       dockerfile: Dockerfile
-    command: python3 manage.py runserver 0.0.0.0:8000
+    restart: on-failure
+    command: >
+      bash -c "pip install -r requirements.txt && python3 manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./backend:/backend
     ports:
@@ -24,7 +31,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    command: npm run serve
+    command: >
+      bash -c "npm i && npm run serve"
     volumes:
       - ./frontend:/frontend
       - /frontend/node_modules/

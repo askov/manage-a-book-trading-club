@@ -4,7 +4,7 @@
       <b-form-input
         id="signupFormName"
         type="text"
-        v-model="form.name"
+        v-model="form.username"
         required
         placeholder="Enter name"
       ></b-form-input>
@@ -61,7 +61,7 @@ export default Vue.extend({
     return {
       form: {
         email: '',
-        name: '',
+        username: '',
         password: '',
         passwordConfirm: '',
       },
