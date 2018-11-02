@@ -3,3 +3,4 @@
 _pyvenv
 __pycache__
 db.sqlite3
+pgdata
