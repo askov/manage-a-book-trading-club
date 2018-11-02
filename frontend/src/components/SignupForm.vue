@@ -1,5 +1,5 @@
 <template>
-  <b-form @submit.prevent="onSubmit" novalidate class="needs-validation" autocomplete="off">
+  <b-form @submit.prevent="onSubmit" novalidate validated="true" autocomplete="off">
     <b-form-group id="signupFormName" label="Name:" label-for="signupFormName">
       <b-form-input
         id="signupFormName"
@@ -40,7 +40,7 @@
       <b-form-input
         id="signupFormPasswordConfirm"
         type="password"
-        v-model="form.password"
+        v-model="form.passwordConfirm"
         required
         placeholder="Repeat password"
       ></b-form-input>
