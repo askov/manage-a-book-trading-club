@@ -4,9 +4,6 @@ import router from './router';
 import store from './store';
 import BootstrapVue from 'bootstrap-vue';
 
-// import axios from 'axios';
-
-
 
 Vue.config.productionTip = false;
 
@@ -27,6 +24,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
+// import Vuelidate from 'vuelidate';
+// Vue.use(Vuelidate);
 
 new Vue({
   router,

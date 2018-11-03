@@ -51,22 +51,43 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { validationMixin } from 'vuelidate';
+import { required, minLength } from 'vuelidate/lib/validators';
 
 interface Event {
   preventDefault: () => void;
 }
+
 export default Vue.extend({
   name: 'SignupForm',
   data() {
     return {
       form: {
-        email: '',
-        username: '',
-        password: '',
-        passwordConfirm: '',
+        // email: '',
+        // username: '',
+        // password: '',
+        // passwordConfirm: '',
       },
     };
   },
+  mixins: [validationMixin],
+  validations: {},
+  // validations: {
+  //   form: {
+  //     email: {
+  //       required,
+  //     },
+  //     // username: {
+  //     //   required,
+  //     // },
+  //     // password: {
+  //     //   required,
+  //     // },
+  //     // passwordConfirm: {
+  //     //   required,
+  //     // },
+  //   },
+  // },
   methods: {
     onSubmit(evt: Event): void {
       // alert(JSON.stringify(this.form));
