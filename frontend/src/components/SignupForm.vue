@@ -72,6 +72,7 @@ export default Vue.extend({
   },
   mixins: [validationMixin],
   validations: {},
+
   // validations: {
   //   form: {
   //     email: {
@@ -93,11 +94,11 @@ export default Vue.extend({
       // alert(JSON.stringify(this.form));
       this.$store
         .dispatch('newUser', this.form)
-        .then((user) => {
+        .then((user: object) => {
           // console.log('#new user!');
           // do something after the new user was successfull created
         })
-        .catch((error) => {
+        .catch((error: object) => {
           // do something when something goes wrong
         });
     },
