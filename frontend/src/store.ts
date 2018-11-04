@@ -14,10 +14,14 @@ export default new Vuex.Store({
   actions: {
     newUser({ commit }, user) {
       return new Promise((resolve, reject) => {
-        resolve({ some: 1 });
+        // resolve({ some: 1 });
         apiService.new(user).then((res) => {
-          resolve({ some: 1 });
-        }).catch(() => reject({ some: 2 }));
+          // console.log('#res', res);
+          resolve({ data: res });
+        }).catch((err) => {
+          // console.log('#err', err.data);
+          reject(err.data);
+        });
       });
     },
   },

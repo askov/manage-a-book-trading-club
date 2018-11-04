@@ -38,6 +38,9 @@
         "esSpecCompliant": true
       }
     ],
+    "no-console": false,
+    "only-arrow-functions": false,
+    "space-before-function-paren": false,
     "no-implicit-dependencies": false,
     "no-submodule-imports": false
   }

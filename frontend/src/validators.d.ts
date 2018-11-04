@@ -1,3 +1,4 @@
+declare module '@/validators/serverRule';
 // build your own rule
 declare module 'vuelidate/lib/validators' {
   import Vue from 'vue'
@@ -46,4 +47,7 @@ declare module 'vuelidate/lib/validators' {
   export function url(): ValidationRule
   export function or(...validators: ValidationRule[]): ValidationRule
   export function and(...validators: ValidationRule[]): ValidationRule
+
+  export function serverRule(field: string): ValidationRule
+
 }

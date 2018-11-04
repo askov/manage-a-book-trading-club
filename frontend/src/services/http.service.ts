@@ -1,12 +1,15 @@
 import axios from 'axios';
-// const axios = require('axios');
 
 const baseUrl = 'http://127.0.0.1:8000';
 
-export default axios.create({
+const axiosInstance = axios.create({
   baseURL: baseUrl,
-  // headers: {
-  //   Authorization: `Bearer ${localStorage.getItem('token')}`,
-  //   'X-Requested-With': 'XMLHttpRequest'
-  // }
 });
+
+axiosInstance.interceptors.response.use((response) => {
+  return response;
+}, (error) => {
+  return Promise.reject(error.response);
+});
+
+export default axiosInstance;
