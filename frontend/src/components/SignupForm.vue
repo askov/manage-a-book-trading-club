@@ -12,7 +12,7 @@
       <b-form-invalid-feedback
         v-if="!$v.form.username.minLength"
       >Name must be at least {{$v.form.username.$params.minLength.min}} characters</b-form-invalid-feedback>
-      {{$v.form.username.serverRule}}
+      <b-form-invalid-feedback v-if="!$v.form.username.serverRule">{{form.serverErrors.username[0]}}</b-form-invalid-feedback>
     </b-form-group>
     <b-form-group id="signupFormEmail" label="Email address:" label-for="signupFormEmail">
       <b-form-input
@@ -24,6 +24,7 @@
       ></b-form-input>
       <b-form-invalid-feedback v-if="!$v.form.email.required">Email is required</b-form-invalid-feedback>
       <b-form-invalid-feedback v-if="!$v.form.email.email">Email must be valid</b-form-invalid-feedback>
+      <b-form-invalid-feedback v-if="!$v.form.email.serverRule">{{form.serverErrors.email[0]}}</b-form-invalid-feedback>
     </b-form-group>
     <b-form-group id="signupFormPassword" label="Password:" label-for="signupFormPassword">
       <b-form-input
@@ -37,6 +38,7 @@
       <b-form-invalid-feedback
         v-if="!$v.form.password.minLength"
       >Password must have at least {{ $v.form.password.$params.minLength.min }} letters.</b-form-invalid-feedback>
+      <b-form-invalid-feedback v-if="!$v.form.password.serverRule">{{form.serverErrors.password[0]}}</b-form-invalid-feedback>
     </b-form-group>
     <b-form-group
       id="signupFormPasswordConfirm"
@@ -87,8 +89,8 @@ export default Vue.extend({
   name: 'SignupForm',
   data() {
     return {
-      serverErrors: {},
       form: {
+        serverErrors: {},
         username: 'jack',
         email: 'jack@mail.ru',
         password: 'qweqwe123',
@@ -98,26 +100,22 @@ export default Vue.extend({
   },
   mixins: [validationMixin],
   validations: {
-    // serverErrors: { serverRule: serverRule('bar') },
     form: {
+      serverErrors: {},
       email: {
         required,
         email,
-        // serverRule: serverRule('email'),
+        serverRule: serverRule('email'),
       },
       username: {
         required,
         minLength: minLength(4),
-        // mustBeCool
         serverRule: serverRule('username'),
-
-        // serverRule: ('username') => {
-        //   return
-        // },
       },
       password: {
         required,
         minLength: minLength(8),
+        serverRule: serverRule('password'),
       },
       passwordConfirm: {
         sameAsPassword: sameAs('password'),
@@ -125,8 +123,11 @@ export default Vue.extend({
     },
   },
   methods: {
-    updateServerErrors(errors: object) {
-      this.serverErrors = { username: 'Error' };
+    updateServerErrors(errors: object): void {
+      this.form.serverErrors = errors;
+    },
+    clearServerError(field: string): void {
+      delete this.form.serverErrors[field];
     },
     onSubmit(evt: Event): void {
       this.$v.$touch();
@@ -148,6 +149,14 @@ export default Vue.extend({
           this.updateServerErrors(errors);
           // do something when something goes wrong
         });
+    },
+  },
+  watch: {
+    'form.username': function(): void {
+      this.clearServerError('username');
+    },
+    'form.email': function(): void {
+      this.clearServerError('email');
     },
   },
 });

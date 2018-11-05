@@ -1,14 +1,10 @@
-import { helpers } from 'vuelidate/lib/validators';
 
 interface ServerErrors {
-  serverErrors: object
-  form: object
+  serverErrors: object;
 }
+
 export default function (field: string) {
-  return (value: object, vm: ServerErrors) => {
-    console.log('#this inside', vm);
-    return true;
+  return (value: string, vm: ServerErrors) => {
+    return !vm.serverErrors.hasOwnProperty(field);
   };
-  // return () => data && !data.hasOwnProperty(field);
-  // return (value) => !helpers.req(value) || value.indexOf(param) >= 0
 }
