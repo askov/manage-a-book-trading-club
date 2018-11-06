@@ -62,35 +62,22 @@
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs, email } from 'vuelidate/lib/validators';
-// import { serverRule } from '@/validators';
 import serverRule from '@/validators/serverRule';
 
 interface Event {
   preventDefault: () => void;
 }
 
-// const mustBeCool = (value) => value.indexOf('cool') >= 0;
-// const serverValidation = (getter: string): object => {
-//   return function(): boolean {
-//     return false;
-//   };
-// };
-
-// const serverValidation = (field: string) => {
-//   return function() {
-//     return false;
-//   };
-// };
-// const serverRule = (field: string) {
-
-// };
+interface TestInterface {
+  [index: string]: string[];
+}
 
 export default Vue.extend({
   name: 'SignupForm',
   data() {
     return {
       form: {
-        serverErrors: {},
+        serverErrors: Object as () => TestInterface,
         username: 'jack',
         email: 'jack@mail.ru',
         password: 'qweqwe123',
@@ -123,41 +110,42 @@ export default Vue.extend({
     },
   },
   methods: {
-    updateServerErrors(errors: object): void {
+    updateServerErrors(errors: TestInterface): void {
       this.form.serverErrors = errors;
     },
     clearServerError(field: string): void {
       delete this.form.serverErrors[field];
     },
+
     onSubmit(evt: Event): void {
       this.$v.$touch();
       if (this.$v.$invalid) {
-        // console.log('#invalid submit', this.$v);
-        // console.log('#tof', this.constructor);
         return;
       }
-      // alert(JSON.stringify(this.form));
       this.$store
         .dispatch('newUser', this.form)
         .then((user: object) => {
           console.log('#new user!');
-
-          // do something after the new user was successfull created
         })
-        .catch((errors: object) => {
+        .catch((errors: TestInterface) => {
           console.log('#error catch!!!', errors);
           this.updateServerErrors(errors);
-          // do something when something goes wrong
         });
     },
   },
   watch: {
-    'form.username': function(): void {
+    'form.username'(): void {
       this.clearServerError('username');
     },
-    'form.email': function(): void {
+    'form.email'(): void {
       this.clearServerError('email');
     },
+    // 'form.username': function(): void {
+    //   this.clearServerError('username');
+    // },
+    // 'form.email': function(): void {
+    //   this.clearServerError('email');
+    // },
   },
 });
 </script>
