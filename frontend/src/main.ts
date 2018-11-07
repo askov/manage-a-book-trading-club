@@ -11,21 +11,9 @@ Vue.config.productionTip = false;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
-// 123
-
-// Plugins
-// Vue.use({
-//   install(Vue) {
-//     Vue.prototype.$http = axios.create({
-//       baseURL: 'http://127.0.0.1:8000/'
-//     })
-//   }
-// });
 Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
-// import Vuelidate from 'vuelidate';
-// Vue.use(Vuelidate);
 
 new Vue({
   router,
