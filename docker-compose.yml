@@ -20,7 +20,7 @@ services:
       dockerfile: Dockerfile
     restart: on-failure
     command: >
-      bash -c "pip install -r requirements.txt && sleep 3 && python3 manage.py runserver 0.0.0.0:8000"
+      bash -c "pip install -r requirements.txt && sleep 5 && python3 manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./backend:/backend
     ports:

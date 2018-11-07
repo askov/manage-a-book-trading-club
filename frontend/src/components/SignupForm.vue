@@ -60,6 +60,10 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import Component from 'vue-class-component';
+
+import { mapState, mapMutations } from 'vuex';
+
 import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs, email } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
@@ -72,82 +76,136 @@ interface TestInterface {
   [index: string]: string[];
 }
 
-export default Vue.extend({
-  name: 'SignupForm',
-  data() {
-    return {
-      form: {
-        serverErrors: Object as () => TestInterface,
-        username: 'jack',
-        email: 'jack@mail.ru',
-        password: 'qweqwe123',
-        passwordConfirm: 'qweqwe123',
-      },
-    };
-  },
-  mixins: [validationMixin],
-  validations: {
-    form: {
-      serverErrors: {},
-      email: {
-        required,
-        email,
-        serverRule: serverRule('email'),
-      },
-      username: {
-        required,
-        minLength: minLength(4),
-        serverRule: serverRule('username'),
-      },
-      password: {
-        required,
-        minLength: minLength(8),
-        serverRule: serverRule('password'),
-      },
-      passwordConfirm: {
-        sameAsPassword: sameAs('password'),
-      },
-    },
-  },
-  methods: {
-    updateServerErrors(errors: TestInterface): void {
-      this.form.serverErrors = errors;
-    },
-    clearServerError(field: string): void {
-      delete this.form.serverErrors[field];
-    },
-
-    onSubmit(evt: Event): void {
-      this.$v.$touch();
-      if (this.$v.$invalid) {
-        return;
-      }
-      this.$store
-        .dispatch('newUser', this.form)
-        .then((user: object) => {
-          console.log('#new user!');
-        })
-        .catch((errors: TestInterface) => {
-          console.log('#error catch!!!', errors);
-          this.updateServerErrors(errors);
-        });
-    },
-  },
-  watch: {
-    'form.username'(): void {
-      this.clearServerError('username');
-    },
-    'form.email'(): void {
-      this.clearServerError('email');
-    },
-    // 'form.username': function(): void {
-    //   this.clearServerError('username');
-    // },
-    // 'form.email': function(): void {
-    //   this.clearServerError('email');
-    // },
+const AppProps = Vue.extend({
+  props: {
+    // propMessage: String
   },
 });
+
+@Component({
+  components: {
+    // Hello,
+    // World
+  },
+  // Vuex's component binding helper can use here
+  computed: mapState([
+    // 'count'
+  ]),
+  methods: mapMutations([
+    // 'increment'
+  ]),
+})
+export default class App extends AppProps {
+  // inital data
+  email: 'email';
+
+  //   form: {
+  //   serverErrors: Object as () => TestInterface,
+  //   username: 'jack',
+  //   email: 'jack@mail.ru',
+  //   password: 'qweqwe123',
+  //   passwordConfirm: 'qweqwe123',
+  // }
+  // msg: number = 123
+  // use prop values for initial data
+  // helloMsg: string = 'Hello, ' + this.propMessage
+  // annotate refs type
+  // $refs!: {
+  //   helloComponent: Hello
+  // }
+  // additional declaration is needed
+  // when you declare some properties in `Component` decorator
+  // count!: number
+  // increment!: () => void
+  // lifecycle hook
+  // mounted () {
+  //   this.greet()
+  // }
+  // computed
+  // get computedMsg () {
+  //   return 'computed ' + this.msg
+  // }
+  // method
+  // greet () {
+  //   alert('greeting: ' + this.msg)
+  //   this.$refs.helloComponent.sayHello()
+  // }
+  // direct dispatch example
+  // incrementIfOdd () {
+  //   this.$store.dispatch('incrementIfOdd')
+  // }
+}
+
+// export default Vue.extend({
+//   name: 'SignupForm',
+//   data() {
+//     return {
+//       form: {
+//         serverErrors: Object as () => TestInterface,
+//         username: 'jack',
+//         email: 'jack@mail.ru',
+//         password: 'qweqwe123',
+//         passwordConfirm: 'qweqwe123',
+//       },
+//     };
+//   },
+//   mixins: [validationMixin],
+//   validations: {
+//     form: {
+//       serverErrors: {},
+//       email: {
+//         required,
+//         email,
+//         serverRule: serverRule('email'),
+//       },
+//       username: {
+//         required,
+//         minLength: minLength(4),
+//         serverRule: serverRule('username'),
+//       },
+//       password: {
+//         required,
+//         minLength: minLength(8),
+//         serverRule: serverRule('password'),
+//       },
+//       passwordConfirm: {
+//         sameAsPassword: sameAs('password'),
+//       },
+//     },
+//   },
+//   methods: {
+//     updateServerErrors(errors: TestInterface): void {
+//       this.form.serverErrors = errors;
+//     },
+//     clearServerError(field: string): void {
+//       delete this.form.serverErrors[field];
+//     },
+
+//     onSubmit(evt: Event): void {
+//       this.$v.$touch();
+//       if (this.$v.$invalid) {
+//         return;
+//       }
+//       this.$store
+//         .dispatch('newUser', this.form)
+//         .then((user: object) => {
+//           console.log('#new user!');
+//         })
+//         .catch((errors: TestInterface) => {
+//           console.log('#error catch!!!', errors);
+//           this.updateServerErrors(errors);
+//         });
+//     },
+//   },
+//   watch: {
+//     'form.username'(): void {
+//       this.clearServerError('username');
+//     },
+//     'form.email'(): void {
+//       this.clearServerError('email');
+//     },
+//   },
+// });
 </script>
 
 <style scoped lang="scss">
