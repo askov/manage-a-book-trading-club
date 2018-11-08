@@ -72,12 +72,35 @@ interface TestInterface {
   [index: string]: string[];
 }
 
+type Index = 'email' | 'username' | 'password' | 'passwordConfirm';
+type FromIndex = { [k in Index]?: string[] };
+// interface ServerErrors {
+//   [index: string]: string[];
+//   // email?: string[];
+//   // username?: string[];
+//   // password?: string[];
+//   // passwordConfirm?: string[];
+// }
+
+interface SignupFormInterface {
+  // serverErrors: ServerErrors;
+  serverErrors: FromIndex;
+  email: string;
+  username: string;
+  password: string;
+  passwordConfirm: string;
+}
+
+interface ComponentData {
+  form: SignupFormInterface;
+}
+
 export default Vue.extend({
   name: 'SignupForm',
-  data() {
+  data(): ComponentData {
     return {
       form: {
-        serverErrors: Object as () => TestInterface,
+        serverErrors: {},
         username: 'jack',
         email: 'jack@mail.ru',
         password: 'qweqwe123',
