@@ -60,7 +60,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import Component from 'vue-class-component';
+import Component, { mixins } from 'vue-class-component';
 
 import { mapState, mapMutations } from 'vuex';
 
@@ -72,21 +72,35 @@ interface Event {
   preventDefault: () => void;
 }
 
-interface TestInterface {
-  [index: string]: string[];
+interface ServerErrors {
+  email?: string[];
+  username?: string[];
+  password?: string[];
+  passwordConfirm?: string[];
 }
 
-const AppProps = Vue.extend({
+interface SignupFormInterface {
+  serverErrors: ServerErrors;
+  email: string;
+  username: string;
+  password: string;
+  passwordConfirm: string;
+}
+
+// const AppProps = Vue.extend({
+//   props: {
+//     // propMessage: String
+//   },
+// });
+
+class AppMixins extends mixins(validationMixin) {}
+class AppProps extends AppMixins {
   props: {
     // propMessage: String
-  },
-});
-
+  };
+}
 @Component({
-  components: {
-    // Hello,
-    // World
-  },
+  components: {},
   // Vuex's component binding helper can use here
   computed: mapState([
     // 'count'
@@ -97,15 +111,39 @@ const AppProps = Vue.extend({
 })
 export default class App extends AppProps {
   // inital data
-  email: 'email';
 
+  form: SignupFormInterface = {
+    serverErrors: {},
+    email: 'jack',
+    username: 'jack@mail.ru',
+    password: 'qweqwe123',
+    passwordConfirm: 'qweqwe123',
+  };
+
+  // validations: {
   //   form: {
-  //   serverErrors: Object as () => TestInterface,
-  //   username: 'jack',
-  //   email: 'jack@mail.ru',
-  //   password: 'qweqwe123',
-  //   passwordConfirm: 'qweqwe123',
-  // }
+  //     serverErrors: {},
+  //     email: {
+  //       required,
+  //       email,
+  //       serverRule: serverRule('email'),
+  //     },
+  //     username: {
+  //       required,
+  //       minLength: minLength(4),
+  //       serverRule: serverRule('username'),
+  //     },
+  //     password: {
+  //       required,
+  //       minLength: minLength(8),
+  //       serverRule: serverRule('password'),
+  //     },
+  //     passwordConfirm: {
+  //       sameAsPassword: sameAs('password'),
+  //     },
+  //   },
+  // },
+
   // msg: number = 123
   // use prop values for initial data
   // helloMsg: string = 'Hello, ' + this.propMessage
@@ -125,7 +163,9 @@ export default class App extends AppProps {
   // get computedMsg () {
   //   return 'computed ' + this.msg
   // }
+
   // method
+
   // greet () {
   //   alert('greeting: ' + this.msg)
   //   this.$refs.helloComponent.sayHello()
