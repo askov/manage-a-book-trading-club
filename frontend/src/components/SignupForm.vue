@@ -93,12 +93,12 @@ interface SignupFormInterface {
 //   },
 // });
 
-class AppMixins extends mixins(validationMixin) {}
-class AppProps extends AppMixins {
-  props: {
-    // propMessage: String
-  };
-}
+// class AppMixins extends mixins(validationMixin) {}
+// class AppProps extends AppMixins {
+//   props: {
+//     // propMessage: String
+//   };
+// }
 @Component({
   components: {},
   // Vuex's component binding helper can use here
@@ -109,7 +109,7 @@ class AppProps extends AppMixins {
     // 'increment'
   ]),
 })
-export default class App extends AppProps {
+export default class App extends mixins(validationMixin) {
   // inital data
 
   form: SignupFormInterface = {
@@ -120,14 +120,23 @@ export default class App extends AppProps {
     passwordConfirm: 'qweqwe123',
   };
 
+  // validations() {
+  //   // form: {
+  //   //   serverErrors: {
+  //   //   }
+  //   // }
+  // }
+
+  validations() {}
+
   // validations: {
   //   form: {
-  //     serverErrors: {},
+  //     serverErrors: {};
   //     email: {
-  //       required,
-  //       email,
-  //       serverRule: serverRule('email'),
-  //     },
+  //       required;
+  //       email;
+  //       serverRule: serverRule('email');
+  //     };
   //     username: {
   //       required,
   //       minLength: minLength(4),
@@ -141,8 +150,8 @@ export default class App extends AppProps {
   //     passwordConfirm: {
   //       sameAsPassword: sameAs('password'),
   //     },
-  //   },
-  // },
+  //   };
+  // };
 
   // msg: number = 123
   // use prop values for initial data
