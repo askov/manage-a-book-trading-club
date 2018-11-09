@@ -68,23 +68,11 @@ interface Event {
   preventDefault: () => void;
 }
 
-interface TestInterface {
-  [index: string]: string[];
-}
-
-type Index = 'email' | 'username' | 'password' | 'passwordConfirm';
-type FromIndex = { [k in Index]?: string[] };
-// interface ServerErrors {
-//   [index: string]: string[];
-//   // email?: string[];
-//   // username?: string[];
-//   // password?: string[];
-//   // passwordConfirm?: string[];
-// }
+type ErrorIndex = 'email' | 'username' | 'password' | 'passwordConfirm';
+type ServerErrors = { [k in ErrorIndex]?: string[] };
 
 interface SignupFormInterface {
-  // serverErrors: ServerErrors;
-  serverErrors: FromIndex;
+  serverErrors: ServerErrors;
   email: string;
   username: string;
   password: string;
@@ -133,10 +121,10 @@ export default Vue.extend({
     },
   },
   methods: {
-    updateServerErrors(errors: TestInterface): void {
+    updateServerErrors(errors: ServerErrors): void {
       this.form.serverErrors = errors;
     },
-    clearServerError(field: string): void {
+    clearServerError(field: ErrorIndex): void {
       delete this.form.serverErrors[field];
     },
 
@@ -150,7 +138,7 @@ export default Vue.extend({
         .then((user: object) => {
           console.log('#new user!');
         })
-        .catch((errors: TestInterface) => {
+        .catch((errors: ServerErrors) => {
           console.log('#error catch!!!', errors);
           this.updateServerErrors(errors);
         });
@@ -163,12 +151,6 @@ export default Vue.extend({
     'form.email'(): void {
       this.clearServerError('email');
     },
-    // 'form.username': function(): void {
-    //   this.clearServerError('username');
-    // },
-    // 'form.email': function(): void {
-    //   this.clearServerError('email');
-    // },
   },
 });
 </script>
