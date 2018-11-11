@@ -14,12 +14,9 @@ export default new Vuex.Store({
   actions: {
     newUser({ commit }, user) {
       return new Promise((resolve, reject) => {
-        // resolve({ some: 1 });
         apiService.new(user).then((res) => {
-          // console.log('#res', res);
           resolve({ data: res });
         }).catch((err) => {
-          // console.log('#err', err.data);
           reject(err.data);
         });
       });
