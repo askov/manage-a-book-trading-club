@@ -10,9 +10,6 @@
           <router-link to="/signup" class="nav-link">Register</router-link>
           <router-link to="/login" class="nav-link">Log in</router-link>
         </b-navbar-nav>
-        <!-- <b-navbar-nav class="ml-auto">
-          <router-link to="/login" class="nav-link">Log in</router-link>
-        </b-navbar-nav>-->
       </b-collapse>
     </b-navbar>
     <router-view/>
