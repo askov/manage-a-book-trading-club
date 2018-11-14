@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>Registration</h1>
     <div class="row">
-      <div class="col-md-6 col-centered">
+      <div class="shadow standard-form col-10 mt-5 px-0 mx-auto rounded">
         <SignupForm/>
       </div>
     </div>
@@ -23,7 +22,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-.col-centered {
-  margin: 0 auto;
+.standard-form {
+  max-width: 450px;
 }
 </style>

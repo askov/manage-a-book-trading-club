@@ -18,4 +18,7 @@
 
 
 <style lang="scss">
+.standard-form {
+  max-width: 300px;
+}
 </style>
