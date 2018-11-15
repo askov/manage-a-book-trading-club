@@ -168,11 +168,4 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-// .test {
-//   // background-color: #fafafa;
-//   border: 1px solid #ced4da;
-//   padding: 1em;
-//   margin-top: 50px;
-//   border-radius: 4px;
-// }
 </style>

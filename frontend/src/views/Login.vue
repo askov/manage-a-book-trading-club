@@ -1,7 +1,10 @@
 <template>
   <div>
-    <h1>Login</h1>
-    <LoginForm/>
+    <div class="row">
+      <div class="shadow standard-form col-10 mt-5 px-0 mx-auto rounded">
+        <LoginForm/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,3 +19,10 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped lang="scss">
+.standard-form {
+  max-width: 450px;
+}
+</style>
+

@@ -7,6 +7,9 @@ import BootstrapVue from 'bootstrap-vue';
 
 Vue.config.productionTip = false;
 
+// Scss
+import './styles/index.scss';
+
 // Css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
