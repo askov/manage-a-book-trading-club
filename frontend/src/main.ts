@@ -14,6 +14,16 @@ import './styles/index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
+
+// Font awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+library.add(faEye, faEyeSlash);
+
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+// import fontawesome from '@fortawesome/vue-fontawesome';
 Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
