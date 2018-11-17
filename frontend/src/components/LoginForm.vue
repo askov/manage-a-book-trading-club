@@ -2,9 +2,6 @@
   <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light border rounded">
     <div class="bg-primary text-light p-2 text-center rounded-top">
       <h1>Login</h1>
-      <font-awesome-icon icon="eye"/>
-      <font-awesome-icon icon="eye-slash"/>
-      <font-awesome-icon :icon="['far', 'eye']"/>
     </div>
     <div class="px-4 py-3 text-dark">
       <b-form-group label="Name:" label-for="loginFormName">
@@ -21,13 +18,21 @@
         >{{form.serverErrors.username[0]}}</b-form-invalid-feedback>
       </b-form-group>
       <b-form-group label="Password:" label-for="loginFormPassword">
-        <b-form-input
-          id="loginFormPassword"
-          type="password"
-          v-model="form.password"
-          :class="{ 'is-invalid': $v.form.password.$error }"
-          placeholder="Enter password"
-        ></b-form-input>
+        <b-input-group>
+          <b-form-input
+            id="loginFormPassword"
+            :type="passwordVisibility ? 'text': 'password'"
+            :class="{ 'is-invalid': $v.form.password.$error }"
+            v-model="form.password"
+            placeholder="Enter password"
+          ></b-form-input>
+          <b-input-group-append>
+            <b-btn variant="primary" @click="togglePasswordVisibility()">
+              <font-awesome-icon icon="eye" v-if="passwordVisibility"/>
+              <font-awesome-icon icon="eye-slash" v-else/>
+            </b-btn>
+          </b-input-group-append>
+        </b-input-group>
         <b-form-invalid-feedback v-if="!$v.form.password.required">Password is required</b-form-invalid-feedback>
         <b-form-invalid-feedback
           v-if="!$v.form.password.serverRule"
@@ -61,6 +66,7 @@ interface LoginFormInterface {
 }
 
 interface ComponentData {
+  passwordVisibility: boolean;
   form: LoginFormInterface;
 }
 
@@ -68,6 +74,7 @@ export default Vue.extend({
   name: 'LoginForm',
   data(): ComponentData {
     return {
+      passwordVisibility: false,
       form: {
         serverErrors: {},
         username: 'jack',
@@ -90,6 +97,10 @@ export default Vue.extend({
     },
   },
   methods: {
+    togglePasswordVisibility(): void {
+      this.passwordVisibility = !this.passwordVisibility;
+      console.log('#greet!');
+    },
     updateServerErrors(errors: ServerErrors): void {
       this.form.serverErrors = errors;
     },

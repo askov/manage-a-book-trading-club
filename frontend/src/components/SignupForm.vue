@@ -33,13 +33,21 @@
         <b-form-invalid-feedback v-if="!$v.form.email.serverRule">{{form.serverErrors.email[0]}}</b-form-invalid-feedback>
       </b-form-group>
       <b-form-group id="signupFormPassword" label="Password:" label-for="signupFormPassword">
-        <b-form-input
-          id="signupFormPassword"
-          type="password"
-          v-model="form.password"
-          :class="{ 'is-invalid': $v.form.password.$error }"
-          placeholder="Enter password"
-        ></b-form-input>
+        <b-input-group>
+          <b-form-input
+            id="signupFormPassword"
+            :type="passwordVisibility ? 'text': 'password'"
+            v-model="form.password"
+            :class="{ 'is-invalid': $v.form.password.$error }"
+            placeholder="Enter password"
+          ></b-form-input>
+          <b-input-group-append>
+            <b-btn variant="primary" @click="togglePasswordVisibility()">
+              <font-awesome-icon icon="eye" v-if="passwordVisibility"/>
+              <font-awesome-icon icon="eye-slash" v-else/>
+            </b-btn>
+          </b-input-group-append>
+        </b-input-group>
         <b-form-invalid-feedback v-if="!$v.form.password.required">Password is required</b-form-invalid-feedback>
         <b-form-invalid-feedback
           v-if="!$v.form.password.minLength"
@@ -53,13 +61,21 @@
         label="Repeat password:"
         label-for="signupFormPasswordConfirm"
       >
-        <b-form-input
-          id="signupFormPasswordConfirm"
-          type="password"
-          v-model="form.passwordConfirm"
-          :class="{ 'is-invalid': $v.form.passwordConfirm.$error }"
-          placeholder="Repeat password"
-        ></b-form-input>
+        <b-input-group>
+          <b-form-input
+            id="signupFormPasswordConfirm"
+            :type="passwordConfirmVisibility ? 'text': 'password'"
+            v-model="form.passwordConfirm"
+            :class="{ 'is-invalid': $v.form.passwordConfirm.$error }"
+            placeholder="Repeat password"
+          ></b-form-input>
+          <b-input-group-append>
+            <b-btn variant="primary" @click="togglePasswordVisibility('confirm')">
+              <font-awesome-icon icon="eye" v-if="passwordConfirmVisibility"/>
+              <font-awesome-icon icon="eye-slash" v-else/>
+            </b-btn>
+          </b-input-group-append>
+        </b-input-group>
         <b-form-invalid-feedback v-if="!$v.form.passwordConfirm.sameAs">Passwords must be identical.</b-form-invalid-feedback>
       </b-form-group>
       <b-button type="submit" variant="primary">Sign me up!</b-button>
@@ -92,6 +108,8 @@ interface SignupFormInterface {
 }
 
 interface ComponentData {
+  passwordVisibility: boolean;
+  passwordConfirmVisibility: boolean;
   form: SignupFormInterface;
 }
 
@@ -99,6 +117,8 @@ export default Vue.extend({
   name: 'SignupForm',
   data(): ComponentData {
     return {
+      passwordVisibility: false,
+      passwordConfirmVisibility: false,
       form: {
         serverErrors: {},
         username: 'jack',
@@ -133,6 +153,13 @@ export default Vue.extend({
     },
   },
   methods: {
+    togglePasswordVisibility(field: string): void {
+      if (field === 'confirm') {
+        this.passwordConfirmVisibility = !this.passwordConfirmVisibility;
+      } else {
+        this.passwordVisibility = !this.passwordVisibility;
+      }
+    },
     updateServerErrors(errors: ServerErrors): void {
       this.form.serverErrors = errors;
     },
