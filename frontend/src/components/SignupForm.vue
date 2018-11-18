@@ -121,10 +121,10 @@ export default Vue.extend({
       passwordConfirmVisibility: false,
       form: {
         serverErrors: {},
-        username: 'jack',
-        email: 'jack@mail.ru',
-        password: 'qweqwe123',
-        passwordConfirm: 'qweqwe123',
+        username: '',
+        email: '',
+        password: '',
+        passwordConfirm: '',
       },
     };
   },

@@ -77,8 +77,8 @@ export default Vue.extend({
       passwordVisibility: false,
       form: {
         serverErrors: {},
-        username: 'jack',
-        password: 'qweqwe123',
+        username: '',
+        password: '',
       },
     };
   },
@@ -99,7 +99,6 @@ export default Vue.extend({
   methods: {
     togglePasswordVisibility(): void {
       this.passwordVisibility = !this.passwordVisibility;
-      console.log('#greet!');
     },
     updateServerErrors(errors: ServerErrors): void {
       this.form.serverErrors = errors;

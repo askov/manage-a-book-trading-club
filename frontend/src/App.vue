@@ -30,8 +30,6 @@ body {
   & + span {
     text-transform: capitalize;
   }
-  // display: inline-block;
-  // vertical-align: middle;
 }
 .standard-form {
   max-width: 300px;

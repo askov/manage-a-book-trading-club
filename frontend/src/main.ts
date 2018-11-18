@@ -23,7 +23,6 @@ library.add(faEye, faEyeSlash);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-// import fontawesome from '@fortawesome/vue-fontawesome';
 Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
