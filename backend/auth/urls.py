@@ -6,6 +6,6 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
     url(r'register', views.UserCreate.as_view()),
-    url(r'^me/$', obtain_jwt_token,
-        name='me')
+    url(r'^login/$', obtain_jwt_token,
+        name='login')
 ]

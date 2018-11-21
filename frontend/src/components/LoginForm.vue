@@ -113,16 +113,31 @@ export default Vue.extend({
       if (this.$v.$invalid) {
         return;
       }
-      // this.$store
-      //   .dispatch('newUser', this.form)
-      //   .then((user: object) => {
-      //     console.log('#new user!');
-      //   })
-      //   .catch((errors: ServerErrors) => {
-      //     console.log('#error catch!!!', errors);
-      //     this.updateServerErrors(errors);
-      //   });
+      this.$store
+        .dispatch('logIn', this.form)
+        .then((user: object) => {
+          console.log('#new user!');
+        })
+        .catch((errors: ServerErrors) => {
+          console.log('#error catch!!!', errors);
+          this.updateServerErrors(errors);
+        });
     },
+    //  onSubmit(evt: Event): void {
+    //   this.$v.$touch();
+    //   if (this.$v.$invalid) {
+    //     return;
+    //   }
+    //   this.$store
+    //     .dispatch('signUp', this.form)
+    //     .then((user: object) => {
+    //       console.log('#new user!');
+    //     })
+    //     .catch((errors: ServerErrors) => {
+    //       console.log('#error catch!!!', errors);
+    //       this.updateServerErrors(errors);
+    //     });
+    // },
   },
   watch: {
     'form.username'(): void {

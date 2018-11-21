@@ -173,7 +173,7 @@ export default Vue.extend({
         return;
       }
       this.$store
-        .dispatch('newUser', this.form)
+        .dispatch('signUp', this.form)
         .then((user: object) => {
           console.log('#new user!');
         })

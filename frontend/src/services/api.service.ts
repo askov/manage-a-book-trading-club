@@ -1,14 +1,11 @@
 import http from '@/services/http.service';
 
-interface UserRegistrationForm {
-  email: string;
-  name: string;
-  password: string;
-  passwordConfirm: string;
-}
-
 export default {
-  new(form: UserRegistrationForm): Promise<object> {
+  signUp(form: UserRegistrationForm) {
     return http.post('auth/register/', form);
+  },
+
+  logIn(form: UserLoginForm) {
+    return http.post('auth/login/', form);
   },
 };
