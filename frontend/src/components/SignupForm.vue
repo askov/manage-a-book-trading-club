@@ -4,23 +4,26 @@
       <h1>Registration</h1>
     </div>
     <div class="px-4 py-3 text-dark">
-      <b-form-group id="signupFormName" label="Name:" label-for="signupFormName">
+      <b-form-group
+        id="signupFormName"
+        label="Name:"
+        label-for="signupFormName"
+        :invalid-feedback="invalidName"
+      >
         <b-form-input
           id="signupFormName"
           type="text"
-          :class="{ 'is-invalid': $v.form.username.$error }"
           v-model="form.username"
           placeholder="Enter name"
+          :class="{ 'is-invalid': $v.form.username.$error }"
         ></b-form-input>
-        <b-form-invalid-feedback v-if="!$v.form.username.required">Name is required</b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          v-if="!$v.form.username.minLength"
-        >Name must be at least {{$v.form.username.$params.minLength.min}} characters</b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          v-if="!$v.form.username.serverRule"
-        >{{form.serverErrors.username[0]}}</b-form-invalid-feedback>
       </b-form-group>
-      <b-form-group id="signupFormEmail" label="Email address:" label-for="signupFormEmail">
+      <b-form-group
+        id="signupFormEmail"
+        label="Email address:"
+        label-for="signupFormEmail"
+        :invalid-feedback="invalidEmail"
+      >
         <b-form-input
           id="signupFormEmail"
           type="email"
@@ -28,11 +31,13 @@
           :class="{ 'is-invalid': $v.form.email.$error }"
           placeholder="Enter email"
         ></b-form-input>
-        <b-form-invalid-feedback v-if="!$v.form.email.required">Email is required</b-form-invalid-feedback>
-        <b-form-invalid-feedback v-if="!$v.form.email.email">Email must be valid</b-form-invalid-feedback>
-        <b-form-invalid-feedback v-if="!$v.form.email.serverRule">{{form.serverErrors.email[0]}}</b-form-invalid-feedback>
       </b-form-group>
-      <b-form-group id="signupFormPassword" label="Password:" label-for="signupFormPassword">
+      <b-form-group
+        id="signupFormPassword"
+        label="Password:"
+        label-for="signupFormPassword"
+        :invalid-feedback="invalidPassword"
+      >
         <b-input-group>
           <b-form-input
             id="signupFormPassword"
@@ -48,26 +53,20 @@
             </b-btn>
           </b-input-group-append>
         </b-input-group>
-        <b-form-invalid-feedback v-if="!$v.form.password.required">Password is required</b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          v-if="!$v.form.password.minLength"
-        >Password must have at least {{ $v.form.password.$params.minLength.min }} letters.</b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          v-if="!$v.form.password.serverRule"
-        >{{form.serverErrors.password[0]}}</b-form-invalid-feedback>
       </b-form-group>
       <b-form-group
         id="signupFormPasswordConfirm"
         label="Repeat password:"
         label-for="signupFormPasswordConfirm"
+        :invalid-feedback="invalidPasswordConfirm"
       >
         <b-input-group>
           <b-form-input
             id="signupFormPasswordConfirm"
             :type="passwordConfirmVisibility ? 'text': 'password'"
             v-model="form.passwordConfirm"
-            :class="{ 'is-invalid': $v.form.passwordConfirm.$error }"
             placeholder="Repeat password"
+            :class="{ 'is-invalid': $v.form.passwordConfirm.$error }"
           ></b-form-input>
           <b-input-group-append>
             <b-btn variant="primary" @click="togglePasswordVisibility('confirm')">
@@ -76,7 +75,6 @@
             </b-btn>
           </b-input-group-append>
         </b-input-group>
-        <b-form-invalid-feedback v-if="!$v.form.passwordConfirm.sameAs">Passwords must be identical.</b-form-invalid-feedback>
       </b-form-group>
       <b-button type="submit" variant="primary">Sign me up!</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Already registered ?
@@ -152,6 +150,53 @@ export default Vue.extend({
       },
     },
   },
+  computed: {
+    invalidName(): string {
+      if (!this.$v.form.username.required) {
+        return 'Name is required';
+      } else if (!this.$v.form.username.minLength) {
+        return `Name must be at least ${
+          this.$v.form.username.$params.minLength.min
+        }`;
+      } else if (!this.$v.form.username.serverRule) {
+        return this.form.serverErrors.username[0];
+      } else {
+        return '';
+      }
+    },
+    invalidEmail(): string {
+      if (!this.$v.form.email.required) {
+        return 'Email is required';
+      } else if (!this.$v.form.email.email) {
+        return 'Email must be valid';
+      } else if (!this.$v.form.email.serverRule) {
+        return this.form.serverErrors.email[0];
+      } else {
+        return '';
+      }
+    },
+    invalidPassword(): string {
+      if (!this.$v.form.password.required) {
+        return 'Password is required';
+      } else if (!this.$v.form.password.minLength) {
+        return `Password must be at least ${
+          this.$v.form.password.$params.minLength.min
+        }`;
+      } else if (!this.$v.form.password.serverRule) {
+        return this.form.serverErrors.password[0];
+      } else {
+        return '';
+      }
+    },
+    invalidPasswordConfirm(): string {
+      if (!this.$v.form.passwordConfirm.sameAs) {
+        return 'Passwords must be identical';
+      } else {
+        return '';
+      }
+    },
+    // <!-- <b-form-invalid-feedback v-if="!$v.form.passwordConfirm.sameAs">Passwords must be identical.</b-form-invalid-feedback> -->
+  },
   methods: {
     togglePasswordVisibility(field: string): void {
       if (field === 'confirm') {
@@ -195,4 +240,11 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+.b-form-group.form-group {
+  & > div {
+    .invalid-feedback {
+      display: block !important;
+    }
+  }
+}
 </style>

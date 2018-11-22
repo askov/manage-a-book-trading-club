@@ -1,6 +1,7 @@
 <template>
   <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light border rounded">
     <div class="bg-primary text-light p-2 text-center rounded-top">
+      <b-form-invalid-feedback>Password is required</b-form-invalid-feedback>
       <h1>Login</h1>
     </div>
     <div class="px-4 py-3 text-dark">
