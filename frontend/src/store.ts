@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import apiService from '@/services/api.service';
-import { __await } from 'tslib';
 
 Vue.use(Vuex);
 

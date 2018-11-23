@@ -21,9 +21,7 @@
 
 
 <style lang="scss">
-body {
-  font-family: 'Gentium Book Basic', serif;
-}
+
 .mbtc-logo {
   height: 30px;
   margin-right: 5px;
@@ -31,10 +29,5 @@ body {
     text-transform: capitalize;
   }
 }
-.standard-form {
-  max-width: 300px;
-}
-.standard-form {
-  max-width: 450px;
-}
+
 </style>
