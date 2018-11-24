@@ -36,9 +36,8 @@
         id="signupFormPassword"
         label="Password:"
         label-for="signupFormPassword"
-        :invalid-feedback="invalidPassword"
       >
-        <b-input-group>
+        <b-input-group class="flex-wrap">
           <b-form-input
             id="signupFormPassword"
             :type="passwordVisibility ? 'text': 'password'"
@@ -53,12 +52,12 @@
             </b-btn>
           </b-input-group-append>
         </b-input-group>
+        <b-form-invalid-feedback v-if="$v.form.password.$error">{{invalidPassword}}</b-form-invalid-feedback>
       </b-form-group>
       <b-form-group
         id="signupFormPasswordConfirm"
         label="Repeat password:"
         label-for="signupFormPasswordConfirm"
-        :invalid-feedback="invalidPasswordConfirm"
       >
         <b-input-group>
           <b-form-input
@@ -75,6 +74,7 @@
             </b-btn>
           </b-input-group-append>
         </b-input-group>
+        <b-form-invalid-feedback v-if="$v.form.passwordConfirm.$error">{{invalidPasswordConfirm}}</b-form-invalid-feedback>
       </b-form-group>
       <b-button type="submit" variant="primary">Sign me up!</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Already registered ?
