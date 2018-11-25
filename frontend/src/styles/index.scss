@@ -1,9 +1,12 @@
 body {
   font-family: 'Gentium Book Basic', serif;
 }
-.standard-form {
-  max-width: 300px;
-}
+
 .standard-form {
   max-width: 450px;
+}
+
+// Inline group error display fix
+.b-form-group.form-group .input-group + .invalid-feedback{
+  display: block;
 }

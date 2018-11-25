@@ -5,7 +5,8 @@
       <h1>Login</h1>
     </div>
     <div class="px-4 py-3 text-dark">
-      <b-form-group label="Name:" label-for="loginFormName">
+
+      <b-form-group label="Name:" label-for="loginFormName" :invalid-feedback="invalidName">
         <b-form-input
           id="loginFormName"
           type="text"
@@ -13,10 +14,6 @@
           v-model="form.username"
           placeholder="Enter name"
         ></b-form-input>
-        <b-form-invalid-feedback v-if="!$v.form.username.required">Name is required</b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          v-if="!$v.form.username.serverRule"
-        >{{form.serverErrors.username[0]}}</b-form-invalid-feedback>
       </b-form-group>
       <b-form-group label="Password:" label-for="loginFormPassword">
         <b-input-group>
@@ -34,11 +31,12 @@
             </b-btn>
           </b-input-group-append>
         </b-input-group>
-        <b-form-invalid-feedback v-if="!$v.form.password.required">Password is required</b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          v-if="!$v.form.password.serverRule"
-        >{{form.serverErrors.password[0]}}</b-form-invalid-feedback>
+        <b-form-invalid-feedback v-if="$v.form.password.$error">{{invalidPassword}}</b-form-invalid-feedback>
+              <b-form-invalid-feedback v-if="nonFieldErrors">
+        {{nonFieldErrors}}
+      </b-form-invalid-feedback>
       </b-form-group>
+
       <b-button type="submit" variant="primary">Log in</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Don't have your account yet?
         <router-link to="/signup">Register here</router-link>
@@ -57,7 +55,7 @@ interface Event {
   preventDefault: () => void;
 }
 
-type ErrorIndex = 'username' | 'password';
+type ErrorIndex = 'non_field_errors' | 'username' | 'password';
 type ServerErrors = { [k in ErrorIndex]?: string[] };
 
 interface LoginFormInterface {
@@ -97,19 +95,46 @@ export default Vue.extend({
       },
     },
   },
+  computed: {
+    nonFieldErrors(): string {
+      if (this.form.serverErrors.non_field_errors) {
+        return this.form.serverErrors.non_field_errors[0];
+      } else {
+        return '';
+      }
+    },
+    invalidName(): string {
+      if (!(this.$v.form as any).username.required) {
+        return 'Name is required';
+      } else if (!(this.$v.form as any).username.serverRule) {
+        return (this.form as any).serverErrors.username[0];
+      } else {
+        return '';
+      }
+    },
+    invalidPassword(): string {
+      if (!(this.$v.form as any).password.required) {
+        return 'Password is required';
+      } else if (!(this.$v.form as any).password.serverRule) {
+        return (this.form as any).serverErrors.password[0];
+      } else {
+        return '';
+      }
+    },
+  },
   methods: {
     togglePasswordVisibility(): void {
       this.passwordVisibility = !this.passwordVisibility;
     },
     updateServerErrors(errors: ServerErrors): void {
+      console.log('#server errors #2', errors);
       this.form.serverErrors = errors;
     },
     clearServerError(field: ErrorIndex): void {
       delete this.form.serverErrors[field];
+      delete this.form.serverErrors.non_field_errors;
     },
-
     onSubmit(evt: Event): void {
-      console.log('#submit');
       this.$v.$touch();
       if (this.$v.$invalid) {
         return;
@@ -124,21 +149,6 @@ export default Vue.extend({
           this.updateServerErrors(errors);
         });
     },
-    //  onSubmit(evt: Event): void {
-    //   this.$v.$touch();
-    //   if (this.$v.$invalid) {
-    //     return;
-    //   }
-    //   this.$store
-    //     .dispatch('signUp', this.form)
-    //     .then((user: object) => {
-    //       console.log('#new user!');
-    //     })
-    //     .catch((errors: ServerErrors) => {
-    //       console.log('#error catch!!!', errors);
-    //       this.updateServerErrors(errors);
-    //     });
-    // },
   },
   watch: {
     'form.username'(): void {

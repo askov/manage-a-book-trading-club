@@ -113,14 +113,6 @@ interface ComponentData {
   form: SignupFormInterface;
 }
 
-interface Test  {
-  required: boolean;
-}
-
-interface MyForm {
-  username: Test;
-}
-
 export default Vue.extend({
   name: 'SignupForm',
   data(): ComponentData {
@@ -215,6 +207,7 @@ export default Vue.extend({
       }
     },
     updateServerErrors(errors: ServerErrors): void {
+      console.log('#server errors #1', errors);
       this.form.serverErrors = errors;
     },
     clearServerError(field: ErrorIndex): void {
@@ -249,11 +242,4 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-.b-form-group.form-group {
-  & > div {
-    .invalid-feedback {
-      display: block !important;
-    }
-  }
-}
 </style>
