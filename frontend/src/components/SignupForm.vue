@@ -74,7 +74,9 @@
             </b-btn>
           </b-input-group-append>
         </b-input-group>
-        <b-form-invalid-feedback v-if="$v.form.passwordConfirm.$error">{{invalidPasswordConfirm}}</b-form-invalid-feedback>
+        <b-form-invalid-feedback v-if="$v.form.passwordConfirm.$error">
+          {{invalidPasswordConfirm}}
+        </b-form-invalid-feedback>
       </b-form-group>
       <b-button type="submit" variant="primary">Sign me up!</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Already registered ?
@@ -87,14 +89,14 @@
 <script lang="ts">
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
-import { required, minLength, sameAs, email } from 'vuelidate/lib/validators';
+import { required, minLength, sameAs, email, ValidationRule } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
 
 interface Event {
   preventDefault: () => void;
 }
 
-type ErrorIndex = 'email' | 'username' | 'password' | 'passwordConfirm';
+type ErrorIndex = 'non_field_errors' | 'email' | 'username' | 'password' | 'passwordConfirm';
 type ServerErrors = { [k in ErrorIndex]?: string[] };
 
 interface SignupFormInterface {
@@ -109,6 +111,14 @@ interface ComponentData {
   passwordVisibility: boolean;
   passwordConfirmVisibility: boolean;
   form: SignupFormInterface;
+}
+
+interface Test  {
+  required: boolean;
+}
+
+interface MyForm {
+  username: Test;
 }
 
 export default Vue.extend({
@@ -152,50 +162,49 @@ export default Vue.extend({
   },
   computed: {
     invalidName(): string {
-      if (!this.$v.form.username.required) {
+      if (!(this.$v.form as any).username.required) {
         return 'Name is required';
-      } else if (!this.$v.form.username.minLength) {
+      } else if (!(this.$v.form as any).username.minLength) {
         return `Name must be at least ${
-          this.$v.form.username.$params.minLength.min
+          (this.$v.form as any).username.$params.minLength.min
         }`;
-      } else if (!this.$v.form.username.serverRule) {
-        return this.form.serverErrors.username[0];
+      } else if (!(this.$v.form as any).username.serverRule) {
+        return (this.form as any).serverErrors.username[0];
       } else {
         return '';
       }
     },
     invalidEmail(): string {
-      if (!this.$v.form.email.required) {
+      if (!(this.$v.form as any).email.required) {
         return 'Email is required';
-      } else if (!this.$v.form.email.email) {
+      } else if (!(this.$v.form as any).email.email) {
         return 'Email must be valid';
-      } else if (!this.$v.form.email.serverRule) {
-        return this.form.serverErrors.email[0];
+      } else if (!(this.$v.form as any).email.serverRule) {
+        return (this.form as any).serverErrors.email[0];
       } else {
         return '';
       }
     },
     invalidPassword(): string {
-      if (!this.$v.form.password.required) {
+      if (!(this.$v.form as any).password.required) {
         return 'Password is required';
-      } else if (!this.$v.form.password.minLength) {
+      } else if (!(this.$v.form as any).password.minLength) {
         return `Password must be at least ${
-          this.$v.form.password.$params.minLength.min
+          (this.$v.form as any).password.$params.minLength.min
         }`;
-      } else if (!this.$v.form.password.serverRule) {
-        return this.form.serverErrors.password[0];
+      } else if (!(this.$v.form as any).password.serverRule) {
+        return (this.form as any).serverErrors.password[0];
       } else {
         return '';
       }
     },
     invalidPasswordConfirm(): string {
-      if (!this.$v.form.passwordConfirm.sameAs) {
+      if (!(this.$v.form as any).passwordConfirm.sameAs) {
         return 'Passwords must be identical';
       } else {
         return '';
       }
     },
-    // <!-- <b-form-invalid-feedback v-if="!$v.form.passwordConfirm.sameAs">Passwords must be identical.</b-form-invalid-feedback> -->
   },
   methods: {
     togglePasswordVisibility(field: string): void {
