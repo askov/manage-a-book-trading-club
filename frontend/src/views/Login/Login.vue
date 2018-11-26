@@ -2,21 +2,20 @@
   <div>
     <div class="row">
       <div class="shadow standard-form col-10 mt-5 px-0 mx-auto rounded">
-        <SignupForm/>
+        <LoginForm/>
       </div>
     </div>
   </div>
 </template>
 
-
 <script lang="ts">
 import Vue from 'vue';
-import SignupForm from '@/components/SignupForm.vue';
+import LoginForm from '@/components/LoginForm/LoginForm.vue';
 
 export default Vue.extend({
-  name: 'signup',
+  name: 'login',
   components: {
-    SignupForm,
+    LoginForm,
   },
 });
 </script>
@@ -26,3 +25,4 @@ export default Vue.extend({
   max-width: 450px;
 }
 </style>
+

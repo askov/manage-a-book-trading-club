@@ -50,6 +50,7 @@ import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
+import { LOGIN_REQUEST } from '@/store/actions/auth';
 
 interface Event {
   preventDefault: () => void;
@@ -140,7 +141,7 @@ export default Vue.extend({
         return;
       }
       this.$store
-        .dispatch('logIn', this.form)
+        .dispatch(LOGIN_REQUEST, this.form)
         .then((user: object) => {
           console.log('#new user!');
         })
