@@ -23,5 +23,13 @@ export default new Router({
       name: 'login',
       component: () => import('./views/Login.vue'),
     },
+    {
+      path: '/404',
+      name: '404',
+      component: () => import('./views/NotFound/NotFound.vue'),
+    }, {
+      path: '*',
+      redirect: '/404',
+    },
   ],
 });
