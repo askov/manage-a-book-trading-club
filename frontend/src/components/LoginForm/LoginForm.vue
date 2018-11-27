@@ -140,10 +140,11 @@ export default Vue.extend({
       if (this.$v.$invalid) {
         return;
       }
+
       this.$store
         .dispatch(LOGIN_REQUEST, this.form)
         .then((user: object) => {
-          console.log('#new user!');
+          console.log('#new user!', user);
         })
         .catch((errors: ServerErrors) => {
           console.log('#error catch!!!', errors);

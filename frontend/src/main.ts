@@ -3,7 +3,8 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import BootstrapVue from 'bootstrap-vue';
-
+import { getStoreBuilder } from 'vuex-typex';
+import Vuex from 'vuex';
 
 Vue.config.productionTip = false;
 
@@ -27,8 +28,12 @@ Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
 
+Vue.use(Vuex);
+
+const storeBuilder = getStoreBuilder<RootState>();
+
 new Vue({
   router,
-  store,
+  store: storeBuilder.vuexStore(),
   render: (h) => h(App),
 }).$mount('#app');

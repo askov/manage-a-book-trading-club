@@ -1,11 +1,13 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// import apiService from '@/services/api.service';
+import { getStoreBuilder } from 'vuex-typex';
 import user from './modules/user';
 
-Vue.use(Vuex);
 
 const debug = process.env.NODE_ENV !== 'production';
+
+const storeBuilder = getStoreBuilder<RootState>();
+
 
 export default new Vuex.Store({
   modules: {
