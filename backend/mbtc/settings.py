@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = (
+    '*',
+    '0.0.0.0:8080',
     'localhost:8080',
 )
 # Application definition
