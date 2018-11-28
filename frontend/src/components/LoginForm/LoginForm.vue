@@ -50,7 +50,9 @@ import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
-import { LOGIN_REQUEST } from '@/store/actions/auth';
+// import { LOGIN_REQUEST } from '@/store/actions/auth';
+import user from '@/store/modules/user';
+
 
 interface Event {
   preventDefault: () => void;
@@ -141,15 +143,20 @@ export default Vue.extend({
         return;
       }
 
-      this.$store
-        .dispatch(LOGIN_REQUEST, this.form)
-        .then((user: object) => {
-          console.log('#new user!', user);
-        })
-        .catch((errors: ServerErrors) => {
-          console.log('#error catch!!!', errors);
-          this.updateServerErrors(errors);
-        });
+      user.dispatchLogIn(this.form).then( (res) => {
+        console.log('#then res', res);
+      } , (err) => {
+        console.log('#err', err);
+      });
+      // this.$store
+      //   .dispatch(LOGIN_REQUEST, this.form)
+      //   .then((user: object) => {
+      //     console.log('#new user!', user);
+      //   })
+      //   .catch((errors: ServerErrors) => {
+      //     console.log('#error catch!!!', errors);
+      //     this.updateServerErrors(errors);
+      //   });
     },
   },
   watch: {

@@ -22,5 +22,5 @@ interface UserState {
   profile?: UserProfile;
 }
 
-interface RootState { user: UserState; }
+// interface RootState { user: UserState; }
 
