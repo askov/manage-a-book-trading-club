@@ -8,8 +8,8 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.response.use((response) => {
   return response;
-}, (error) => {
-  return Promise.reject(error.response.data);
+}, (err) => {
+  return Promise.reject(err.response.data);
 });
 
 export default axiosInstance;

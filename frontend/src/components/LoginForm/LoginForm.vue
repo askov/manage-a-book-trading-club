@@ -54,18 +54,8 @@ import serverRule from '@/validators/serverRule';
 import user from '@/store/modules/user';
 
 
-interface Event {
-  preventDefault: () => void;
-}
 
-type ErrorIndex = 'non_field_errors' | 'username' | 'password';
-type ServerErrors = { [k in ErrorIndex]?: string[] };
 
-interface LoginFormInterface {
-  serverErrors: ServerErrors;
-  username: string;
-  password: string;
-}
 
 interface ComponentData {
   passwordVisibility: boolean;
@@ -142,21 +132,13 @@ export default Vue.extend({
       if (this.$v.$invalid) {
         return;
       }
-
-      user.dispatchLogIn(this.form).then( (res) => {
-        console.log('#then res', res);
-      } , (err) => {
+      const {serverErrors, ...form} = this.form;
+      user.dispatchLogIn(form).then((res) => {
+        console.log('#res', res);
+      } , (err: ServerErrors) => {
         console.log('#err', err);
+        this.updateServerErrors(err);
       });
-      // this.$store
-      //   .dispatch(LOGIN_REQUEST, this.form)
-      //   .then((user: object) => {
-      //     console.log('#new user!', user);
-      //   })
-      //   .catch((errors: ServerErrors) => {
-      //     console.log('#error catch!!!', errors);
-      //     this.updateServerErrors(errors);
-      //   });
     },
   },
   watch: {

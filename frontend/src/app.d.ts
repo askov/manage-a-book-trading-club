@@ -1,3 +1,7 @@
+interface Event {
+  preventDefault: () => void;
+}
+
 interface UserRegistrationForm {
   email: string;
   name: string;
@@ -22,5 +26,13 @@ interface UserState {
   profile?: UserProfile;
 }
 
+interface LoginFormInterface {
+  serverErrors: ServerErrors;
+  username: string;
+  password: string;
+}
+
+type ErrorIndex = 'non_field_errors' | 'username' | 'password';
+type ServerErrors = { [k in ErrorIndex]?: string[] };
 // interface RootState { user: UserState; }
 

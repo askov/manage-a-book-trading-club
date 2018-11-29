@@ -36,30 +36,22 @@ function logout(s: UserState) {
 }
 
 // # Actions
-async function logIn(context: BareActionContext<UserState, RootState>, form: LoginFormInterface) {
-  console.log('#commit', form);
+async function logIn(context: BareActionContext<UserState, RootState>, form: UserLoginForm) {
   return new Promise<object>((resolve, reject) => {
-      resolve({ data: 'test' });
-
-    // apiService.login(form.username, form.password).then((res) => {
-    //   resolve({ data: res });
-    // }).catch((err) => {
-    //   reject(err.data);
-    // });
+    user.commitLoginRequest();
+    apiService.logIn(form).then((res) => {
+      user.commitLoginSuccess(res);
+      resolve(res.data);
+    }).catch((err) => {
+      user.commitLoginError(err);
+      reject(err);
+    });
   });
-  // b.commit(loginRequest);
 }
-// const actions: ActionTree<UserState, RootState> = {
-//   [LOGIN_REQUEST]: async ({ commit, dispatch }, form: UserLoginForm) => {
-//     // commit(LOGIN_REQUEST)
-//     console.log('#commit', commit);
-//     commit(LOGIN_REQUEST, await apiService.logIn(form));
-//   },
-// };
 
 // Example
 // https://gist.github.com/ChristopherKiss/cda423131c020e7f5d80e7015b1fc790
-export default {
+const user = {
   // # State
   get state() {
     return stateGetter();
@@ -81,5 +73,5 @@ export default {
 
   // # Actions
   dispatchLogIn: b.dispatch(logIn),
-  // dispatchRestoreSavedBasket: b.dispatch(restoreSavedBasket)
 };
+export default user;
