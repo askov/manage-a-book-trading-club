@@ -50,7 +50,6 @@ import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
-// import { LOGIN_REQUEST } from '@/store/actions/auth';
 import user from '@/store/modules/user';
 
 

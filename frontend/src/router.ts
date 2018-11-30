@@ -4,7 +4,7 @@ import Home from './views/Home/Home.vue';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -17,6 +17,7 @@ export default new Router({
       path: '/signup',
       name: 'signup',
       component: () => import('./views/Signup/Signup.vue'),
+      meta: {title: (route) => 'signup'}
     },
     {
       path: '/login',
@@ -33,3 +34,9 @@ export default new Router({
     },
   ],
 });
+
+router.afterEach((to, from) => {
+  document.title = `mbtc - ${to.name}`;
+});
+
+export default router;
