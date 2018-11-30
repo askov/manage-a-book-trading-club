@@ -17,12 +17,16 @@ const router = new Router({
       path: '/signup',
       name: 'signup',
       component: () => import('./views/Signup/Signup.vue'),
-      meta: {title: (route) => 'signup'}
     },
     {
       path: '/login',
       name: 'login',
       component: () => import('./views/Login/Login.vue'),
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('./views/Profile/Profile.vue'),
     },
     {
       path: '/404',
