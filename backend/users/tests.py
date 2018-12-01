@@ -5,7 +5,7 @@ from rest_framework import status
 from rest_framework.authtoken.models import Token
 
 
-class AuthTests(APITestCase):
+class UsersTests(APITestCase):
     def setUp(self):
         self.test_user = User.objects.create_user(
             'testuser', 'test@example.com', 'testpassword')

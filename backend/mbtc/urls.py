@@ -45,5 +45,5 @@ urlpatterns = [
     # url(r'^', include(router.urls)),
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # url(r'^users/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^auth/', include('auth.urls'))
+    url(r'^auth/', include('users.urls'))
 ]
