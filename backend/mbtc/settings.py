@@ -86,6 +86,12 @@ REST_FRAMEWORK = {
     )
 }
 
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer',
+    # Debug mode
+    'JWT_VERIFY_EXPIRATION': False,
+}
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
