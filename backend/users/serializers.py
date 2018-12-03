@@ -36,3 +36,23 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = ['first_name', 'last_name', 'second_name', 'city', 'state', 'email', 'username']
 
+    # def update(self, instance, validated_data):
+    #   profile_data = validated_data.pop('profile')
+    #   print(profile_data)
+      # # Unless the application properly enforces that this field is
+      # # always set, the follow could raise a `DoesNotExist`, which
+      # # would need to be handled.
+      # profile = instance.profile
+
+      # instance.username = validated_data.get('username', instance.username)
+      # instance.email = validated_data.get('email', instance.email)
+      # instance.save()
+
+      # profile.company_name = profile_data.get(
+      #     'company_name',
+      #     profile.company_name
+      # )
+      # profile.save()
+
+      # return instance
+

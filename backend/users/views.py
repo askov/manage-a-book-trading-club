@@ -36,3 +36,11 @@ class ProfileView(APIView):
         user_profile = Profile.objects.get(user=request.user)
         serializer = ProfileSerializer(user_profile)
         return Response(serializer.data)
+
+    def patch(self, request):
+        print(request.data)
+        # user_profile = Profile.objects.get(user=request.user)
+        serializer = ProfileSerializer(data=request.data)
+        if serializer.is_valid():
+          return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
