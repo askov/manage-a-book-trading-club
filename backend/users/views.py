@@ -29,6 +29,10 @@ class UserCreate(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+# class ProfileView(generics.RetrieveAPIView):
+#     queryset = Profile.objects.all()
+#     serializer_class = UserSerializer
+
 class ProfileView(APIView):
     permission_classes = (IsAuthenticated,)
 
@@ -38,8 +42,17 @@ class ProfileView(APIView):
         return Response(serializer.data)
 
     def patch(self, request):
-        pass
-        # serializer = ProfileSerializer(data=request.data)
+        # pass
+        serializer = ProfileSerializer(data=request.data)
+        print('PATCH')
+        if serializer.is_valid():
+          return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    # def put(self, request, pk, format=None):
+    #     print('PUT')
+        # user = self.get_object(pk)
+        # serializer = SnippetSerializer(snippet, data=request.data)
         # if serializer.is_valid():
-        #   return Response(serializer.data)
+        #     serializer.save()
+        #     return Response(serializer.data)
         # return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
