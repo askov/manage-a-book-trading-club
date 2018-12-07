@@ -24,11 +24,11 @@ class UserSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(serializers.ModelSerializer):
     # user = UserSerializer(required=True)
-    first_name = serializers.CharField(allow_blank=True)
-    last_name = serializers.CharField(allow_blank=True)
-    second_name = serializers.CharField(allow_blank=True)
-    city = serializers.CharField(allow_blank=True)
-    state = serializers.CharField(allow_blank=True)
+    first_name = serializers.CharField(allow_blank=True, required=False)
+    last_name = serializers.CharField(allow_blank=True, required=False)
+    second_name = serializers.CharField(allow_blank=True, required=False)
+    city = serializers.CharField(allow_blank=True, required=False)
+    state = serializers.CharField(allow_blank=True, required=False)
     email = serializers.CharField(source='user.email')
     username = serializers.CharField(source='user.username')
 

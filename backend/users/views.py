@@ -37,9 +37,12 @@ class ProfileView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
-        user_profile = Profile.objects.get(user=request.user)
-        serializer = ProfileSerializer(user_profile)
-        return Response(serializer.data)
+        try:
+          user_profile = Profile.objects.get(user=request.user)
+          serializer = ProfileSerializer(user_profile)
+          return Response(serializer.data)
+        except:
+          return Response(status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request):
         # pass
