@@ -12,7 +12,7 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 
-class UserCreate(APIView):
+class UserCreateView(APIView):
     """
     Creates the user
     """
@@ -29,11 +29,9 @@ class UserCreate(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-# class ProfileView(generics.RetrieveAPIView):
-#     queryset = Profile.objects.all()
-#     serializer_class = UserSerializer
-
 class ProfileView(APIView):
+    """ """
+
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
@@ -45,17 +43,9 @@ class ProfileView(APIView):
           return Response(status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request):
-        # pass
-        serializer = ProfileSerializer(data=request.data)
-        print('PATCH')
+        user_profile = Profile.objects.get(user=request.user)
+        serializer = ProfileSerializer(user_profile, data=request.data, partial=True)
         if serializer.is_valid():
+          serializer.save(user=request.user)
           return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    # def put(self, request, pk, format=None):
-    #     print('PUT')
-        # user = self.get_object(pk)
-        # serializer = SnippetSerializer(snippet, data=request.data)
-        # if serializer.is_valid():
-        #     serializer.save()
-        #     return Response(serializer.data)
-        # return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
