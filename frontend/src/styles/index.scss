@@ -1,9 +1,21 @@
 body {
-  font-family: 'Gentium Book Basic', serif;
 }
 
 .standard-form {
   max-width: 450px;
+}
+
+.form-header {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+
+.form-submit-button {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
 
 // Inline group error display fix

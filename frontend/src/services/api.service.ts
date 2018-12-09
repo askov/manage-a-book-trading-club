@@ -8,4 +8,8 @@ export default {
   logIn(form: UserLoginForm) {
     return http.post('auth/login/', form);
   },
+
+  getProfile() {
+    return http.get('auth/profile/');
+  },
 };

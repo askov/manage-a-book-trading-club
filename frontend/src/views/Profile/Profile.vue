@@ -1,12 +1,16 @@
 <template>
-  <h1>TODO: Profile</h1>
+  <h1>Profile</h1>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import ProfileForm from '@/components/ProfileForm/ProfileForm.vue';
 
 export default Vue.extend({
   name: 'Profile',
+  components: {
+    ProfileForm,
+  },
 });
 </script>
 

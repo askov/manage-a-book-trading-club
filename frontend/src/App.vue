@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container-fluid">
-    <b-navbar toggleable="md" type="dark" variant="success" class="row">
+    <b-navbar toggleable="md" type="dark" variant="dark" class="row">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <router-link to="/">
         <b-navbar-brand>

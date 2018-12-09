@@ -1,11 +1,6 @@
 <template>
-  <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light border rounded">
-    <div class="bg-primary text-light p-2 text-center rounded-top">
-      <b-form-invalid-feedback>Password is required</b-form-invalid-feedback>
-      <h1>Login</h1>
-    </div>
+  <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light rounded">
     <div class="px-4 py-3 text-dark">
-
       <b-form-group label="Name:" label-for="loginFormName" :invalid-feedback="invalidName">
         <b-form-input
           id="loginFormName"
@@ -25,7 +20,7 @@
             placeholder="Enter password"
           ></b-form-input>
           <b-input-group-append>
-            <b-btn variant="primary" @click="togglePasswordVisibility()">
+            <b-btn variant="success" @click="togglePasswordVisibility()">
               <font-awesome-icon icon="eye" v-if="passwordVisibility"/>
               <font-awesome-icon icon="eye-slash" v-else/>
             </b-btn>
@@ -37,7 +32,7 @@
       </b-form-invalid-feedback>
       </b-form-group>
 
-      <b-button type="submit" variant="primary">Log in</b-button>
+      <b-button type="submit" variant="success" class="w-100 form-submit-button">Log in</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Don't have your account yet?
         <router-link to="/signup">Register here</router-link>
       </div>

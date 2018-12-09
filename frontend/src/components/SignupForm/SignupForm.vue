@@ -1,8 +1,5 @@
 <template>
   <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light border rounded">
-    <div class="bg-primary text-light p-2 text-center rounded-top">
-      <h1>Registration</h1>
-    </div>
     <div class="px-4 py-3 text-dark">
       <b-form-group
         id="signupFormName"
@@ -46,7 +43,7 @@
             placeholder="Enter password"
           ></b-form-input>
           <b-input-group-append>
-            <b-btn variant="primary" @click="togglePasswordVisibility()">
+            <b-btn variant="success" @click="togglePasswordVisibility()">
               <font-awesome-icon icon="eye" v-if="passwordVisibility"/>
               <font-awesome-icon icon="eye-slash" v-else/>
             </b-btn>
@@ -68,7 +65,7 @@
             :class="{ 'is-invalid': $v.form.passwordConfirm.$error }"
           ></b-form-input>
           <b-input-group-append>
-            <b-btn variant="primary" @click="togglePasswordVisibility('confirm')">
+            <b-btn variant="success" @click="togglePasswordVisibility('confirm')">
               <font-awesome-icon icon="eye" v-if="passwordConfirmVisibility"/>
               <font-awesome-icon icon="eye-slash" v-else/>
             </b-btn>
@@ -78,7 +75,7 @@
           {{invalidPasswordConfirm}}
         </b-form-invalid-feedback>
       </b-form-group>
-      <b-button type="submit" variant="primary">Sign me up!</b-button>
+      <b-button type="submit" variant="success" class="w-100 form-submit-button">Sign me up!</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Already registered ?
         <router-link to="/login">Login here</router-link>
       </div>

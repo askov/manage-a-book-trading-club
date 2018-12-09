@@ -34,7 +34,6 @@ class ProfileSerializer(serializers.ModelSerializer):
     """
     first_name = serializers.CharField(allow_blank=True)
     last_name = serializers.CharField(allow_blank=True)
-    second_name = serializers.CharField(allow_blank=True)
     city = serializers.CharField(allow_blank=True)
     state = serializers.CharField(allow_blank=True)
     email = serializers.CharField(source='user.email')
@@ -43,8 +42,8 @@ class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = [
-            'first_name', 'last_name', 'second_name',
-            'city', 'state', 'email', 'username'
+            'first_name', 'last_name', 'city',
+            'state', 'email', 'username'
         ]
 
     def update(self, instance, validated_data):
@@ -53,7 +52,6 @@ class ProfileSerializer(serializers.ModelSerializer):
         """
         instance.first_name = validated_data.get('first_name', instance.first_name)
         instance.last_name = validated_data.get('last_name', instance.last_name)
-        instance.second_name = validated_data.get('second_name', instance.second_name)
         instance.state = validated_data.get('state', instance.state)
         instance.city = validated_data.get('city', instance.city)
         instance.save()
