@@ -1,15 +1,15 @@
-import http from '@/services/http.service';
+import axiosInstance from '@/services/http.service';
 
 export default {
   signUp(form: UserRegistrationForm) {
-    return http.post('auth/register/', form);
+    return axiosInstance.http.post('auth/register/', form);
   },
 
   logIn(form: UserLoginForm) {
-    return http.post('auth/login/', form);
+    return axiosInstance.http.post('auth/login/', form);
   },
 
   getProfile() {
-    return http.get('auth/profile/');
+    return axiosInstance.http.get('auth/profile/');
   },
 };
