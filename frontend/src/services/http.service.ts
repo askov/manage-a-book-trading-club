@@ -13,10 +13,10 @@ const setAuthorizationHeaders = (token: string) => {
 };
 
 // TODO
-const token = localStorage.getItem('token');
+const savedToken = localStorage.getItem('token');
 
-if (token) {
-  setAuthorizationHeaders(token);
+if (savedToken) {
+  setAuthorizationHeaders(savedToken);
 }
 
 axiosInstance.interceptors.response.use((response) => {
@@ -27,5 +27,5 @@ axiosInstance.interceptors.response.use((response) => {
 
 export default {
   http: axiosInstance,
-  setAuthorizationHeaders
+  setAuthorizationHeaders,
 };

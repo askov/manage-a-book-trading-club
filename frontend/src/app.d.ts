@@ -21,9 +21,21 @@ interface UserProfile {
   phone?: string;
 }
 
+interface UserProfileResponse {
+  first_name: string;
+  last_name: string;
+  city: string;
+  state: string;
+  email: string;
+  username: string;
+}
+
+// interface
+
+
 interface UserState {
   status: string;
-  profile?: UserProfile;
+  profile?: UserProfileResponse;
 }
 
 interface LoginFormInterface {
@@ -31,6 +43,7 @@ interface LoginFormInterface {
   username: string;
   password: string;
 }
+
 
 type ErrorIndex = 'non_field_errors' | 'username' | 'password';
 type ServerErrors = { [k in ErrorIndex]?: string[] };

@@ -20,7 +20,7 @@ export default Vue.extend({
   },
   mounted() {
     user.dispatchObtainProfile();
-  }
+  },
 });
 </script>
 

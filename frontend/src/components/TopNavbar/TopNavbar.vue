@@ -35,7 +35,7 @@ export default Vue.extend({
   computed: {
     isLoggedIn() {
       return user.isLoggedIn;
-    }
+    },
   },
   methods: {
     logOut() {

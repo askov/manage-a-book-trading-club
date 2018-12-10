@@ -15,7 +15,7 @@ const b = getStoreBuilder<RootState>().module('userState', initialState);
 const stateGetter = b.state();
 
 // # Getters
-const getProfileGetter = b.read((s: UserState): UserProfile | undefined => s.profile, 'getProfile');
+const getProfileGetter = b.read((s: UserState): UserProfileResponse | undefined => s.profile, 'getProfile');
 const isProfileLoadedGetter = b.read((s: UserState): boolean => s.profile !== undefined, 'isProfileLoaded');
 const isLoggedInGetter = b.read((s: UserState): boolean => s.profile !== undefined, 'isLoggedIn');
 
@@ -40,7 +40,7 @@ function logOutSuccess(s: UserState) {
   localStorage.removeItem(TOKEN_STORAGE_KEY);
 }
 
-function obtainProfileSuccess(s: UserState, profile: object) {
+function obtainProfileSuccess(s: UserState, profile: UserProfileResponse) {
   s.profile = profile;
   s.status = 'success';
 }
