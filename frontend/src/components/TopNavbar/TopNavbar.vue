@@ -41,7 +41,7 @@ export default Vue.extend({
     logOut() {
       console.log('#logout');
       user.dispatchLogOut();
-    }
+    },
   },
   watch: {
   },

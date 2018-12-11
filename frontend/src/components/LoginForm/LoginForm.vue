@@ -147,6 +147,7 @@ export default Vue.extend({
       this.clearServerError('password');
     },
   },
+
 });
 </script>
 

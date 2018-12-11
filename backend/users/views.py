@@ -28,6 +28,7 @@ class UserCreateView(APIView):
             return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+import time
 
 class ProfileView(APIView):
     """ """
@@ -35,6 +36,7 @@ class ProfileView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
+        time.sleep(3)
         try:
           user_profile = Profile.objects.get(user=request.user)
           serializer = ProfileSerializer(user_profile)

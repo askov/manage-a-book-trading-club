@@ -1,112 +1,112 @@
 <template>
-  <b-form @submit.prevent="onSubmit" novalidate autocomplete="off">
-
+  <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light p-4 rounded">
+    <b-form-group label="City:" label-for="profileFormCity">
+      <b-form-input
+        id="profileFormCity"
+        v-model="form.city"
+        placeholder="Enter your city"
+      ></b-form-input>
+    <b-form-group label="State:" label-for="profileFormState">
+      <b-form-input
+        id="profileFormState"
+        v-model="form.state"
+        placeholder="Enter your state"
+      ></b-form-input>
+    </b-form-group>
+    </b-form-group>
+    <b-form-group label="Email:" label-for="profileFormEmail">
+      <b-form-input
+        id="profileFormEmail"
+        v-model="form.email"
+        placeholder="Enter your email"
+      ></b-form-input>
+    </b-form-group>
+    <b-form-group label="First name:" label-for="profileFormFirstName">
+      <b-form-input
+        id="profileFormFirstName"
+        v-model="form.firstName"
+        placeholder="Enter your first name"
+      ></b-form-input>
+    </b-form-group>
+    <b-form-group label="Last name:" label-for="profileFormLastName">
+      <b-form-input type="submit"
+        id="profileFormLastName"
+        v-model="form.lastName"
+        placeholder="Enter your last name"
+      ></b-form-input>
+    </b-form-group>
   </b-form>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
+import user from '@/store/modules/user';
+
 // import { required, minLength, sameAs } from 'vuelidate/lib/validators';
 // import serverRule from '@/validators/serverRule';
 // import user from '@/store/modules/user';
 
 
 
+interface UserProfileForm {
+  city: string;
+  state: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  username: string;
+}
 
-
-// interface ComponentData {
-//   passwordVisibility: boolean;
-//   form: LoginFormInterface;
-// }
+interface ComponentData {
+  form: UserProfileForm
+}
 
 export default Vue.extend({
   name: 'ProfileForm',
-  // data(): ComponentData {
-  //   return {
-  //     passwordVisibility: false,
-  //     form: {
-  //       serverErrors: {},
-  //       username: '',
-  //       password: '',
-  //     },
-  //   };
-  // },
+  data(): ComponentData {
+    return {
+      form: {
+        city: '',
+        state: '',
+        email: '',
+        firstName: '',
+        lastName: '',
+        username: '',
+      }
+    };
+  },
   mixins: [validationMixin],
   validations: {
-    // form: {
-    //   serverErrors: {},
-    //   username: {
-    //     required,
-    //     serverRule: serverRule('username'),
-    //   },
-    //   password: {
-    //     required,
-    //     serverRule: serverRule('password'),
-    //   },
-    // },
+
   },
   computed: {
-    // nonFieldErrors(): string {
-    //   if (this.form.serverErrors.non_field_errors) {
-    //     return this.form.serverErrors.non_field_errors[0];
-    //   } else {
-    //     return '';
-    //   }
-    // },
-    // invalidName(): string {
-    //   if (!(this.$v.form as any).username.required) {
-    //     return 'Name is required';
-    //   } else if (!(this.$v.form as any).username.serverRule) {
-    //     return (this.form as any).serverErrors.username[0];
-    //   } else {
-    //     return '';
-    //   }
-    // },
-    // invalidPassword(): string {
-    //   if (!(this.$v.form as any).password.required) {
-    //     return 'Password is required';
-    //   } else if (!(this.$v.form as any).password.serverRule) {
-    //     return (this.form as any).serverErrors.password[0];
-    //   } else {
-    //     return '';
-    //   }
-    // },
+    profile() {
+      return user.getProfile;
+    }
+
   },
   methods: {
-    // togglePasswordVisibility(): void {
-    //   this.passwordVisibility = !this.passwordVisibility;
-    // },
-    // updateServerErrors(errors: ServerErrors): void {
-    //   console.log('#server errors #2', errors);
-    //   this.form.serverErrors = errors;
-    // },
-    // clearServerError(field: ErrorIndex): void {
-    //   delete this.form.serverErrors[field];
-    //   delete this.form.serverErrors.non_field_errors;
-    // },
-    // onSubmit(evt: Event): void {
-    //   this.$v.$touch();
-    //   if (this.$v.$invalid) {
-    //     return;
-    //   }
-    //   const {serverErrors, ...form} = this.form;
-    //   user.dispatchLogIn(form).then((res) => {
-    //     console.log('#res', res);
-    //     this.$router.push('profile');
-    //   } , (err: ServerErrors) => {
-    //     console.log('#err', err);
-    //     this.updateServerErrors(err);
-    //   });
-    // },
+    onSubmit(evt: Event): void {
+      console.log('#submit');
+    },
   },
   watch: {
-    // 'form.username'(): void {
-    //   this.clearServerError('username');
-    // },
-    // 'form.password'(): void {
-    //   this.clearServerError('password');
-    // },
+    profile (newVal, oldVal) {
+      if (newVal) {
+        this.form.city = newVal.city;
+        this.form.state = newVal.state;
+        this.form.email = newVal.email;
+        this.form.firstName = newVal.first_name;
+        this.form.lastName = newVal.last_name;
+      }
+    },
+    form: {
+      handler: function(newValue) {
+        console.log(newValue);
+      },
+      deep: true,
+    }
   },
 });
 </script>

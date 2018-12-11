@@ -1,5 +1,7 @@
 <template>
-  <h1>Profile</h1>
+  <div class="shadow standard-form col-10 mt-5 px-0 mx-auto rounded">
+    <ProfileForm/>
+  </div>
 </template>
 
 <script lang="ts">
