@@ -36,7 +36,7 @@ class ProfileView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
-        time.sleep(3)
+        # time.sleep(3)
         try:
           user_profile = Profile.objects.get(user=request.user)
           serializer = ProfileSerializer(user_profile)

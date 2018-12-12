@@ -4,35 +4,41 @@
       <b-form-input
         id="profileFormCity"
         v-model="form.city"
+        @keydown.native="handleProfileChange"
         placeholder="Enter your city"
       ></b-form-input>
     <b-form-group label="State:" label-for="profileFormState">
       <b-form-input
         id="profileFormState"
         v-model="form.state"
+        @keydown.native="handleProfileChange"
         placeholder="Enter your state"
       ></b-form-input>
     </b-form-group>
-    </b-form-group>
-    <b-form-group label="Email:" label-for="profileFormEmail">
-      <b-form-input
-        id="profileFormEmail"
-        v-model="form.email"
-        placeholder="Enter your email"
-      ></b-form-input>
     </b-form-group>
     <b-form-group label="First name:" label-for="profileFormFirstName">
       <b-form-input
         id="profileFormFirstName"
         v-model="form.firstName"
+        @keydown.native="handleProfileChange"
         placeholder="Enter your first name"
       ></b-form-input>
     </b-form-group>
     <b-form-group label="Last name:" label-for="profileFormLastName">
-      <b-form-input type="submit"
+      <b-form-input
         id="profileFormLastName"
         v-model="form.lastName"
+        @keydown.native="handleProfileChange"
         placeholder="Enter your last name"
+      ></b-form-input>
+    </b-form-group>
+    <b-form-group label="Email:" label-for="profileFormEmail">
+      <b-form-input
+        disabled
+        id="profileFormEmail"
+        v-model="form.email"
+        @keydown.native="handleProfileChange"
+        placeholder="Enter your email"
       ></b-form-input>
     </b-form-group>
   </b-form>
@@ -40,13 +46,12 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { validationMixin } from 'vuelidate';
 import user from '@/store/modules/user';
+import apiService from '@/services/api.service';
 
-// import { required, minLength, sameAs } from 'vuelidate/lib/validators';
-// import serverRule from '@/validators/serverRule';
-// import user from '@/store/modules/user';
+import { debounce } from "lodash";
 
+const DEBOUNCE_DELAY =  1000;
 
 
 interface UserProfileForm {
@@ -59,7 +64,7 @@ interface UserProfileForm {
 }
 
 interface ComponentData {
-  form: UserProfileForm
+  form: UserProfileForm,
 }
 
 export default Vue.extend({
@@ -73,40 +78,42 @@ export default Vue.extend({
         firstName: '',
         lastName: '',
         username: '',
-      }
+      },
     };
   },
-  mixins: [validationMixin],
-  validations: {
-
+  mounted() {
+    // BUG with input event: https://github.com/bootstrap-vue/bootstrap-vue/issues/1881
+    this.populateFormFields(user.getProfile);
   },
   computed: {
     profile() {
       return user.getProfile;
     }
-
   },
   methods: {
-    onSubmit(evt: Event): void {
-      console.log('#submit');
+    populateFormFields(profile: UserProfileResponse): void {
+      if (!profile) return;
+      this.form.city = profile.city;
+      this.form.state = profile.state;
+      this.form.email = profile.email;
+      this.form.firstName = profile.first_name;
+      this.form.lastName = profile.last_name;
     },
+    handleProfileChange: debounce(function() {
+      console.log('#handleProfileChange');
+      apiService.patchProfile({
+        city: this.form.city,
+        state: this.form.state,
+        first_name: this.form.firstName,
+        last_name: this.form.lastName,
+      });
+    }, DEBOUNCE_DELAY),
+
   },
   watch: {
     profile (newVal, oldVal) {
-      if (newVal) {
-        this.form.city = newVal.city;
-        this.form.state = newVal.state;
-        this.form.email = newVal.email;
-        this.form.firstName = newVal.first_name;
-        this.form.lastName = newVal.last_name;
-      }
+      this.populateFormFields(newVal);
     },
-    form: {
-      handler: function(newValue) {
-        console.log(newValue);
-      },
-      deep: true,
-    }
   },
 });
 </script>

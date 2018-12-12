@@ -12,4 +12,8 @@ export default {
   getProfile() {
     return axiosInstance.http.get('auth/profile/');
   },
+
+  patchProfile(form: UserProfileResponse) {
+    return axiosInstance.http.patch('auth/profile/', form);
+  },
 };

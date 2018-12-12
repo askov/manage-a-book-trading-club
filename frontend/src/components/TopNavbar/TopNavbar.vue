@@ -9,9 +9,11 @@
     </router-link>
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav class="ml-auto" v-if="isLoggedIn">
+        <router-link to="/profile" class="nav-link">Profile</router-link>
         <b-button variant="link" class="nav-link" @click="logOut()">
           Log out
         </b-button>
+
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto" v-else>
         <router-link to="/signup" class="nav-link">Register</router-link>
