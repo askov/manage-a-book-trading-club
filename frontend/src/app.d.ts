@@ -35,7 +35,8 @@ interface UserProfileResponse {
 
 interface UserState {
   status: string;
-  profile?: UserProfileResponse;
+  token: string | null;
+  profile: UserProfileResponse | null;
 }
 
 interface LoginFormInterface {

@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+import lsService from '@/services/localstorage.service';
+
 const baseUrl = 'http://127.0.0.1:8000';
 
 const AUTH_TYPE = 'Bearer';
@@ -12,8 +14,12 @@ const setAuthorizationHeaders = (token: string) => {
   axiosInstance.defaults.headers.common['Authorization'] = `${AUTH_TYPE} ${token}`;
 };
 
+const clearAuthorizationHeaders = () => {
+  delete axiosInstance.defaults.headers.common['Authorization'];
+};
+
 // TODO
-const savedToken = localStorage.getItem('token');
+const savedToken = lsService.getUserToken();
 
 if (savedToken) {
   setAuthorizationHeaders(savedToken);
@@ -28,4 +34,5 @@ axiosInstance.interceptors.response.use((response) => {
 export default {
   http: axiosInstance,
   setAuthorizationHeaders,
+  clearAuthorizationHeaders,
 };

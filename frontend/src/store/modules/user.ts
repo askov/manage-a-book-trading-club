@@ -1,12 +1,15 @@
 import apiService from '@/services/api.service';
 import { BareActionContext, getStoreBuilder } from 'vuex-typex';
 import { RootState } from '@/store';
+import axiosInstance from '@/services/http.service';
 
-const TOKEN_STORAGE_KEY = 'token';
+// const TOKEN_STORAGE_KEY = 'token';
+import lsService from '@/services/localstorage.service';
 
 const initialState: UserState = {
   status: '',
-  profile: undefined,
+  token: null,
+  profile: null,
 };
 
 const b = getStoreBuilder<RootState>().module('userState', initialState);
@@ -15,9 +18,9 @@ const b = getStoreBuilder<RootState>().module('userState', initialState);
 const stateGetter = b.state();
 
 // # Getters
-const getProfileGetter = b.read((s: UserState): UserProfileResponse | undefined => s.profile, 'getProfile');
-const isProfileLoadedGetter = b.read((s: UserState): boolean => s.profile !== undefined, 'isProfileLoaded');
-const isLoggedInGetter = b.read((s: UserState): boolean => s.profile !== undefined, 'isLoggedIn');
+const getProfileGetter = b.read((s: UserState): UserProfileResponse | null => s.profile, 'getProfile');
+const isProfileLoadedGetter = b.read((s: UserState): boolean => s.profile !== null, 'isProfileLoaded');
+const isLoggedInGetter = b.read((s: UserState): boolean => s.token !== null, 'isLoggedIn');
 
 // # Mutations
 function requestProcessing(s: UserState) {
@@ -26,7 +29,7 @@ function requestProcessing(s: UserState) {
 
 function loginSuccess(s: UserState, res: object) {
   console.log('#LOGIN_SUCCESS', res);
-  localStorage.setItem(TOKEN_STORAGE_KEY, res.data.token);
+  lsService.setUserToken(res.data.token);
   s.status = 'success';
 }
 
@@ -36,8 +39,9 @@ function loginError(s: UserState, err: object) {
 }
 
 function logOutSuccess(s: UserState) {
-  s.profile = undefined;
-  localStorage.removeItem(TOKEN_STORAGE_KEY);
+  s.profile = null;
+  s.token = null;
+  lsService.removeUserToken();
 }
 
 function obtainProfileSuccess(s: UserState, profile: UserProfileResponse) {
@@ -46,8 +50,12 @@ function obtainProfileSuccess(s: UserState, profile: UserProfileResponse) {
 }
 
 function obtainProfileError(s: UserState) {
-  s.profile = undefined;
+  s.profile = null;
   s.status = 'error';
+}
+
+function initUserState(s: UserState) {
+  s.token = lsService.getUserToken();
 }
 
 // # Actions
@@ -56,6 +64,7 @@ function logIn(context: BareActionContext<UserState, RootState>, form: UserLogin
     user.commitRequestProcessing();
     apiService.logIn(form).then((res) => {
       user.commitLoginSuccess(res);
+      axiosInstance.setAuthorizationHeaders(res.token);
       resolve(res.data);
     }).catch((err) => {
       user.commitLoginError(err);
@@ -65,6 +74,7 @@ function logIn(context: BareActionContext<UserState, RootState>, form: UserLogin
 }
 
 function logOut(context: BareActionContext<UserState, RootState>) {
+  axiosInstance.clearAuthorizationHeaders();
   user.commitLogOutSuccess();
 }
 
@@ -111,6 +121,8 @@ const user = {
   commitLoginError: b.commit(loginError),
   commitLogOutSuccess: b.commit(logOutSuccess),
   commitObtainProfileSuccess: b.commit(obtainProfileSuccess),
+  commitInitUserState: b.commit(initUserState),
+
   // # Actions
   dispatchLogIn: b.dispatch(logIn),
   dispatchLogOut: b.dispatch(logOut),

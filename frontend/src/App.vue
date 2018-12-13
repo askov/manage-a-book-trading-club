@@ -18,6 +18,9 @@ export default Vue.extend({
   components: {
     TopNavbar,
   },
+	beforeCreate() {
+    user.commitInitUserState();
+	},
   mounted() {
     user.dispatchObtainProfile();
   },
