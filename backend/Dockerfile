@@ -2,6 +2,8 @@
  ENV PYTHONUNBUFFERED 1
  RUN mkdir /backend
  WORKDIR /backend
- ADD requirements.txt /backend/
+ COPY requirements.txt /backend/
+ COPY wait-for-it.sh wait-for-it.sh
+ RUN chmod +x wait-for-it.sh
  RUN pip install -r requirements.txt
- ADD . /backend/
+ COPY . /backend/
