@@ -18,9 +18,9 @@ export default Vue.extend({
   components: {
     TopNavbar,
   },
-	beforeCreate() {
+  beforeCreate() {
     user.commitInitUserState();
-	},
+  },
   mounted() {
     user.dispatchObtainProfile();
   },

@@ -49,7 +49,8 @@ import Vue from 'vue';
 import user from '@/store/modules/user';
 import apiService from '@/services/api.service';
 
-import { debounce } from "lodash";
+import { debounce } from 'lodash';
+
 
 const DEBOUNCE_DELAY =  1000;
 
@@ -64,7 +65,7 @@ interface UserProfileForm {
 }
 
 interface ComponentData {
-  form: UserProfileForm,
+  form: UserProfileForm;
 }
 
 export default Vue.extend({
@@ -88,16 +89,17 @@ export default Vue.extend({
   computed: {
     profile() {
       return user.getProfile;
-    }
+    },
   },
   methods: {
     populateFormFields(profile: UserProfileResponse): void {
-      if (!profile) return;
-      this.form.city = profile.city;
-      this.form.state = profile.state;
-      this.form.email = profile.email;
-      this.form.firstName = profile.first_name;
-      this.form.lastName = profile.last_name;
+      if (profile) {
+        this.form.city = profile.city;
+        this.form.state = profile.state;
+        this.form.email = profile.email;
+        this.form.firstName = profile.first_name;
+        this.form.lastName = profile.last_name;
+      }
     },
     handleProfileChange: debounce(function() {
       console.log('#handleProfileChange');

@@ -12,6 +12,6 @@ export default {
 
   removeUserToken() {
     localStorage.removeItem(TOKEN_STORAGE_KEY);
-  }
+  },
 
 };
