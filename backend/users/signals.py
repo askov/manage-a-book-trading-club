@@ -6,7 +6,7 @@ from django.dispatch import receiver
 
 
 @receiver(post_save, sender=User)
-def create_user_profile(_sender, instance, created, **_kwargs):
+def create_user_profile(sender, instance, created, **_kwargs):
     """
     Creates user profile when user created
     """
@@ -14,7 +14,7 @@ def create_user_profile(_sender, instance, created, **_kwargs):
         Profile.objects.create(user=instance)
 
 @receiver(post_save, sender=User)
-def save_user_profile(_sender, instance, **_kwargs):
+def save_user_profile(sender, instance, **_kwargs):
     """
     Updates user profile when user saved
     """
