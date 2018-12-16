@@ -9,7 +9,7 @@ export default {
     return axiosInstance.http.post('auth/login/', form);
   },
 
-  get() {
+  getProfile() {
     return axiosInstance.http.get('auth/profile/');
   },
 

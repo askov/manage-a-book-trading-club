@@ -31,7 +31,6 @@
         {{nonFieldErrors}}
       </b-form-invalid-feedback>
       </b-form-group>
-
       <b-button type="submit" variant="success" class="w-100 form-submit-button">Log in</b-button>
       <div class="border-top mt-3 pt-2 text-secondary">Don't have your account yet?
         <router-link to="/signup">Register here</router-link>

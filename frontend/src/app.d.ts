@@ -50,3 +50,17 @@ type ErrorIndex = 'non_field_errors' | 'username' | 'password';
 type ServerErrors = { [k in ErrorIndex]?: string[] };
 // interface RootState { user: UserState; }
 
+// interface LoginServerResponseSuccess {
+//   token: string;
+// }
+
+// interface LoginServerResponseFieldError {
+//   username?: string;
+//   password?: string;
+// }
+
+// interface LoginServerResponseNonFieldError {
+//   non_field_errors: Array<string>;
+// }
+
+// type LoginServerResponse = LoginServerResponseSuccess | LoginServerResponseFieldError | LoginServerResponseNonFieldError;

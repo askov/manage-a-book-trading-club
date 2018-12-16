@@ -87,7 +87,7 @@ export default Vue.extend({
     this.populateFormFields(user.getProfile);
   },
   computed: {
-    profile() {
+    profile(): UserProfileResponse {
       return user.getProfile;
     },
   },
