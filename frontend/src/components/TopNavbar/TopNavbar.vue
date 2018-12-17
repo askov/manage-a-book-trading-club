@@ -27,11 +27,6 @@
 import Vue from 'vue';
 import user from '@/store/modules/user';
 
-
-
-
-
-
 export default Vue.extend({
   name: 'TopNavbar',
   computed: {
@@ -41,8 +36,8 @@ export default Vue.extend({
   },
   methods: {
     logOut() {
-      console.log('#logout');
       user.dispatchLogOut();
+      this.$router.push('/');
     },
   },
   watch: {

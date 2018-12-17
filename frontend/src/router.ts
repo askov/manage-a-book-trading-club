@@ -1,11 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home/Home.vue';
-
 import user from '@/store/modules/user';
 
 Vue.use(Router);
-
 
 const router = new Router({
   mode: 'history',
@@ -58,7 +56,6 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
-  console.log('#user.isLoggedIn', user.isLoggedIn);
   if (to.meta.requiresAuth) {
     if (user.isLoggedIn) {
       next();
@@ -66,7 +63,11 @@ router.beforeEach((to, from, next) => {
       next({ name: 'login' });
     }
   } else {
-    next();
+    if (to.name === 'login' && user.isLoggedIn) {
+      next({name: 'home'})
+    } else {
+      next();
+    }
   }
 });
 

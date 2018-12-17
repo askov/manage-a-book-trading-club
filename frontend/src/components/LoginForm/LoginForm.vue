@@ -45,10 +45,6 @@ import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
 import user from '@/store/modules/user';
-// import axiosInstance from '@/services/http.service';
-
-
-
 
 
 interface ComponentData {
@@ -128,12 +124,9 @@ export default Vue.extend({
       }
       const {serverErrors, ...form} = this.form;
       user.dispatchLogIn(form).then((res) => {
-        console.log('#res', res);
-        // axiosInstance.setAuthorizationHeaders(res.token);
         user.dispatchObtainProfile();
         this.$router.push('profile');
       } , (err: ServerErrors) => {
-        console.log('#err', err);
         this.updateServerErrors(err);
       });
     },
