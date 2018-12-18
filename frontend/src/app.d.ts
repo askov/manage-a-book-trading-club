@@ -26,9 +26,10 @@ interface UserProfileResponse {
   last_name: string;
   city: string;
   state: string;
-  email: string;
-  username: string;
+  email?: string;
+  username?: string;
 }
+
 
 // interface
 
@@ -48,11 +49,10 @@ interface LoginFormInterface {
 
 type ErrorIndex = 'non_field_errors' | 'username' | 'password';
 type ServerErrors = { [k in ErrorIndex]?: string[] };
-// interface RootState { user: UserState; }
 
-// interface LoginServerResponseSuccess {
-//   token: string;
-// }
+interface LoginServerResponseSuccess {
+  token: string;
+}
 
 // interface LoginServerResponseFieldError {
 //   username?: string;
@@ -63,4 +63,4 @@ type ServerErrors = { [k in ErrorIndex]?: string[] };
 //   non_field_errors: Array<string>;
 // }
 
-// type LoginServerResponse = LoginServerResponseSuccess | LoginServerResponseFieldError | LoginServerResponseNonFieldError;
+// type LoginServerResponse = LoginServerResponseFieldError | LoginServerResponseNonFieldError;

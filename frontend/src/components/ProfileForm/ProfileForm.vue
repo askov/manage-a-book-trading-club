@@ -58,10 +58,10 @@ const DEBOUNCE_DELAY =  1000;
 interface UserProfileForm {
   city: string;
   state: string;
-  email: string;
+  email?: string;
   firstName: string;
   lastName: string;
-  username: string;
+  username?: string;
 }
 
 interface ComponentData {
@@ -87,12 +87,12 @@ export default Vue.extend({
     this.populateFormFields(user.getProfile);
   },
   computed: {
-    profile(): UserProfileResponse {
+    profile(): UserProfileResponse | null {
       return user.getProfile;
     },
   },
   methods: {
-    populateFormFields(profile: UserProfileResponse): void {
+    populateFormFields(profile: UserProfileResponse | null): void {
       if (profile) {
         this.form.city = profile.city;
         this.form.state = profile.state;
@@ -100,14 +100,16 @@ export default Vue.extend({
         this.form.firstName = profile.first_name;
         this.form.lastName = profile.last_name;
       }
+
     },
-    handleProfileChange: debounce(function() {
+    handleProfileChange: debounce(function(this: any) {
       console.log('#handleProfileChange');
       apiService.patchProfile({
         city: this.form.city,
         state: this.form.state,
         first_name: this.form.firstName,
         last_name: this.form.lastName,
+
       });
     }, DEBOUNCE_DELAY),
 

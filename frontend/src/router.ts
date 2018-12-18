@@ -64,7 +64,7 @@ router.beforeEach((to, from, next) => {
     }
   } else {
     if (to.name === 'login' && user.isLoggedIn) {
-      next({name: 'home'})
+      next({ name: 'home' });
     } else {
       next();
     }

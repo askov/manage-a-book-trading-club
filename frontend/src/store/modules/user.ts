@@ -27,15 +27,13 @@ function requestProcessing(s: UserState) {
   s.status = 'processing';
 }
 
-function loginSuccess(s: UserState, res: object) {
-  console.log('#LOGIN_SUCCESS', res);
-  lsService.setUserToken(res.data.token);
-  s.token = res.data.token;
+function loginSuccess(s: UserState, data: LoginServerResponseSuccess) {
+  lsService.setUserToken(data.token);
+  s.token = data.token;
   s.status = 'success';
 }
 
-function loginError(s: UserState, err: object) {
-  console.log('#LOGIN_ERROR', err);
+function loginError(s: UserState) {
   s.status = 'error';
 }
 
@@ -60,11 +58,11 @@ function logIn(context: BareActionContext<UserState, RootState>, form: UserLogin
   return new Promise<object>((resolve, reject) => {
     user.commitRequestProcessing();
     apiService.logIn(form).then((res) => {
-      user.commitLoginSuccess(res);
+      user.commitLoginSuccess(res.data);
       axiosInstance.setAuthorizationHeaders(res.data.token);
       resolve(res.data);
     }).catch((err) => {
-      user.commitLoginError(err);
+      user.commitLoginError();
       reject(err);
     });
   });
