@@ -9,9 +9,9 @@ from users.serializers import UserSerializer, ProfileSerializer
 from users.permissions import IsOwnerOrReadOnly
 from users.models import Profile
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework_jwt.settings import api_settings
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
-
 class UserCreateView(APIView):
     """
     Creates the user
@@ -22,9 +22,14 @@ class UserCreateView(APIView):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
-            token = Token.objects.create(user=user)
             json = serializer.data
-            json['token'] = token.key
+            # token = Token.objects.create(user=user)
+            jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+            jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+            payload = jwt_payload_handler(user)
+            token = jwt_encode_handler(payload)
+            json['token'] = token
+            # json['token'] = token.key
             return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

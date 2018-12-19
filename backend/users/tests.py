@@ -3,6 +3,7 @@ from rest_framework.test import APITestCase
 from django.contrib.auth.models import User
 from rest_framework import status
 from rest_framework.authtoken.models import Token
+from rest_framework_jwt.settings import api_settings
 
 
 class UsersTests(APITestCase):
@@ -29,8 +30,12 @@ class UsersTests(APITestCase):
         self.assertFalse('password' in res.data)
 
         user = User.objects.latest('id')
-        token = Token.objects.get(user=user)
-        self.assertEqual(res.data['token'], token.key)
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+
+        self.assertEqual(res.data['token'], token)
 
     def test_create_user_with_too_short_password(self):
         """
