@@ -6,7 +6,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework_jwt.settings import api_settings
 
 
-class UsersTests(APITestCase):
+class SignupTests(APITestCase):
     def setUp(self):
         self.test_user = User.objects.create_user(
             'testuser', 'test@example.com', 'testpassword')
@@ -156,3 +156,48 @@ class UsersTests(APITestCase):
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(User.objects.count(), 1)
         self.assertEqual(len(res.data['email']), 1)
+
+
+class LoginTests(APITestCase):
+    def setUp(self):
+        self.test_user = User.objects.create_user(
+            'testuser', 'test@example.com', 'testpassword')
+        self.create_url = reverse('login')
+
+    def test_user_login_with_correct_credentials(self):
+        data = {
+            'username': 'testuser',
+            'password': 'testpassword'
+        }
+
+        res = self.client.post(self.create_url, data, format='json')
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+        self.assertEqual('token' in res.data, True)
+        self.assertEqual(isinstance(res.data['token'], str), True)
+
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(self.test_user)
+        token = jwt_encode_handler(payload)
+
+        self.assertEqual(res.data['token'] == token, True)
+
+    def test_user_login_with_wrong_username(self):
+        data = {
+            'username': 'testuser1',
+            'password': 'testpassword'
+        }
+
+        res = self.client.post(self.create_url, data, format='json')
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual('non_field_errors' in res.data, True)
+
+    def test_user_login_with_wrong_password(self):
+        data = {
+            'username': 'testuser',
+            'password': 'testpassword1'
+        }
+
+        res = self.client.post(self.create_url, data, format='json')
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual('non_field_errors' in res.data, True)
