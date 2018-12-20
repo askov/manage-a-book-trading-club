@@ -105,13 +105,10 @@ const user = {
     return isProfileLoadedGetter();
   },
   get isLoggedIn() {
-    // console.log('#isLoggedInGetter', isLoggedInGetter());
     return isLoggedInGetter();
   },
 
   // # Mutations
-  // commitLoginRequest: b.commit(loginRequest),
-  // commitProfileRequest: b.commit(profileRequest),
   commitRequestProcessing: b.commit(requestProcessing),
   commitLoginSuccess: b.commit(loginSuccess),
   commitLoginError: b.commit(loginError),

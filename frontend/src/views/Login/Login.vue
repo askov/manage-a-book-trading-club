@@ -21,8 +21,5 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-// .standard-form {
-//   max-width: 450px;
-// }
 </style>
 
