@@ -20,7 +20,7 @@ export default Vue.extend({
     TopNavbar,
   },
   mounted() {
-    if(user.isLoggedIn) {
+    if (user.isLoggedIn) {
       user.dispatchObtainProfile();
     }
   },
