@@ -26,6 +26,10 @@ if (savedToken) {
 axiosInstance.interceptors.response.use((response) => {
   return response;
 }, (err) => {
+  if (err.response.status === 401) {
+    lsService.removeUserToken();
+    clearAuthorizationHeaders();
+  }
   return Promise.reject(err.response.data);
 });
 
