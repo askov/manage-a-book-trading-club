@@ -162,7 +162,7 @@ class LoginTests(APITestCase):
     def setUp(self):
         self.test_user = User.objects.create_user(
             'testuser', 'test@example.com', 'testpassword')
-        self.create_url = reverse('login')
+        self.login_url = reverse('login')
 
     def test_user_login_with_correct_credentials(self):
         data = {
@@ -170,7 +170,7 @@ class LoginTests(APITestCase):
             'password': 'testpassword'
         }
 
-        res = self.client.post(self.create_url, data, format='json')
+        res = self.client.post(self.login_url, data, format='json')
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual('token' in res.data, True)
         self.assertEqual(isinstance(res.data['token'], str), True)
@@ -188,7 +188,7 @@ class LoginTests(APITestCase):
             'password': 'testpassword'
         }
 
-        res = self.client.post(self.create_url, data, format='json')
+        res = self.client.post(self.login_url, data, format='json')
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual('non_field_errors' in res.data, True)
 
@@ -198,6 +198,30 @@ class LoginTests(APITestCase):
             'password': 'testpassword1'
         }
 
-        res = self.client.post(self.create_url, data, format='json')
+        res = self.client.post(self.login_url, data, format='json')
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual('non_field_errors' in res.data, True)
+
+
+class UserProfileTests(APITestCase):
+    def setUp(self):
+        self.user_data = {
+            'username': 'testuser',
+            'password': 'testpassword',
+            'email': 'test@mail.ru'
+        }
+        self.test_user = User.objects.create_user(
+            self.user_data['username'], self.user_data['email'], self.user_data['password'])
+        self.login_url = reverse('login')
+        self.profile_url = reverse('profile')
+
+    def test_user_login_and_get_profile(self):
+        data = self.user_data.copy()
+        data.pop('email')
+        res = self.client.post(self.login_url, data, format='json')
+        res = self.client.get(self.profile_url, HTTP_AUTHORIZATION='Bearer {}'.format(res.data['token']))
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+        self.assertEqual('email' in res.data, True)
+        self.assertEqual(res.data['email'] == self.user_data['email'], True)
+
+# TODO: signal tests
