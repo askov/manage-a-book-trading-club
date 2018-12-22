@@ -38,12 +38,14 @@ class ProfileSerializer(serializers.ModelSerializer):
     state = serializers.CharField(allow_blank=True)
     email = serializers.CharField(source='user.email')
     username = serializers.CharField(source='user.username')
+    image = serializers.CharField(allow_blank=True)
 
     class Meta:
         model = Profile
         fields = [
             'first_name', 'last_name', 'city',
-            'state', 'email', 'username'
+            'state', 'email', 'username',
+            'image'
         ]
 
     def update(self, instance, validated_data):
