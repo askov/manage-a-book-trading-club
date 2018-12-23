@@ -12,6 +12,12 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework_jwt.settings import api_settings
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
+
+from files.models import Userpic
+from files.serializers import UserpicSerializer
+
+
+
 class UserCreateView(APIView):
     """
     Creates the user
@@ -52,6 +58,10 @@ class ProfileView(APIView):
     def patch(self, request):
         user_profile = Profile.objects.get(user=request.user)
         serializer = ProfileSerializer(user_profile, data=request.data, partial=True)
+
+        userpic = Userpic.objects.get(owner=request.user)
+        print('#USERPIC')
+        # userpic_serializer = UserpicSerializer()
         if serializer.is_valid():
           serializer.save(user=request.user)
           return Response(serializer.data)

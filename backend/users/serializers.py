@@ -2,14 +2,15 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from users.models import Profile
+from files.models import Userpic
+from files.serializers import UserpicSerializer
+
 
 class UserSerializer(serializers.ModelSerializer):
     """
     User serializer
     """
-    class Meta:
-        model = User
-        fields = ('id', 'username', 'email', 'password')
+
     email = serializers.EmailField(
         required=True,
         validators=[UniqueValidator(queryset=User.objects.all())]
@@ -19,6 +20,10 @@ class UserSerializer(serializers.ModelSerializer):
                                          queryset=User.objects.all())]
                                      )
     password = serializers.CharField(min_length=8, write_only=True)
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'password')
 
     def create(self, validated_data):
         """
@@ -38,15 +43,23 @@ class ProfileSerializer(serializers.ModelSerializer):
     state = serializers.CharField(allow_blank=True)
     email = serializers.CharField(source='user.email')
     username = serializers.CharField(source='user.username')
-    image = serializers.CharField(allow_blank=True)
-
+    # avatar = serializers.ImageField()
+    # avatar = serializers.SerializerMethodField()
+    # avatar_id = serializers.PrimaryKeyRelatedField(
+    #     required=False, source='userpic', write_only=True, queryset=Userpic.objects)
     class Meta:
         model = Profile
         fields = [
             'first_name', 'last_name', 'city',
             'state', 'email', 'username',
-            'image'
+            'avatar',
         ]
+
+    # def get_avatar(self, obj):
+    #     try:
+    #         return obj.userpic.image.url
+    #     except (ValueError, AttributeError):
+    #         return None
 
     def update(self, instance, validated_data):
         """
