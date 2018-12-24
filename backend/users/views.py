@@ -59,8 +59,8 @@ class ProfileView(APIView):
         user_profile = Profile.objects.get(user=request.user)
         serializer = ProfileSerializer(user_profile, data=request.data, partial=True)
 
-        userpic = Userpic.objects.get(owner=request.user)
-        print('#USERPIC')
+        # userpic = Userpic.objects.get(owner=request.user)
+        # print('#USERPIC')
         # userpic_serializer = UserpicSerializer()
         if serializer.is_valid():
           serializer.save(user=request.user)
