@@ -39,7 +39,6 @@ class UserCreateView(APIView):
             return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-import time
 
 class ProfileView(APIView):
     """ """
@@ -47,7 +46,6 @@ class ProfileView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
-        # time.sleep(3)
         try:
           user_profile = Profile.objects.get(user=request.user)
           serializer = ProfileSerializer(user_profile)
@@ -59,10 +57,11 @@ class ProfileView(APIView):
         user_profile = Profile.objects.get(user=request.user)
         serializer = ProfileSerializer(user_profile, data=request.data, partial=True)
 
-        # userpic = Userpic.objects.get(owner=request.user)
-        # print('#USERPIC')
-        # userpic_serializer = UserpicSerializer()
-        if serializer.is_valid():
-          serializer.save(user=request.user)
+        avatar_data = {}
+        if ('avatar' in request.data):
+            avatar_data['image'] = request.data.get('avatar')
+        avatar_serializer = UserpicSerializer(data=avatar_data, partial=True)
+
+        if avatar_serializer.is_valid(raise_exception=True) and serializer.is_valid(raise_exception=True):
+          serializer.save(user=request.user, avatar=request.FILES.get('avatar', None))
           return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

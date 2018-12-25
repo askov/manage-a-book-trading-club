@@ -43,23 +43,16 @@ class ProfileSerializer(serializers.ModelSerializer):
     state = serializers.CharField(allow_blank=True)
     email = serializers.CharField(source='user.email')
     username = serializers.CharField(source='user.username')
-    # avatar = serializers.ImageField()
-    # avatar = serializers.SerializerMethodField()
-    # avatar_id = serializers.PrimaryKeyRelatedField(
-    #     required=False, source='userpic', write_only=True, queryset=Userpic.objects)
+    # avatar = UserpicSerializer()
+    avatar = serializers.SerializerMethodField()
+
     class Meta:
         model = Profile
-        fields = [
+        fields = (
             'first_name', 'last_name', 'city',
-            'state', 'email', 'username',
-            'avatar',
-        ]
-
-    # def get_avatar(self, obj):
-    #     try:
-    #         return obj.userpic.image.url
-    #     except (ValueError, AttributeError):
-    #         return None
+            'state', 'email', 'username', 'avatar'
+        )
+        read_only_fields = ('email', 'username',)
 
     def update(self, instance, validated_data):
         """
@@ -69,5 +62,14 @@ class ProfileSerializer(serializers.ModelSerializer):
         instance.last_name = validated_data.get('last_name', instance.last_name)
         instance.state = validated_data.get('state', instance.state)
         instance.city = validated_data.get('city', instance.city)
+        if validated_data['avatar']:
+            instance.avatar = Userpic.objects.create(
+                owner=validated_data.get('user'),
+                image=validated_data['avatar']
+            )
         instance.save()
         return instance
+
+
+    def get_avatar(self, obj):
+        return obj.avatar.image.url

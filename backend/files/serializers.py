@@ -8,18 +8,19 @@ from django.contrib.auth.models import User
 class UserImageSerializer(serializers.ModelSerializer):
     image = serializers.ImageField(
         use_url=True,
-        required=False,
-        default=None,)
-
+        required=True,
+        )
+# default=None,
     class Meta:
         model = UserImage
-        exclude = ('created_at', 'updated_at', )
-        # write_only_fields = ('owner',)
+        read_only_fields = ('created_at', 'updated_at')
 
-    def create(self, validated_data):
-        pass
-        # avatar = validated_data.get('avatar')
-        # return avatar
+
+    # def create(self, instance, validated_data):
+    #     """
+    #     Create user image
+    #     """
+    #     print('CREATE USER IMAGE')
 
 class UserpicSerializer(UserImageSerializer):
     owner = serializers.PrimaryKeyRelatedField(
@@ -30,5 +31,4 @@ class UserpicSerializer(UserImageSerializer):
 
     class Meta:
         model = Userpic
-        fields = ('id', 'image', 'owner', )
-        # write_only_fields = ('owner', )
+        fields = ('id', 'image', 'owner',)
