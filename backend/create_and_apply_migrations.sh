@@ -1,3 +1,2 @@
 #!/bin/bash
-docker exec -it mbtc.backend bash -c "python manage.py makemigrations"
-docker exec -it mbtc.backend bash -c "python manage.py migrate"
+docker exec -it mbtc.backend bash -c "source _pyvenv/bin/activate && python manage.py makemigrations && python manage.py migrate"
