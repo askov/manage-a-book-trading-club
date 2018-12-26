@@ -72,4 +72,4 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 
     def get_avatar(self, obj):
-        return obj.avatar.image.url
+        return obj.avatar and obj.avatar.image.url
