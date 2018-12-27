@@ -16,4 +16,8 @@ export default {
   patchProfile(form: UserProfileResponse) {
     return axiosInstance.http.patch('auth/profile/', form);
   },
+
+  getAllBooks() {
+    return axiosInstance.http.get('books/');
+  },
 };

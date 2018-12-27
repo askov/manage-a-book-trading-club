@@ -1,10 +1,18 @@
 <template>
-  <div id="app" class="container-fluid">
-    <TopNavbar/>
+  <div id="app">
+    <div class="container-fluid">
+      <TopNavbar/>
+    </div>
     <transition name="fade" mode="out-in">
       <router-view/>
     </transition>
   </div>
+  <!-- <div id="app" class="container-fluid">
+    <TopNavbar/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
+  </div> -->
 </template>
 
 
