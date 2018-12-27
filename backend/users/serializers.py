@@ -15,10 +15,12 @@ class UserSerializer(serializers.ModelSerializer):
         required=True,
         validators=[UniqueValidator(queryset=User.objects.all())]
     )
-    username = serializers.CharField(max_length=30,
-                                     validators=[UniqueValidator(
-                                         queryset=User.objects.all())]
-                                     )
+    username = serializers.CharField(
+      max_length=30,
+      validators=[
+        UniqueValidator(queryset=User.objects.all())
+      ]
+    )
     password = serializers.CharField(min_length=8, write_only=True)
 
     class Meta:
@@ -30,7 +32,8 @@ class UserSerializer(serializers.ModelSerializer):
         Creates new user
         """
         user = User.objects.create_user(
-            validated_data['username'], validated_data['email'], validated_data['password'])
+            validated_data['username'], validated_data['email'], validated_data['password']
+        )
         return user
 
 class ProfileSerializer(serializers.ModelSerializer):
@@ -43,7 +46,6 @@ class ProfileSerializer(serializers.ModelSerializer):
     state = serializers.CharField(allow_blank=True)
     email = serializers.CharField(source='user.email')
     username = serializers.CharField(source='user.username')
-    # avatar = UserpicSerializer()
     avatar = serializers.SerializerMethodField()
 
     class Meta:
@@ -72,4 +74,10 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 
     def get_avatar(self, obj):
-        return obj.avatar and obj.avatar.image.url
+        try:
+            request = self.context.get('request')
+            return request.build_absolute_uri(obj.avatar.image.url)
+        except AttributeError:
+            return None
+
+

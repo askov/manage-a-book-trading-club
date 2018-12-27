@@ -48,7 +48,7 @@ class ProfileView(APIView):
     def get(self, request):
         try:
           user_profile = Profile.objects.get(user=request.user)
-          serializer = ProfileSerializer(user_profile)
+          serializer = ProfileSerializer(user_profile, context={'request': request})
           return Response(serializer.data)
         except:
           return Response(status=status.HTTP_400_BAD_REQUEST)
