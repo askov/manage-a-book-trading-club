@@ -1,0 +1,12 @@
+[
+  {
+    "model": "files.userpic",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "image": "avatar.jpg",
+      "created_at": "2013-03-16T17:41:28+00:00",
+      "updated_at": "2013-03-16T17:41:28+00:00"
+    }
+  }
+]
