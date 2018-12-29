@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     from users.models import Profile
     from files.fixtures.create_file_fixtures import FileFixtures
-    
+
     FileFixtures.copy_avatar_file()
 
     Profile.objects.all().delete()
