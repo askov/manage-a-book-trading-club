@@ -48,7 +48,7 @@ class UserFixtures():
         return user, profile
 
 
-    def create_user_list(self):
+    def generate(self):
         p = os.path.dirname(os.path.abspath(__file__))
         with open(p + '/firstnames/us.txt') as firstnames, open(p + '/surnames/us.txt') as surnames:
             fnames = firstnames.read().splitlines()
@@ -84,4 +84,4 @@ class UserFixtures():
 
 if __name__ == '__main__':
     uf = UserFixtures(sys.argv[1:])
-    uf.create_user_list()
+    uf.generate()

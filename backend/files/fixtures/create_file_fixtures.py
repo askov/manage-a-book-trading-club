@@ -1,11 +1,7 @@
-
-
-
 import os
 from pathlib import Path
-from django.contrib.auth.hashers import make_password
 from shutil import copyfile
-from pathlib import Path
+
 
 class FileFixtures():
 

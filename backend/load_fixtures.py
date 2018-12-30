@@ -8,10 +8,13 @@ if __name__ == '__main__':
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mbtc.settings")
     django.setup()
 
-    from users.fixtures.create_user_fixtures import UserFixtures
-    uf = UserFixtures(sys.argv[1:])
-    uf.create_user_list()
-
+    try:
+        if sys.argv[2] == 'generate':
+            from users.fixtures.create_user_fixtures import UserFixtures
+            uf = UserFixtures(sys.argv[1:])
+            uf.generate()
+    except IndexError:
+        pass
 
     management.call_command('flush', verbosity=1, interactive=False)
     management.call_command('loaddata', 'users', verbosity=1)
