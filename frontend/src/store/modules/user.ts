@@ -29,6 +29,7 @@ function requestProcessing(s: UserState) {
 
 function loginSuccess(s: UserState, data: LoginServerResponseSuccess) {
   lsService.setUserToken(data.token);
+  axiosInstance.setAuthorizationHeaders(data.token);
   s.token = data.token;
   s.status = 'success';
 }
@@ -37,10 +38,22 @@ function loginError(s: UserState) {
   s.status = 'error';
 }
 
+function signupError(s: UserState) {
+  s.status = 'error';
+}
+
+function signupSuccess(s: UserState, data: SignupServerResponseSuccess) {
+  lsService.setUserToken(data.token);
+  axiosInstance.setAuthorizationHeaders(data.token);
+  s.token = data.token;
+  s.status = 'success';
+}
+
 function logOutSuccess(s: UserState) {
   s.profile = null;
   s.token = null;
   lsService.removeUserToken();
+  axiosInstance.clearAuthorizationHeaders();
 }
 
 function obtainProfileSuccess(s: UserState, profile: UserProfileResponse) {
@@ -54,12 +67,25 @@ function obtainProfileError(s: UserState) {
 }
 
 // # Actions
+function signUp(context: BareActionContext<UserState, RootState>, form: UserRegistrationForm) {
+  return new Promise<object>((resolve, reject) => {
+    user.commitRequestProcessing();
+    apiService.signUp(form).then((res) => {
+      user.commitSignupSuccess(res.data);
+      // axiosInstance.setAuthorizationHeaders(res.data.token);
+      resolve(res.data);
+    }).catch((err) => {
+      user.commitSignupError();
+      reject(err);
+    });
+  });
+}
 function logIn(context: BareActionContext<UserState, RootState>, form: UserLoginForm) {
   return new Promise<object>((resolve, reject) => {
     user.commitRequestProcessing();
     apiService.logIn(form).then((res) => {
       user.commitLoginSuccess(res.data);
-      axiosInstance.setAuthorizationHeaders(res.data.token);
+      // axiosInstance.setAuthorizationHeaders(res.data.token);
       resolve(res.data);
     }).catch((err) => {
       user.commitLoginError();
@@ -82,7 +108,7 @@ function obtainProfile(context: BareActionContext<UserState, RootState>) {
       resolve(res.data);
     }).catch((err) => {
       console.log('#err profile', err);
-      // user.commitLoginError(err);
+      user.commitLoginError();
       reject(err);
     });
   });
@@ -114,10 +140,13 @@ const user = {
   commitLoginError: b.commit(loginError),
   commitLogOutSuccess: b.commit(logOutSuccess),
   commitObtainProfileSuccess: b.commit(obtainProfileSuccess),
+  commitSignupSuccess: b.commit(signupSuccess),
+  commitSignupError: b.commit(signupError),
 
   // # Actions
   dispatchLogIn: b.dispatch(logIn),
   dispatchLogOut: b.dispatch(logOut),
+  dispatchSignUp: b.dispatch(signUp),
   dispatchObtainProfile: b.dispatch(obtainProfile),
 };
 export default user;

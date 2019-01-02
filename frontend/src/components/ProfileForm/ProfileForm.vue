@@ -1,5 +1,17 @@
 <template>
   <b-form @submit.prevent="onSubmit" novalidate autocomplete="off" class="bg-light p-4 rounded">
+    <b-form-group>
+      <b-alert variant="danger"
+             dismissible
+             fade
+             :show="showDismissibleAlert"
+             @dismissed="showDismissibleAlert=false">
+      Image is too large. File size can't exceed 50 kB
+    </b-alert>
+      <!-- <b-img v-bind:src="form.avatar" rounded="circle" blank width="100" height="100" alt="user-avatar" center class="mb-3" /> -->
+    <img :src="form.avatar" alt="user-avatar" class="profile-avatar shadow" @click="$refs.file.click()" v-b-tooltip.hover title="Click to select your avatar">
+    <input type="file" ref="file" style="display: none" @change="onImageChange">
+    </b-form-group>
     <b-form-group label="City:" label-for="profileFormCity">
       <b-form-input
         id="profileFormCity"
@@ -51,12 +63,12 @@ import apiService from '@/services/api.service';
 
 import { debounce } from 'lodash';
 
-
 const DEBOUNCE_DELAY =  1000;
 
 
 interface UserProfileForm {
   city: string;
+  avatar: string;
   state: string;
   email?: string;
   firstName: string;
@@ -65,6 +77,7 @@ interface UserProfileForm {
 }
 
 interface ComponentData {
+  showDismissibleAlert: boolean;
   form: UserProfileForm;
 }
 
@@ -72,6 +85,7 @@ export default Vue.extend({
   name: 'ProfileForm',
   data(): ComponentData {
     return {
+      showDismissibleAlert: false,
       form: {
         city: '',
         state: '',
@@ -79,6 +93,7 @@ export default Vue.extend({
         firstName: '',
         lastName: '',
         username: '',
+        avatar: '',
       },
     };
   },
@@ -94,6 +109,7 @@ export default Vue.extend({
   methods: {
     populateFormFields(profile: UserProfileResponse | null): void {
       if (profile) {
+        this.form.avatar = profile.avatar;
         this.form.city = profile.city;
         this.form.state = profile.state;
         this.form.email = profile.email;
@@ -109,10 +125,27 @@ export default Vue.extend({
         state: this.form.state,
         first_name: this.form.firstName,
         last_name: this.form.lastName,
+        // avatar: null TODO
 
       });
     }, DEBOUNCE_DELAY),
+    onImageChange(event): void {
+      // console.log('#image change!!!!', event.target.files[0].size);
+      const selectedImage = event.target.files[0];
+      if (selectedImage) {
+        if (selectedImage.size > 1024 * 50) {
+          console.warn('image is too large');
+          this.showDismissibleAlert = true;
+        } else {
+          const fd = new FormData();
+          fd.append('avatar', selectedImage, selectedImage.name);
+          apiService.patchProfile(fd).then(res => {
+            this.form.avatar = res.data.avatar;
+          });
+        }
+      }
 
+    }
   },
   watch: {
     profile (newVal, oldVal) {
@@ -123,4 +156,14 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+.profile-avatar {
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
 </style>

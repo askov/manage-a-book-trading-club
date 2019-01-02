@@ -3,10 +3,10 @@ interface Event {
 }
 
 interface UserRegistrationForm {
+  username: string;
   email: string;
-  name: string;
   password: string;
-  passwordConfirm: string;
+  // passwordConfirm: string;
 }
 
 interface UserLoginForm {
@@ -28,6 +28,7 @@ interface UserProfileResponse {
   state: string;
   email?: string;
   username?: string;
+  avatar: string;
 }
 
 
@@ -53,7 +54,12 @@ type ServerErrors = { [k in ErrorIndex]?: string[] };
 interface LoginServerResponseSuccess {
   token: string;
 }
-
+interface SignupServerResponseSuccess {
+  id: number;
+  username: string;
+  email: string;
+  token: string;
+}
 // interface LoginServerResponseFieldError {
 //   username?: string;
 //   password?: string;

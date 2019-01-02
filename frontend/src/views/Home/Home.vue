@@ -39,10 +39,10 @@ export default Vue.extend({
     BookCard,
   },
   mounted() {
-    apiService.getAllBooks().then((res) => {
-      this.books = res.data.results;
-      console.log('$books', res);
-    });
+    // apiService.getAllBooks().then((res) => {
+    //   this.books = res.data.results;
+    //   console.log('$books', res);
+    // });
   },
 });
 </script>

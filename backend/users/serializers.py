@@ -64,11 +64,13 @@ class ProfileSerializer(serializers.ModelSerializer):
         instance.last_name = validated_data.get('last_name', instance.last_name)
         instance.state = validated_data.get('state', instance.state)
         instance.city = validated_data.get('city', instance.city)
-        if validated_data['avatar']:
+        try:
             instance.avatar = Userpic.objects.create(
                 owner=validated_data.get('user'),
                 image=validated_data['avatar']
             )
+        except:
+            pass
         instance.save()
         return instance
 

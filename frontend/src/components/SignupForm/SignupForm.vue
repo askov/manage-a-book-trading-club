@@ -43,7 +43,7 @@
             placeholder="Enter password"
           ></b-form-input>
           <b-input-group-append>
-            <b-btn variant="success" @click="togglePasswordVisibility()">
+            <b-btn variant="success" tabindex="-1" @click="togglePasswordVisibility()">
               <font-awesome-icon icon="eye" v-if="passwordVisibility"/>
               <font-awesome-icon icon="eye-slash" v-else/>
             </b-btn>
@@ -65,7 +65,7 @@
             :class="{ 'is-invalid': $v.form.passwordConfirm.$error }"
           ></b-form-input>
           <b-input-group-append>
-            <b-btn variant="success" @click="togglePasswordVisibility('confirm')">
+            <b-btn variant="success" tabindex="-1" @click="togglePasswordVisibility('confirm')">
               <font-awesome-icon icon="eye" v-if="passwordConfirmVisibility"/>
               <font-awesome-icon icon="eye-slash" v-else/>
             </b-btn>
@@ -88,6 +88,7 @@ import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, minLength, sameAs, email, ValidationRule } from 'vuelidate/lib/validators';
 import serverRule from '@/validators/serverRule';
+import user from '@/store/modules/user';
 
 interface Event {
   preventDefault: () => void;
@@ -204,7 +205,6 @@ export default Vue.extend({
       }
     },
     updateServerErrors(errors: ServerErrors): void {
-      console.log('#server errors #1', errors);
       this.form.serverErrors = errors;
     },
     clearServerError(field: ErrorIndex): void {
@@ -216,15 +216,12 @@ export default Vue.extend({
       if (this.$v.$invalid) {
         return;
       }
-      this.$store
-        .dispatch('signUp', this.form)
-        .then((user: object) => {
-          console.log('#new user!');
-        })
-        .catch((errors: ServerErrors) => {
-          console.log('#error catch!!!', errors);
-          this.updateServerErrors(errors);
-        });
+      user.dispatchSignUp(this.form).then(() => {
+        user.dispatchObtainProfile();
+        this.$router.push('profile');
+      } , (err: ServerErrors) => {
+        this.updateServerErrors(err);
+      });
     },
   },
   watch: {

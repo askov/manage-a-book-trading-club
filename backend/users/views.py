@@ -55,7 +55,7 @@ class ProfileView(APIView):
 
     def patch(self, request):
         user_profile = Profile.objects.get(user=request.user)
-        serializer = ProfileSerializer(user_profile, data=request.data, partial=True)
+        serializer = ProfileSerializer(user_profile, data=request.data, partial=True, context={'request': request})
 
         avatar_data = {}
         if ('avatar' in request.data):
