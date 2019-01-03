@@ -13,7 +13,7 @@ export default {
     return axiosInstance.http.get('auth/profile/');
   },
 
-  patchProfile(form: UserProfileResponse) {
+  patchProfile(form: UserProfilePatch | FormData) {
     return axiosInstance.http.patch('auth/profile/', form);
   },
 

@@ -42,6 +42,14 @@ const router = new Router({
       },
     },
     {
+      path: '/my-books',
+      name: 'myBooks',
+      component: () => import('./views/MyBooks/MyBooks.vue'),
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
       path: '/404',
       name: '404',
       component: () => import('./views/NotFound/NotFound.vue'),

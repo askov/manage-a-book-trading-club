@@ -129,7 +129,7 @@ export default Vue.extend({
 
       });
     }, DEBOUNCE_DELAY),
-    onImageChange(event): void {
+    onImageChange(event: any): void {
       // console.log('#image change!!!!', event.target.files[0].size);
       const selectedImage = event.target.files[0];
       if (selectedImage) {
@@ -139,13 +139,12 @@ export default Vue.extend({
         } else {
           const fd = new FormData();
           fd.append('avatar', selectedImage, selectedImage.name);
-          apiService.patchProfile(fd).then(res => {
+          apiService.patchProfile(fd).then((res: any) => {
             this.form.avatar = res.data.avatar;
           });
         }
       }
-
-    }
+    },
   },
   watch: {
     profile (newVal, oldVal) {

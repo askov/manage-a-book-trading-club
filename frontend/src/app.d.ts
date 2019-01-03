@@ -21,18 +21,23 @@ interface UserProfile {
   phone?: string;
 }
 
+
+interface UserProfilePatch {
+  first_name?: string;
+  last_name?: string;
+  city?: string;
+  state?: string;
+}
+
 interface UserProfileResponse {
   first_name: string;
   last_name: string;
   city: string;
   state: string;
-  email?: string;
-  username?: string;
+  email: string;
+  username: string;
   avatar: string;
 }
-
-
-// interface
 
 
 interface UserState {
