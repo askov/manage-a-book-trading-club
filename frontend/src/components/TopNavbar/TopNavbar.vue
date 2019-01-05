@@ -10,6 +10,7 @@
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav class="ml-auto" v-if="isLoggedIn">
         <router-link to="/profile" class="btn btn-link nav-link" v-if="$route.name !== 'profile'">Profile</router-link>
+        <router-link to="/my-books" class="btn btn-link nav-link" v-if="$route.name !== 'myBooks'">My books</router-link>
         <!-- <router-link to="/profile" class="nav-link" v-if="$route.name !== 'profile'">Log out</router-link> -->
         <b-button variant="link" class="nav-link" @click="logOut()">
           Log out
