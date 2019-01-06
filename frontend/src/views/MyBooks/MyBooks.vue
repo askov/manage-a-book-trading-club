@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5 ">
     <b-input-group class="mb-3">
       <b-form-input v-model="searchTerm" @keydown.native="handleBookSearch" />
       <b-input-group-append>
@@ -8,14 +8,20 @@
     </b-input-group>
     <b-form-text>Discover books using the Google Books API and add them to your personal collection</b-form-text>
 
-    <b-pagination @change="handlePageChange" align="center" class="mt-3" v-if="totalItems > 0" size="sm" :total-rows="totalItems" :per-page="PAGE_SIZE"></b-pagination>
+    <div class="bg-light rounded p-4 mt-3" v-if="totalItems > 0">
+    <b-pagination @change="handlePageChange" align="center" class="mt-3" v-if="totalItems > 0" size="sm" :total-rows="totalItems" :per-page="PAGE_SIZE" v-model="currentPage"></b-pagination>
     <br>
-    <h6 class="text-light" v-if="totalItems > 0">Found {{totalItems}}</h6>
-    <ul class="books-container mt-3">
-      <li v-for="book in books" :key="book.id">
+    <h6 class="text-secondary text-center">Discovered <b-badge variant="success">{{totalItems}}</b-badge></h6>
+    <ul class="books-container mt-3 custom-scroll-1 mh-100">
+      <li v-for="book in currentBooks" :key="book.id">
         <BookCard :image="book.imageThumbnail"/>
       </li>
+      <li class="border border-primary load-more-placeholder" v-if="showLoadMore">
+        <b-button class="d-block text-center w-100 h-100" :size="'sm'" :variant="'link'" @click="loadMore">Load more...</b-button>
+      </li>
     </ul>
+    </div>
+
 
 
   </div>
@@ -31,10 +37,14 @@ import BookCard from '@/components/BookCard/BookCard.vue';
 import { debounce, get } from 'lodash';
 
 const DEBOUNCE_DELAY = 700;
+const PAGE_SIZE = 10;
 
 interface ComponentData {
+  loading: boolean;
+  limitReached: boolean;
   searchTerm: string;
   startIndex: number;
+  currentPage: number;
   totalItems: number;
   books: object[];
 }
@@ -45,51 +55,65 @@ export default Vue.extend({
     BookCard,
   },
   computed: {
-    PAGE_SIZE: () => 10,
+    PAGE_SIZE: () => PAGE_SIZE,
+    showLoadMore() {
+      return (this.totalItems > 0) && !this.limitReached && !this.loading;
+    },
+    currentBooks() {
+      return this.books.slice((this.currentPage - 1) * PAGE_SIZE, this.currentPage * PAGE_SIZE);
+    },
   },
   data(): ComponentData {
     return {
+      loading: false,
+      limitReached: false,
       searchTerm: '',
+      currentPage: 0,
       startIndex: 0,
       totalItems: 0,
       books: [],
     };
   },
   methods: {
-    handleBookSearch: debounce(function(this: any) {
+    loadMore() {
+      // console.log('#load more');
+      this.startIndex += this.PAGE_SIZE;
       this.searchBooks();
-      // if (this.searchTerm) {
-      //   apiService.googleBookApiSearch(this.searchTerm).then((res) => {
-      //     console.log('res', res.data);
-      //     const books = res.data.items;
-      //     books.forEach((el: any) => {
-      //       el.imageThumbnail = get(el, 'volumeInfo.imageLinks.thumbnail', '');
-      //     });
-      //     this.books = books;
-      //     this.totalItems = res.data.totalItems;
-      //   });
-      // }
-    }, DEBOUNCE_DELAY),
+    },
+    handlePageChange() {
+      console.log('#change');
+    },
     searchBooks() {
       if (this.searchTerm) {
-        apiService.googleBookApiSearch(this.searchTerm, this.startIndex).then((res) => {
-          console.log('res', res.data);
+        this.loading = true;
+        apiService.googleBookApiSearch(this.searchTerm, this.startIndex, this.PAGE_SIZE).then((res) => {
           const books = res.data.items;
           if (Array.isArray(books)) {
             books.forEach((el: any) => {
               el.imageThumbnail = get(el, 'volumeInfo.imageLinks.thumbnail', '');
             });
-            this.books = books;
-            this.totalItems = res.data.totalItems;
+            this.books = this.books.concat(books);
+            this.totalItems = this.books.length;
+            this.currentPage = Math.floor(this.totalItems / this.PAGE_SIZE);
+          } else {
+            this.limitReached = true;
           }
+          this.loading = false;
         });
       }
     },
-    handlePageChange(pageNum: number) {
-      console.log('#change!!', pageNum);
-      this.startIndex = this.PAGE_SIZE * (pageNum - 1);
-      this.searchBooks();
+    resetSearch() {
+      this.startIndex = 0;
+      this.totalItems = 0;
+      this.currentPage = 0;
+      this.limitReached = false;
+      this.books = [];
     },
+    handleBookSearch: debounce(function(this: any) {
+      this.resetSearch();
+      this.searchBooks();
+    }, DEBOUNCE_DELAY),
+
   },
 });
 </script>
@@ -101,5 +125,11 @@ export default Vue.extend({
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  // height: 50vh;
+  // background-color: gold;
+  overflow-y: auto;
+}
+.load-more-placeholder {
+  width: 128px;
 }
 </style>
