@@ -25,7 +25,10 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.use(BootstrapVue);
 import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
+import VirtualScrollList from 'vue-virtual-scroll-list';
 
+
+Vue.component('virtual-list', VirtualScrollList);
 
 new Vue({
   router,

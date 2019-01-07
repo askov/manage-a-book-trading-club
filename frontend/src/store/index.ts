@@ -7,7 +7,7 @@ export interface RootState { user: UserState; }
 
 const debug = process.env.NODE_ENV !== 'production';
 
-Vue.filter('filterA', function (value: string, cutLength: number): string {
+Vue.filter('ellipsis', function (value: string, cutLength: number): string {
   if (!value) { return ''; }
   const val = value.toString();
   return val.slice(0, cutLength) + (val.length > cutLength ? '…' : '');
