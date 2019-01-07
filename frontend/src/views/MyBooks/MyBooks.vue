@@ -14,7 +14,7 @@
     <h6 class="text-secondary text-center">Discovered <b-badge variant="success">{{totalItems}}</b-badge></h6>
     <ul class="books-container mt-3 custom-scroll-1 mh-100">
       <li v-for="book in currentBooks" :key="book.id">
-        <BookCard :image="book.imageThumbnail"/>
+        <BookCard :image="book.imageThumbnail" :title="book.title" :previewLink="book.previewLink" :description="book.description"/>
       </li>
       <li class="border border-primary load-more-placeholder" v-if="showLoadMore">
         <b-button class="d-block text-center w-100 h-100" :size="'sm'" :variant="'link'" @click="loadMore">Load more...</b-button>
@@ -91,6 +91,9 @@ export default Vue.extend({
           if (Array.isArray(books)) {
             books.forEach((el: any) => {
               el.imageThumbnail = get(el, 'volumeInfo.imageLinks.thumbnail', '');
+              el.title = get(el, 'volumeInfo.title', '');
+              el.previewLink = get(el, 'volumeInfo.previewLink', '');
+              el.description = get(el, 'volumeInfo.description', 'description is not available');
             });
             this.books = this.books.concat(books);
             this.totalItems = this.books.length;
