@@ -12,18 +12,14 @@
         >
         <div class="book-card__cover shadow" v-show="!isLoaded"></div>
       </a>
-      <!-- v-b-popover.hover="description" -->
-      <!-- :placement="'bottom'" -->
-      <div class="text-secondary ml-2" :title="title">
-        <div>
-          <strong>{{title | ellipsis(110)}}</strong>
+      <div class="text-secondary ml-2 d-flex flex-column book-card__rcol">
+        <div class="book-card__title">
+          <strong>{{title | ellipsis(50)}}</strong>
           <span v-if="authors" class="ml-1">by
-            <b-badge variant="info">{{authors}}</b-badge>
+            <b-badge variant="info">{{authors | ellipsis(50)}}</b-badge>
           </span>
         </div>
-        <div>
-          <small>{{description | ellipsis(300)}}</small>
-        </div>
+        <div class="book-card__description">{{description}}</div>
       </div>
     </div>
   </transition>
@@ -56,7 +52,6 @@ export default Vue.extend({
       event.target.src = this.getImgUrl();
     },
     handleImageLoaded() {
-      console.log('#loaded');
       this.isLoaded = true;
     },
     getImgUrl() {
@@ -69,13 +64,33 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .book-card {
-  height: 100px;
+  height: 105px;
+  text-overflow: ellipsis;
   overflow: hidden;
   &__cover {
     width: 64px;
     height: 100%;
-    // height: 205px;
     object-fit: cover;
+  }
+  &__title {
+  }
+  &__description {
+    font-size: 12px;
+    overflow: hidden;
+  }
+  &__rcol {
+    position: relative;
+    width: 100%;
+    &:after {
+      display: block;
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 30px;
+      background: linear-gradient(to top, white, transparent);
+    }
   }
 }
 </style>

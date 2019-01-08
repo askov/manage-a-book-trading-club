@@ -1,1 +1,1 @@
-declare module 'vue-virttual-scroll-list';
+declare module 'vue-virtual-scroll-list';

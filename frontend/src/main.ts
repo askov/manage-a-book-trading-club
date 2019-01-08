@@ -27,8 +27,13 @@ import { Navbar } from 'bootstrap-vue/es/components';
 Vue.use(Navbar);
 import VirtualScrollList from 'vue-virtual-scroll-list';
 
-
+// Virtual scroll
 Vue.component('virtual-list', VirtualScrollList);
+
+// Loader
+import Loading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
+// Vue.use(Loading);
 
 new Vue({
   router,
