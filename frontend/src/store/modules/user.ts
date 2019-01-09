@@ -18,15 +18,31 @@ const b = getStoreBuilder<RootState>().module('userState', initialState);
 const stateGetter = b.state();
 
 // # Getters
-const getProfileGetter = b.read((s: UserState): UserProfileResponse | null => s.profile, 'getProfile');
-const isProfileLoadedGetter = b.read((s: UserState): boolean => s.profile !== null, 'isProfileLoaded');
-const isLoggedInGetter = b.read((s: UserState): boolean => s.token !== null, 'isLoggedIn');
+const getProfileGetter = b.read(
+  (s: UserState): UserProfileResponse | null => s.profile,
+  'getProfile'
+);
+const isProfileLoadedGetter = b.read(
+  (s: UserState): boolean => s.profile !== null,
+  'isProfileLoaded'
+);
+const isLoggedInGetter = b.read(
+  (s: UserState): boolean => s.token !== null,
+  'isLoggedIn'
+);
 
 // # Mutations
 function requestProcessing(s: UserState) {
   s.status = 'processing';
 }
 
+function requestError(s: UserState) {
+  s.status = 'error';
+}
+
+function requestSuccess(s: UserState) {
+  s.status = 'success';
+}
 function loginSuccess(s: UserState, data: LoginServerResponseSuccess) {
   lsService.setUserToken(data.token);
   axiosInstance.setAuthorizationHeaders(data.token);
@@ -67,30 +83,41 @@ function obtainProfileError(s: UserState) {
 }
 
 // # Actions
-function signUp(context: BareActionContext<UserState, RootState>, form: UserRegistrationForm) {
+function signUp(
+  context: BareActionContext<UserState, RootState>,
+  form: UserRegistrationForm
+) {
   return new Promise<object>((resolve, reject) => {
     user.commitRequestProcessing();
-    apiService.signUp(form).then((res) => {
-      user.commitSignupSuccess(res.data);
-      // axiosInstance.setAuthorizationHeaders(res.data.token);
-      resolve(res.data);
-    }).catch((err) => {
-      user.commitSignupError();
-      reject(err);
-    });
+    apiService
+      .signUp(form)
+      .then((res) => {
+        user.commitSignupSuccess(res.data);
+        resolve(res.data);
+      })
+      .catch((err) => {
+        user.commitSignupError();
+        reject(err);
+      });
   });
 }
-function logIn(context: BareActionContext<UserState, RootState>, form: UserLoginForm) {
+function logIn(
+  context: BareActionContext<UserState, RootState>,
+  form: UserLoginForm
+) {
   return new Promise<object>((resolve, reject) => {
     user.commitRequestProcessing();
-    apiService.logIn(form).then((res) => {
-      user.commitLoginSuccess(res.data);
-      // axiosInstance.setAuthorizationHeaders(res.data.token);
-      resolve(res.data);
-    }).catch((err) => {
-      user.commitLoginError();
-      reject(err);
-    });
+    apiService
+      .logIn(form)
+      .then((res) => {
+        user.commitLoginSuccess(res.data);
+        // axiosInstance.setAuthorizationHeaders(res.data.token);
+        resolve(res.data);
+      })
+      .catch((err) => {
+        user.commitLoginError();
+        reject(err);
+      });
   });
 }
 
@@ -102,19 +129,39 @@ function logOut(context: BareActionContext<UserState, RootState>) {
 function obtainProfile(context: BareActionContext<UserState, RootState>) {
   return new Promise<object>((resolve, reject) => {
     user.commitRequestProcessing();
-    apiService.getProfile().then((res) => {
-      console.log('#profile', res.data);
-      user.commitObtainProfileSuccess(res.data);
-      resolve(res.data);
-    }).catch((err) => {
-      console.log('#err profile', err);
-      user.commitLoginError();
-      reject(err);
-    });
+    apiService
+      .getProfile()
+      .then((res) => {
+        // console.log('#profile', res.data);
+        user.commitObtainProfileSuccess(res.data);
+        resolve(res.data);
+      })
+      .catch((err) => {
+        // console.log('#err profile', err);
+        user.commitRequestError();
+        reject(err);
+      });
   });
 }
 
-
+function patchProfile(
+  context: BareActionContext<UserState, RootState>,
+  form: UserProfilePatch | FormData
+) {
+  return new Promise<object>((resolve, reject) => {
+    user.commitRequestProcessing();
+    apiService
+      .patchProfile(form)
+      .then((res) => {
+        user.commitObtainProfileSuccess(res.data);
+        resolve(res.data);
+      })
+      .catch((err) => {
+        user.commitRequestError();
+        reject(err);
+      });
+  });
+}
 // Example
 // https://gist.github.com/ChristopherKiss/cda423131c020e7f5d80e7015b1fc790
 const user = {
@@ -136,6 +183,8 @@ const user = {
 
   // # Mutations
   commitRequestProcessing: b.commit(requestProcessing),
+  commitRequestError: b.commit(requestError),
+  commitRequestSuccess: b.commit(requestSuccess),
   commitLoginSuccess: b.commit(loginSuccess),
   commitLoginError: b.commit(loginError),
   commitLogOutSuccess: b.commit(logOutSuccess),
@@ -148,5 +197,6 @@ const user = {
   dispatchLogOut: b.dispatch(logOut),
   dispatchSignUp: b.dispatch(signUp),
   dispatchObtainProfile: b.dispatch(obtainProfile),
+  dispatchPatchProfile: b.dispatch(patchProfile),
 };
 export default user;

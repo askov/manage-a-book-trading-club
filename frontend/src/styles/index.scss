@@ -15,7 +15,6 @@ body {
   margin-bottom: 0;
 }
 
-
 .form-submit-button {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -26,19 +25,30 @@ body {
   display: block;
 }
 
+// Main navbar update
+.navbar-nav {
+  & > li {
+    & > a {
+      text-transform: uppercase;
+      font-size: 12px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
 // Scroll
 .custom-scroll-1 {
   &::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
   &::-webkit-scrollbar {
     width: 8px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
   &::-webkit-scrollbar-thumb {
     background-color: #6c757d;
     border-radius: 4px;
   }
 }
-
-

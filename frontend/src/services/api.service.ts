@@ -1,6 +1,5 @@
 import axiosInstance from '@/services/http.service';
 
-
 export default {
   signUp(form: UserRegistrationForm) {
     return axiosInstance.http.post('auth/register/', form);
@@ -15,6 +14,7 @@ export default {
   },
 
   patchProfile(form: UserProfilePatch | FormData) {
+    console.log('#PATCH', form);
     return axiosInstance.http.patch('auth/profile/', form);
   },
 
@@ -33,10 +33,12 @@ export default {
         startIndex,
         maxResults,
       },
-      transformRequest: [(data, headers) => {
-        delete headers.common.Authorization;
-        return data;
-      }],
+      transformRequest: [
+        (data, headers) => {
+          delete headers.common.Authorization;
+          return data;
+        },
+      ],
     });
   },
 };

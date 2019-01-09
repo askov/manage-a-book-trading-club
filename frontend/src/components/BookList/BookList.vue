@@ -11,7 +11,7 @@
         :is-full-page="false"
         :color="'#007bff'"
       ></loading>
-      <virtual-list :size="105" :remain="4" class="custom-scroll-1" :tobottom="toBottom">
+      <virtual-list :size="105" :remain="5" class="custom-scroll-1" :tobottom="toBottom">
         <BookCard
           v-for="(book, index) of books"
           :key="index"

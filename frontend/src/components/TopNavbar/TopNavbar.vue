@@ -4,21 +4,23 @@
     <router-link to="/">
       <b-navbar-brand>
         <img class="mbtc-logo" src="@/assets/books-logo.svg" alt="book trading club">
-        <span>Book trading club</span>
+        <span>Book exchange</span>
       </b-navbar-brand>
     </router-link>
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav class="ml-auto" v-if="isLoggedIn">
-        <router-link to="/profile" class="btn btn-link nav-link" v-if="$route.name !== 'profile'">Profile</router-link>
-        <router-link to="/my-books" class="btn btn-link nav-link" v-if="$route.name !== 'myBooks'">My books</router-link>
-        <!-- <router-link to="/profile" class="nav-link" v-if="$route.name !== 'profile'">Log out</router-link> -->
-        <b-button variant="link" class="nav-link" @click="logOut()">
-          Log out
-        </b-button>
+        <b-nav-item to="/profile">
+          {{username}}
+          <UserAvatar class="ml-2" :avatar="avatar" :size="'small'" :title="'My profile'"/>
+        </b-nav-item>
+        <b-nav-item to="/my-books">My books</b-nav-item>
+        <b-nav-item @click="logOut()" class="d-block">Log out</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto" v-else>
-        <router-link to="/signup" class="nav-link">Register</router-link>
-        <router-link to="/login" class="nav-link">Log in</router-link>
+        <b-nav-item to="/signup">Register</b-nav-item>
+        <b-nav-item to="/login">Log in</b-nav-item>
+        <!-- <router-link to="/signup" class="nav-link">Register</router-link> -->
+        <!-- <router-link to="/login" class="nav-link">Log in</router-link> -->
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -27,12 +29,22 @@
 <script lang="ts">
 import Vue from 'vue';
 import user from '@/store/modules/user';
+import UserAvatar from '@/components/UserAvatar/UserAvatar.vue';
 
 export default Vue.extend({
   name: 'TopNavbar',
+  components: {
+    UserAvatar,
+  },
   computed: {
     isLoggedIn() {
       return user.isLoggedIn;
+    },
+    username() {
+      return user.getProfile && user.getProfile.username;
+    },
+    avatar() {
+      return user.getProfile && user.getProfile.avatar;
     },
   },
   methods: {
@@ -41,8 +53,7 @@ export default Vue.extend({
       this.$router.push('/');
     },
   },
-  watch: {
-  },
+  watch: {},
 });
 </script>
 
