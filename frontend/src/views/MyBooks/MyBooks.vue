@@ -15,12 +15,14 @@
 <script lang="ts">
 import Vue from 'vue';
 import apiService from '@/services/api.service';
+import lsService from '@/services/localstorage.service';
 import BookList from '@/components/BookList/BookList.vue';
 
 import { debounce, get } from 'lodash';
 
-const DEBOUNCE_DELAY = 700;
+const DEBOUNCE_DELAY = 800;
 const PAGE_SIZE = 40;
+const BOOK_SAVE_LIMIT = 500;
 
 interface ComponentData {
   loading: boolean;
@@ -43,6 +45,11 @@ export default Vue.extend({
         this.loadMore();
       }
     });
+    const s = lsService.getLastSearchResults();
+    if (s && s.books && s.searchTerm) {
+      this.books = s.books;
+      this.searchTerm = s.searchTerm;
+    }
   },
   computed: {
     PAGE_SIZE: () => PAGE_SIZE,
@@ -105,6 +112,9 @@ export default Vue.extend({
               this.books = this.books.concat(books);
               this.totalItems = this.books.length;
               this.currentPage = Math.floor(this.totalItems / this.PAGE_SIZE);
+              if (this.books.length < BOOK_SAVE_LIMIT) {
+                lsService.setLastSearchResults(this.books, this.searchTerm);
+              }
               if (this.totalItems < this.PAGE_SIZE) {
                 this.limitReached = true;
               }
