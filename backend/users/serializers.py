@@ -65,6 +65,8 @@ class ProfileSerializer(serializers.ModelSerializer):
         instance.state = validated_data.get('state', instance.state)
         instance.city = validated_data.get('city', instance.city)
         try:
+            if validated_data['avatar'] is None:
+                raise ValueError('Avatar can not be None')
             instance.avatar = Userpic.objects.create(
                 owner=validated_data.get('user'),
                 image=validated_data['avatar']
@@ -79,7 +81,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         try:
             request = self.context.get('request')
             return request.build_absolute_uri(obj.avatar.image.url)
-        except AttributeError:
+        except:
             return None
 
 
