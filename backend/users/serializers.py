@@ -16,10 +16,10 @@ class UserSerializer(serializers.ModelSerializer):
         validators=[UniqueValidator(queryset=User.objects.all())]
     )
     username = serializers.CharField(
-      max_length=30,
-      validators=[
-        UniqueValidator(queryset=User.objects.all())
-      ]
+        max_length=30,
+        validators=[
+            UniqueValidator(queryset=User.objects.all())
+        ]
     )
     password = serializers.CharField(min_length=8, write_only=True)
 
@@ -35,6 +35,43 @@ class UserSerializer(serializers.ModelSerializer):
             validated_data['username'], validated_data['email'], validated_data['password']
         )
         return user
+
+
+class PublicUserSerializer(serializers.ModelSerializer):
+    """
+    Public user with minimal profile data
+    """
+    avatar = serializers.SerializerMethodField()
+
+    class Meta:
+        model = User
+        fields = (
+            'id', 'username', 'avatar',
+        )
+        read_only_fields = (
+            'id', 'username', 'avatar'
+        )
+
+    def get_avatar(self, obj):
+        try:
+            request = self.context.get('request')
+            return request.build_absolute_uri(obj.profile.avatar.image.url)
+        except:
+            return None
+
+
+class ExtendedPublicUserSerializer(PublicUserSerializer):
+    city = serializers.CharField(source='profile.city')
+
+    class Meta:
+        model = User
+        fields = (
+            'id', 'username', 'avatar', 'city'
+        )
+        read_only_fields = (
+            'id', 'username', 'avatar', 'city'
+        )
+
 
 class ProfileSerializer(serializers.ModelSerializer):
     """
@@ -60,8 +97,10 @@ class ProfileSerializer(serializers.ModelSerializer):
         """
         Updates user profile
         """
-        instance.first_name = validated_data.get('first_name', instance.first_name)
-        instance.last_name = validated_data.get('last_name', instance.last_name)
+        instance.first_name = validated_data.get(
+            'first_name', instance.first_name)
+        instance.last_name = validated_data.get(
+            'last_name', instance.last_name)
         instance.state = validated_data.get('state', instance.state)
         instance.city = validated_data.get('city', instance.city)
         try:
@@ -76,12 +115,9 @@ class ProfileSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
 
-
     def get_avatar(self, obj):
         try:
             request = self.context.get('request')
             return request.build_absolute_uri(obj.avatar.image.url)
         except:
             return None
-
-

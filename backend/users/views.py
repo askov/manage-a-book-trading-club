@@ -2,20 +2,19 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, permissions, generics, viewsets
-from rest_framework.generics import RetrieveAPIView
+from rest_framework import mixins
+from rest_framework.generics import RetrieveAPIView, ListAPIView
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
-from users.serializers import UserSerializer, ProfileSerializer
+from users.serializers import UserSerializer, ProfileSerializer, PublicUserSerializer, ExtendedPublicUserSerializer
 from users.permissions import IsOwnerOrReadOnly
 from users.models import Profile
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework_jwt.settings import api_settings
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
-
 from files.models import Userpic
 from files.serializers import UserpicSerializer
-
 
 
 class UserCreateView(APIView):
@@ -47,15 +46,17 @@ class ProfileView(APIView):
 
     def get(self, request):
         try:
-          user_profile = Profile.objects.get(user=request.user)
-          serializer = ProfileSerializer(user_profile, context={'request': request})
-          return Response(serializer.data)
+            user_profile = Profile.objects.get(user=request.user)
+            serializer = ProfileSerializer(
+                user_profile, context={'request': request})
+            return Response(serializer.data)
         except:
-          return Response(status=status.HTTP_400_BAD_REQUEST)
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request):
         user_profile = Profile.objects.get(user=request.user)
-        serializer = ProfileSerializer(user_profile, data=request.data, partial=True, context={'request': request})
+        serializer = ProfileSerializer(
+            user_profile, data=request.data, partial=True, context={'request': request})
 
         avatar_data = {}
         if ('avatar' in request.data):
@@ -63,5 +64,18 @@ class ProfileView(APIView):
         avatar_serializer = UserpicSerializer(data=avatar_data, partial=True)
 
         if avatar_serializer.is_valid(raise_exception=True) and serializer.is_valid(raise_exception=True):
-          serializer.save(user=request.user, avatar=request.FILES.get('avatar', None))
-          return Response(serializer.data)
+            serializer.save(user=request.user,
+                            avatar=request.FILES.get('avatar', None))
+            return Response(serializer.data)
+
+
+class UserViewSet(viewsets.ReadOnlyModelViewSet):
+
+    def get_queryset(self):
+        return User.objects.filter(is_superuser=False).exclude(pk=self.request.user.id)
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return PublicUserSerializer
+        if self.action == 'retrieve':
+            return ExtendedPublicUserSerializer
