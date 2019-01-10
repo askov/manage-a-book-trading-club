@@ -42,6 +42,14 @@ const router = new Router({
       },
     },
     {
+      path: '/book-store',
+      name: 'bookStore',
+      component: () => import('./views/BookStore/BookStore.vue'),
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
       path: '/my-books',
       name: 'myBooks',
       component: () => import('./views/MyBooks/MyBooks.vue'),
@@ -56,7 +64,8 @@ const router = new Router({
       meta: {
         requiresAuth: false,
       },
-    }, {
+    },
+    {
       path: '*',
       redirect: '/404',
     },

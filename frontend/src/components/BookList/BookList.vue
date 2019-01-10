@@ -1,6 +1,5 @@
 <template>
-  <!-- v-show="totalItems > 0" -->
-  <div class>
+  <div>
     <h6 class="text-secondary text-center mt-2" v-show="totalItems > 0">
       <b-badge variant="success">books discovered: {{totalItems}}</b-badge>
     </h6>
@@ -12,15 +11,7 @@
         :color="'#007bff'"
       ></loading>
       <virtual-list :size="105" :remain="5" class="custom-scroll-1" :tobottom="toBottom">
-        <BookCard
-          v-for="(book, index) of books"
-          :key="index"
-          :image="book.imageThumbnail"
-          :authors="book.authors"
-          :title="book.title"
-          :previewLink="book.previewLink"
-          :description="book.description"
-        />
+        <BookCard v-for="(book, index) of books" :key="index" :book="book"/>
       </virtual-list>
     </div>
   </div>

@@ -21,7 +21,6 @@ interface UserProfile {
   phone?: string;
 }
 
-
 interface UserProfilePatch {
   first_name?: string;
   last_name?: string;
@@ -39,7 +38,6 @@ interface UserProfileResponse {
   avatar: string;
 }
 
-
 interface UserState {
   status: string;
   token: string | null;
@@ -51,7 +49,6 @@ interface LoginFormInterface {
   username: string;
   password: string;
 }
-
 
 type ErrorIndex = 'non_field_errors' | 'username' | 'password';
 type ServerErrors = { [k in ErrorIndex]?: string[] };
@@ -65,6 +62,29 @@ interface SignupServerResponseSuccess {
   email: string;
   token: string;
 }
+
+interface IGoogleBook {
+  readonly sourceApi: string;
+  readonly sourceId: string;
+  readonly title: string;
+  readonly authors: string;
+  readonly thumbnailLink: string;
+  readonly previewLink: string;
+  readonly publishedDate: string;
+  readonly description?: string;
+}
+
+interface IBookResponse {
+  readonly id: number;
+  readonly title: string;
+  readonly authors: string;
+  readonly thumbnail_link: string;
+  readonly preview_link: string;
+  readonly published_date: string;
+  readonly username: string;
+}
+
+
 // interface LoginServerResponseFieldError {
 //   username?: string;
 //   password?: string;

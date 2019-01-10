@@ -1,25 +1,39 @@
 import axiosInstance from '@/services/http.service';
 
 export default {
+  // # Auth
   signUp(form: UserRegistrationForm) {
-    return axiosInstance.http.post('auth/register/', form);
+    return axiosInstance.http.post('accounts/register/', form);
   },
 
   logIn(form: UserLoginForm) {
-    return axiosInstance.http.post('auth/login/', form);
+    return axiosInstance.http.post('accounts/login/', form);
   },
 
+  // # Profile
   getProfile() {
-    return axiosInstance.http.get('auth/profile/');
+    return axiosInstance.http.get('accounts/profile/');
   },
 
   patchProfile(form: UserProfilePatch | FormData) {
-    console.log('#PATCH', form);
-    return axiosInstance.http.patch('auth/profile/', form);
+    return axiosInstance.http.patch('accounts/profile/', form);
   },
 
+  // # Books
   getAllBooks() {
     return axiosInstance.http.get('books/');
+  },
+
+  getUserBooks() {
+    return axiosInstance.http.get('books/my/');
+  },
+
+  addNewBook(book: IGoogleBook) {
+    return axiosInstance.http.post('books/', book);
+  },
+
+  removeBook(bookId: number) {
+    return axiosInstance.http.delete(`books/${bookId}`);
   },
 
   // Google books api
