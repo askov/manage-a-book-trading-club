@@ -10,7 +10,10 @@ from rest_framework.response import Response
 
 class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
-    queryset = Book.objects.all()
+    # queryset = Book.objects.all()
+
+    def get_queryset(self):
+        return Book.objects.filter(owner=self.kwargs['user_pk'])
 
     def get_permissions(self):
         """
@@ -27,13 +30,25 @@ class BookViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
-    def get_queryset(self):
-        """
-        This view should return a list of all the books
-        for the username in query params.
-        """
-        queryset = Book.objects.all()
-        username = self.request.query_params.get('username', None)
-        if username is not None:
-            queryset = queryset.filter(owner__username=username)
-        return queryset
+    # def get_queryset(self):
+    #     """
+    #     This view should return a list of all the books
+    #     for the username in query params.
+    #     """
+    #     queryset = Book.objects.all()
+    #     username = self.request.query_params.get('username', None)
+    #     if username is not None:
+    #         queryset = queryset.filter(owner__username=username)
+    #     return queryset
+
+    @action(detail=False, methods=['get'])
+    def my(self, request):
+        my_books = Book.objects.filter(owner=request.user)
+
+        page = self.paginate_queryset(my_books)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(my_books, many=True)
+        return Response(serializer.data)
