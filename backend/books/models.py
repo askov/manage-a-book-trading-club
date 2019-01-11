@@ -11,6 +11,7 @@ class Book(models.Model):
     )
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
     source_api = models.CharField(
         choices=BOOKS_API_CHOICES,
         default=GOOGLE_BOOK_API,

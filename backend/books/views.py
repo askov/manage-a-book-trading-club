@@ -10,10 +10,13 @@ from rest_framework.response import Response
 
 class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
-    # queryset = Book.objects.all()
 
     def get_queryset(self):
-        return Book.objects.filter(owner=self.kwargs['user_pk'])
+        try:
+            return Book.objects.filter(owner=self.kwargs['user_pk'])
+        except KeyError:
+            return Book.objects.filter()
+
 
     def get_permissions(self):
         """
@@ -41,9 +44,9 @@ class BookViewSet(viewsets.ModelViewSet):
     #         queryset = queryset.filter(owner__username=username)
     #     return queryset
 
-    @action(detail=False, methods=['get'])
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
     def my(self, request):
-        my_books = Book.objects.filter(owner=request.user)
+        my_books = Book.objects.filter(owner=request.user).order_by('-created_at')
 
         page = self.paginate_queryset(my_books)
         if page is not None:
