@@ -1,134 +1,127 @@
 <template>
-  <div class="container mt-5"></div>
+  <div class="container mt-5">
+    <h6 class="text-secondary text-center mt-2">
+      <b-badge variant="primary">books in collection: {{totalBooks}}</b-badge>
+    </h6>
+    <div class="bg-light rounded p-4 mt-3">
+      <b-pagination size="md"
+                    :total-rows="totalBooks"
+                    align="center"
+                    v-model="currentPage"
+                    :per-page="10"
+                    @change="handlePageChange"></b-pagination>
+      <div class="book-container">
+        <ConciseBookCard v-for="(book, index) of books"
+                         :book="book"
+                         :key="index"></ConciseBookCard>
+      </div>
+    </div>
+
+    <b-modal v-model="modal.show"
+             title="Remove book"
+             hide-footer>
+      <p class="my-4">
+        Do you really want to remove this book
+        <strong>&laquo;{{modal.text}}&raquo;</strong>?
+      </p>
+      <b-btn class="mt-3"
+             variant="outline-danger"
+             block
+             @click="removeBook">Remove</b-btn>
+    </b-modal>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-// import apiService from '@/services/api.service';
-// import lsService from '@/services/localstorage.service';
-// import BookList from '@/components/BookList/BookList.vue';
+  import Vue from 'vue';
+  // Services
+  import apiService from '@/services/api.service';
+  import evb from '@/services/eventBus.service';
+  // Components
+  import ConciseBookCard from '@/components/ConciseBookCard/ConciseBookCard.vue';
 
-// import { debounce, get } from 'lodash';
 
-// const DEBOUNCE_DELAY = 800;
-// const PAGE_SIZE = 40;
-// const BOOK_SAVE_LIMIT = 500;
 
-// interface ComponentData {
-//   loading: boolean;
-//   limitReached: boolean;
-//   searchTerm: string;
-//   startIndex: number;
-//   currentPage: number;
-//   totalItems: number;
-//   books: object[];
-// }
+  export default Vue.extend({
+    name: 'MyBooks',
+    components: {
+      ConciseBookCard,
+    },
+    data(): {
+      books: IBookResponse[];
+      totalBooks: number;
+      currentPage: number;
+      modal: {
+        text: string;
+        show: boolean;
+        book: IBookResponse | null;
+      };
+    } {
+      return {
+        books: [],
+        totalBooks: 0,
+        currentPage: 0,
+        modal: {
+          text: '',
+          show: false,
+          book: null,
+        },
+      };
+    },
+    mounted() {
+      this.getMyBooks(1);
+      evb.bus.$on(evb.event.REMOVE_BOOK, (book: IBookResponse) => {
+        this.modal.show = true;
+        this.modal.text = book.title;
+        this.modal.book = book;
+      });
+    },
+    methods: {
+      getMyBooks(page: number) {
+        apiService.getUserBooks(page).then(
+          (res: any) => {
+            console.log('#my books', res);
+            this.books = res.data.results;
+            this.totalBooks = res.data.count;
 
-export default Vue.extend({
-  name: 'MyBooks',
-  components: {
-    // BookList,
-  },
-  // mounted() {
-  //   this.$on('list-end-reached', () => {
-  //     if (!this.loading) {
-  //       this.loadMore();
-  //     }
-  //   });
-  //   const s = lsService.getLastSearchResults();
-  //   if (s && s.books && s.searchTerm) {
-  //     this.books = s.books;
-  //     this.searchTerm = s.searchTerm;
-  //   }
-  // },
-  // computed: {
-  //   PAGE_SIZE: () => PAGE_SIZE,
-  //   showLoadMore() {
-  //     return this.totalItems > 0 && !this.limitReached && !this.loading;
-  //   },
-  //   currentBooks() {
-  //     return this.books.slice(
-  //       (this.currentPage - 1) * PAGE_SIZE,
-  //       this.currentPage * PAGE_SIZE
-  //     );
-  //   },
-  // },
-  // data(): ComponentData {
-  //   return {
-  //     loading: false,
-  //     limitReached: false,
-  //     searchTerm: '',
-  //     currentPage: 0,
-  //     startIndex: 0,
-  //     totalItems: 0,
-  //     books: [],
-  //   };
-  // },
-  methods: {
-    // toBottom() {
-    //   if (!this.loading) {
-    //     this.loadMore();
-    //   }
-    // },
-    // loadMore() {
-    //   if (!this.limitReached) {
-    //     this.startIndex += this.PAGE_SIZE;
-    //     this.searchBooks();
-    //   }
-    // },
-    // searchBooks() {
-    //   if (this.searchTerm) {
-    //     this.loading = true;
-    //     apiService
-    //       .googleBookApiSearch(this.searchTerm, this.startIndex, this.PAGE_SIZE)
-    //       .then((res) => {
-    //         const books = res.data.items;
-    //         if (Array.isArray(books)) {
-    //           books.forEach((el: any) => {
-    //             el.imageThumbnail = get(
-    //               el,
-    //               'volumeInfo.imageLinks.thumbnail',
-    //               ''
-    //             );
-    //             el.title = get(el, 'volumeInfo.title', '');
-    //             el.previewLink = get(el, 'volumeInfo.previewLink', '');
-    //             el.authors = get(el, 'volumeInfo.authors', []).join(', ');
-    //             el.description = get(
-    //               el,
-    //               'volumeInfo.description',
-    //               'description is not available'
-    //             );
-    //           });
-    //           this.books = this.books.concat(books);
-    //           this.totalItems = this.books.length;
-    //           this.currentPage = Math.floor(this.totalItems / this.PAGE_SIZE);
-    //           if (this.books.length < BOOK_SAVE_LIMIT) {
-    //             lsService.setLastSearchResults(this.books, this.searchTerm);
-    //           }
-    //           if (this.totalItems < this.PAGE_SIZE) {
-    //             this.limitReached = true;
-    //           }
-    //         } else {
-    //           this.limitReached = true;
-    //         }
-    //         this.loading = false;
-    //       });
-    //   }
-    // },
-    // resetSearch() {
-    //   this.startIndex = 0;
-    //   this.totalItems = 0;
-    //   this.currentPage = 0;
-    //   this.limitReached = false;
-    //   this.books = [];
-    // },
-    // handleBookSearch: debounce(function(this: any) {
-    //   this.resetSearch();
-    //   this.searchBooks();
-    // }, DEBOUNCE_DELAY),
-  },
-});
+          },
+          (err: any) => {
+            console.warn('#error loading books');
+          }
+        );
+      },
+      removeBook() {
+        if (this.modal.book && this.modal.book.id) {
+          apiService.removeBook(this.modal.book.id).then((res) => {
+            this.modal.show = false;
+            this.removeBookFromList(this.modal.book!.id);
+          }, (err) => {
+            console.warn('#error removing book', err);
+          });
+        }
+      },
+      removeBookFromList(bookId: number) {
+        const ri = this.books.findIndex((el) => el.id === bookId);
+        this.books.splice(ri, 1);
+        this.totalBooks -= 1;
+      },
+      handlePageChange(page: number) {
+        // console.log('#change', this.currentPage);
+        this.getMyBooks(page);
+
+      },
+    },
+  });
+
 </script>
 
-<style scoped lang="scss">
+<style scoped
+       lang="scss">
+  .book-container {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 128px);
+  }
+
 </style>

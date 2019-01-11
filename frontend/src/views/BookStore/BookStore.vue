@@ -8,15 +8,12 @@
     </b-input-group>
     <b-form-text>Discover books using the Google Books API and add them to your personal collection</b-form-text>
     <BookList :books="books" :isLoading="loading"/>
-    <b-modal v-model="modal.show" title="New book" @ok="handleAddOk" @cancel="handleAddCancel">
+    <b-modal v-model="modal.show" title="New book" @ok="handleAddOk">
       <p class="my-4">
         Do you really want to add this book
         <strong>&laquo;{{modal.text}}&raquo;</strong> to your collection?
       </p>
-      <!-- <b-btn variant="success">Yes</b-btn>
-      <b-btn variant="danger">No</b-btn>-->
     </b-modal>
-    <!-- <loading :active.sync="loading" :can-cancel="false" :is-full-page="false" :color="'#007bff'"></loading> -->
   </div>
 </template>
 
@@ -154,17 +151,15 @@ export default Vue.extend({
     }, DEBOUNCE_DELAY),
 
     handleAddOk() {
-      console.log('#OK');
       if (this.modal.book) {
         apiService
-          .addNewBook(helperService.convertObjectToSnakeCase(this.modal.book))
+          .addNewBook(helperService.convertObjectToSnakeCase(
+            this.modal.book
+          ) as IGoogleBook)
           .then((res: any) => {
             this.$router.push('my-books');
           });
       }
-    },
-    handleAddCancel() {
-      console.log('#Cancel');
     },
   },
 });

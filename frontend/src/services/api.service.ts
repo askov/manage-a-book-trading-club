@@ -24,8 +24,12 @@ export default {
     return axiosInstance.http.get('books/');
   },
 
-  getUserBooks() {
-    return axiosInstance.http.get('books/my/');
+  getUserBooks(page: number) {
+    let url = 'books/my/';
+    if (page && page > 1) {
+      url += `?page=${page}`;
+    }
+    return axiosInstance.http.get(url);
   },
 
   addNewBook(book: IGoogleBook) {

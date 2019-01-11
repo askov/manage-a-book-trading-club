@@ -42,6 +42,27 @@ const router = new Router({
       },
     },
     {
+      path: '/users',
+      // name: 'users',
+      component: () => import('./views/Users/UserIndex.vue'),
+      children: [
+        {
+          path: 'a',
+          name: 'user-list',
+          component: () => import('./views/Users/UserList.vue'),
+        },
+        {
+          path: ':id(\\d+)',
+          name: 'user-details',
+          component: () => import('./views/Users/UserDetails.vue'),
+        },
+
+      ],
+      meta: {
+        requiresAuth: false,
+      },
+    },
+    {
       path: '/book-store',
       name: 'bookStore',
       component: () => import('./views/BookStore/BookStore.vue'),
