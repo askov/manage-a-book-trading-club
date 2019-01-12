@@ -47,7 +47,7 @@ const router = new Router({
       component: () => import('./views/Users/UserIndex.vue'),
       children: [
         {
-          path: 'a',
+          path: '',
           name: 'user-list',
           component: () => import('./views/Users/UserList.vue'),
         },

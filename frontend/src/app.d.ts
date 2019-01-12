@@ -84,7 +84,11 @@ interface IBookResponse {
   readonly username: string;
 }
 
-
+interface IUserConciseInfo {
+  readonly id: number;
+  readonly username: string;
+  readonly avatar: string;
+}
 // interface LoginServerResponseFieldError {
 //   username?: string;
 //   password?: string;

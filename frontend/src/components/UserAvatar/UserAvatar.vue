@@ -26,6 +26,9 @@ export default Vue.extend({
       if (this.size === 'small') {
         acl.push('avatar-wrapper--small');
       }
+      if (this.size === 'middle') {
+        acl.push('avatar-wrapper--middle');
+      }
       return acl;
     },
     hoverTitle(): string {
@@ -71,6 +74,11 @@ export default Vue.extend({
   &--small {
     width: 30px;
     height: 30px;
+    display: inline-block;
+  }
+  &--middle {
+    width: 60px;
+    height: 60px;
     display: inline-block;
   }
   &--placeholder {

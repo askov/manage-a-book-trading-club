@@ -40,6 +40,14 @@ export default {
     return axiosInstance.http.delete(`books/${bookId}`);
   },
 
+  // # Users
+  getUsers(page: number) {
+    let url = 'users/';
+    if (page && page > 1) {
+      url += `?page=${page}`;
+    }
+    return axiosInstance.http.get(url);
+  },
   // Google books api
   googleBookApiSearch(q = '', startIndex = 0, maxResults = 10) {
     return axiosInstance.http({
