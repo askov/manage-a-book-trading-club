@@ -42,7 +42,7 @@ export default Vue.extend({
       users: [],
       totalUsers: 0,
       isLoading: false,
-    }
+    };
   },
   mounted() {
     this.getUsers(1);
@@ -59,8 +59,8 @@ export default Vue.extend({
           console.warn('#error loading users');
         }
       );
-    }
-  }
+    },
+  },
 });
 </script>
 

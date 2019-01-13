@@ -19,7 +19,7 @@ import UserAvatar from '@/components/UserAvatar/UserAvatar.vue';
 export default Vue.extend({
   name: 'UserCard',
   components: {
-    UserAvatar
+    UserAvatar,
   },
   data(): {
     isLoaded: boolean;
