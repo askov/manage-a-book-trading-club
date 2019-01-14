@@ -1,24 +1,19 @@
 <template>
   <div class="container mt-5">
-    <!-- <router-view></router-view> -->
-    <div class="vld-parent bg-light rounded p-4 mt-3" v-show="totalUsers > 0 || isLoading">
-        <UserCard v-for="(user, index) of users" :key="index" :user="user"/>
-
-      <!-- <loading
+    <h6 class="text-secondary text-center mt-2">
+      <b-badge variant="primary">users found: {{totalUsers}}</b-badge>
+    </h6>
+    <div class="vld-parent bg-light rounded mt-3" v-show="totalUsers > 0 || isLoading">
+      <loading
         :active.sync="isLoading"
         :can-cancel="false"
         :is-full-page="false"
         :color="'#007bff'"
-      ></loading> -->
-      <!-- <virtual-list :size="105" :remain="5" class="custom-scroll-1" :tobottom="toBottom">
-        <BookCard v-for="(book, index) of books" :key="index" :book="book"/>
-      </virtual-list> -->
+      ></loading>
+      <virtual-list :size="70" :remain="8" class="custom-scroll-1 py-2 px-5" :tobottom="loadMore">
+        <UserCard v-for="(user, index) of users" :key="index" :user="user"/>
+      </virtual-list>
     </div>
-    <!-- <div class="row">
-      <div class="shadow standard-form col-10 mt-5 px-0 mx-auto rounded">
-        <SignupForm/>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -26,39 +21,58 @@
 <script lang="ts">
 import Vue from 'vue';
 import UserCard from '@/components/UserCard/UserCard.vue';
+import Loading from 'vue-loading-overlay';
 import apiService from '@/services/api.service';
+
+const PAGE_SIZE = 10;
 
 export default Vue.extend({
   name: 'userList',
   components: {
+    Loading,
     UserCard,
+  },
+  computed: {
+    PAGE_SIZE: () => PAGE_SIZE,
   },
   data(): {
     users: IUserConciseInfo[],
     totalUsers: number,
     isLoading: boolean,
+    currentPage: number,
+    nextPage: number | null,
   } {
     return {
       users: [],
       totalUsers: 0,
       isLoading: false,
+      currentPage: 1,
+      nextPage: null,
     };
   },
   mounted() {
-    this.getUsers(1);
+    this.getUsers(this.currentPage);
   },
   methods: {
     getUsers(page: number) {
+      this.isLoading = true;
       apiService.getUsers(page).then(
         (res: any) => {
-          console.log('#users', res);
-          this.users = res.data.results;
+          this.users = this.users.concat(res.data.results);
+          this.nextPage = res.data.next;
           this.totalUsers = res.data.count;
+          this.isLoading = false;
         },
         (err: any) => {
           console.warn('#error loading users');
         }
       );
+    },
+    loadMore() {
+      if (!this.isLoading && this.nextPage) {
+        this.currentPage += 1;
+        this.getUsers(this.currentPage);
+      }
     },
   },
 });

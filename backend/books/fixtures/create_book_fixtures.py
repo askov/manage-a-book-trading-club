@@ -1,15 +1,13 @@
 
 
 
-# make_password('qweqwe123')
-
 import os, random
 import json
 import glob
 from django.utils import timezone
 
 class BookFixtures():
-    BOOKS_PER_USER_RANGE = (2, 5)
+    BOOKS_PER_USER_RANGE = (0, 15)
 
     def __init__(self, user_number=10):
         self.USER_ID_RANGE = (2, int(user_number) + 2)

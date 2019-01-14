@@ -59,9 +59,7 @@ export default Vue.extend({
         this.loadMore();
       }
     });
-
     evb.bus.$on(evb.event.ADD_NEW_BOOK, (book: IGoogleBook) => {
-      // console.log('#add book catch', book);
       this.modal.show = true;
       this.modal.text = book.title;
       this.modal.book = book;
@@ -75,15 +73,6 @@ export default Vue.extend({
   },
   computed: {
     PAGE_SIZE: () => PAGE_SIZE,
-    showLoadMore() {
-      return this.totalItems > 0 && !this.limitReached && !this.loading;
-    },
-    currentBooks() {
-      return this.books.slice(
-        (this.currentPage - 1) * PAGE_SIZE,
-        this.currentPage * PAGE_SIZE
-      );
-    },
   },
   data(): ComponentData {
     return {
@@ -103,13 +92,8 @@ export default Vue.extend({
     };
   },
   methods: {
-    toBottom() {
-      if (!this.loading) {
-        this.loadMore();
-      }
-    },
     loadMore() {
-      if (!this.limitReached) {
+      if (!this.limitReached && !this.loading) {
         this.startIndex += this.PAGE_SIZE;
         this.searchBooks();
       }

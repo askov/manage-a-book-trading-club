@@ -5,6 +5,7 @@
     </h6>
     <div class="bg-light rounded p-4 mt-3">
       <b-pagination size="md"
+                    v-show="showPagination"
                     :total-rows="totalBooks"
                     align="center"
                     v-model="currentPage"
@@ -15,6 +16,7 @@
                          :book="book"
                          :key="index"></ConciseBookCard>
       </div>
+      <h6>You have no books in your collection yet. You can always add new books to exchange using the <router-link to='book-store'>book store service</router-link> to add new books.</h6>
     </div>
 
     <b-modal v-model="modal.show"
@@ -51,6 +53,7 @@
       books: IBookResponse[];
       totalBooks: number;
       currentPage: number;
+      showPagination: boolean;
       modal: {
         text: string;
         show: boolean;
@@ -61,6 +64,7 @@
         books: [],
         totalBooks: 0,
         currentPage: 0,
+        showPagination: false,
         modal: {
           text: '',
           show: false,
@@ -83,7 +87,9 @@
             console.log('#my books', res);
             this.books = res.data.results;
             this.totalBooks = res.data.count;
-
+            if (res.data.next || res.data.previous) {
+              this.showPagination = true;
+            }
           },
           (err: any) => {
             console.warn('#error loading books');
