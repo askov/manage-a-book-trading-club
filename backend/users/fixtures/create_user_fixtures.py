@@ -1,24 +1,26 @@
 
 
 
-# make_password('qweqwe123')
-
 import os, sys, random
 import json
-from pathlib import Path
+import warnings
 from django.contrib.auth.hashers import make_password
 
 
 class UserFixtures():
-    DEFAULT_USER_NUMBER = 10
     DEFAULT_USER_PASSWORD = 'qweqwe123'
 
-    def __init__(self, args):
-        try:
-            self.n = int(args[0])
-        except:
-            self.n = self.DEFAULT_USER_NUMBER
+    def __init__(self, user_number=10):
+        self.USER_ID_RANGE = (2, int(user_number) + 2)
 
+    def create_random_user_data(self, fnames, snames):
+        sname = random.choice(snames)
+        fname = random.choice(fnames)
+        return {
+            'fname': fname,
+            'sname': sname,
+            'username': '{}.{}'.format(fname.lower(), sname.lower()),
+        }
 
     def create_user_fixtures(self, userdata):
         user = {
@@ -64,17 +66,26 @@ class UserFixtures():
             users_json.append(admin_user)
             profile_json.append(admin_profile)
 
-            for i in range(2, self.n + 2):
-                fname = random.choice(fnames)
-                sname = random.choice(snames)
-                # User, Profile
-                username = '{}.{}.{}'.format(fname.lower(), sname.lower(), random.randint(1, 100))
+            # Uniq username set
+            uname_set = set()
 
+            for i in range(*self.USER_ID_RANGE):
+                user_data = self.create_random_user_data(fnames, snames)
+                generate_attempts = 0
+                while(user_data['username'] in uname_set):
+                    user_data = self.create_random_user(fnames, snames)
+                    generate_attempts += 1
+                    if (generate_attempts > 10):
+                        warnings.warn('#Unable to generate uniq username')
+                        break
+                uname_set.add(user_data['username'])
+
+                # User, Profile
                 admin_user, admin_profile = self.create_user_fixtures({
                     'pk': i,
-                    'username': username,
-                    'first_name': fname,
-                    'last_name': sname,
+                    'username': user_data['username'],
+                    'first_name': user_data['fname'],
+                    'last_name': user_data['sname'],
                 })
                 users_json.append(admin_user)
                 profile_json.append(admin_profile)

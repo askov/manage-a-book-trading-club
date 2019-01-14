@@ -8,11 +8,17 @@ if __name__ == '__main__':
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mbtc.settings")
     django.setup()
 
+
+    print('Generating fixtures', sys.argv)
+
     try:
-        if sys.argv[2] == 'generate':
+        if sys.argv[1] == 'generate':
             from users.fixtures.create_user_fixtures import UserFixtures
-            uf = UserFixtures(sys.argv[1:])
+            from books.fixtures.create_book_fixtures import BookFixtures
+            uf = UserFixtures(sys.argv[2])
+            bf = BookFixtures(sys.argv[2])
             uf.generate()
+            bf.generate()
     except IndexError:
         pass
 
@@ -27,5 +33,6 @@ if __name__ == '__main__':
     Profile.objects.all().delete()
     management.call_command('loaddata', 'avatars', verbosity=1)
     management.call_command('loaddata', 'profiles', verbosity=1)
+    management.call_command('loaddata', 'books', verbosity=1)
 
 

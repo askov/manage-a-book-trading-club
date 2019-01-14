@@ -2,6 +2,7 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from users.models import Profile
+from books.models import Book
 from files.models import Userpic
 from files.serializers import UserpicSerializer
 
@@ -42,15 +43,19 @@ class PublicUserSerializer(serializers.ModelSerializer):
     Public user with minimal profile data
     """
     avatar = serializers.SerializerMethodField()
+    books_added = serializers.SerializerMethodField()
 
     class Meta:
         model = User
         fields = (
-            'id', 'username', 'avatar',
+            'id', 'username', 'avatar', 'books_added'
         )
         read_only_fields = (
-            'id', 'username', 'avatar'
+            'id', 'username', 'avatar', 'books_added'
         )
+
+    def get_books_added(self, obj):
+        return Book.objects.filter(owner=obj.id).count()
 
     def get_avatar(self, obj):
         try:
@@ -62,14 +67,18 @@ class PublicUserSerializer(serializers.ModelSerializer):
 
 class ExtendedPublicUserSerializer(PublicUserSerializer):
     city = serializers.CharField(source='profile.city')
+    state = serializers.CharField(source='profile.state')
+    first_name = serializers.CharField(source='profile.first_name')
+    last_name = serializers.CharField(source='profile.last_name')
+
 
     class Meta:
         model = User
         fields = (
-            'id', 'username', 'avatar', 'city'
+            'id', 'username', 'avatar', 'city', 'state', 'first_name', 'last_name', 'books_added',
         )
         read_only_fields = (
-            'id', 'username', 'avatar', 'city'
+            'id', 'username', 'avatar', 'city', 'state', 'first_name', 'last_name', 'books_added',
         )
 
 

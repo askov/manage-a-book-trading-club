@@ -1,0 +1,3233 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 347,
+  "items": [
+   {
+    "kind": "books#volume",
+    "id": "KJQRAwAAQBAJ",
+    "etag": "L+k7WQxFI3U",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/KJQRAwAAQBAJ",
+    "volumeInfo": {
+     "title": "Advanced Bash Scripting Guide",
+     "authors": [
+      "Mendel Cooper"
+     ],
+     "publisher": "Рипол Классик",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9785879734423"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "5879734420"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "categories": [
+      "History"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=KJQRAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=KJQRAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=KJQRAwAAQBAJ&printsec=frontcover&dq=bash&hl=&cd=1&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=KJQRAwAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-KJQRAwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 516.0,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 464.4,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=KJQRAwAAQBAJ&rdid=book-KJQRAwAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 5.16E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 4.644E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Advanced_Bash_Scripting_Guide-sample-pdf.acsm?id=KJQRAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=KJQRAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "CEFYNs7RG1MC",
+    "etag": "UgcQQz8zUug",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/CEFYNs7RG1MC",
+    "volumeInfo": {
+     "title": "BASH",
+     "authors": [
+      "Mike Bartos"
+     ],
+     "publisher": "Xlibris Corporation",
+     "publishedDate": "2012-09-11",
+     "description": "Ashley Roper, Gulf War combat veteran, is now a writer and tabloid publisher in Charleston, SC. The nearby Bay Area State Hospital (BASH) for the criminally insane, is offering up a rich variety of potentially juicy stories including an escaped murderer, a patient released by a jury, the violent death of a staff member, and illicit drugs finding their way through the barbed wire perimeter of BASH. Ash decides to investigate from the inside, but through a series of unforeseen circumstances, ends up trapped in the hospital as a patient. Ash ́s headstrong wife and her lawyer buddy, a roadside cafe owner, a sexy weather girl, a meth tweaking biker, a crooked cop, a homicide detective, and a variety of incompetent bureacrats cross paths in this engaging and dramatic adventure. Parts of the story are narrated by hard drinking, blues playing psychiatrist, \"Doc\" Kerrigan, who lands squarely in the middle of the dilemma. The Napa Valley Register calls BASH \"an enthralling read.\"",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781477158937"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1477158936"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 336,
+     "printType": "BOOK",
+     "categories": [
+      "Fiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.5.6.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=CEFYNs7RG1MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=CEFYNs7RG1MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=CEFYNs7RG1MC&printsec=frontcover&dq=bash&hl=&cd=2&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=CEFYNs7RG1MC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-CEFYNs7RG1MC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 73.14,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 65.83,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=CEFYNs7RG1MC&rdid=book-CEFYNs7RG1MC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 7.314E7,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 6.583E7,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/BASH-sample-epub.acsm?id=CEFYNs7RG1MC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/BASH-sample-pdf.acsm?id=CEFYNs7RG1MC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=CEFYNs7RG1MC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Parts of the story are narrated by hard drinking, blues playing psychiatrist, &quot;Doc&quot; Kerrigan, who lands squarely in the middle of the dilemma. The Napa Valley Register calls BASH &quot;an enthralling read.&quot;"
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "lEkjCQAAQBAJ",
+    "etag": "mQASMNmTXvI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/lEkjCQAAQBAJ",
+    "volumeInfo": {
+     "title": "Bash: Three Plays",
+     "authors": [
+      "Neil LaBute"
+     ],
+     "publisher": "The Overlook Press",
+     "publishedDate": "1999-11-01",
+     "description": "A trio of brilliantly scathing plays by the renowned writer-director of In the Company of Men and Your Friends and Neighbors. With the success of his first two films, In The Company of Men and Your Friends and Neighbors, writer-director Neil LaBute has been hailed as a first-rate dramatic talent with a caustic wit reminiscent of Stanley Kubrick. bash—a collection of three stunning one-act plays that mark LaBute’s return to the New York stage after ten years—forms a trio of unforgettable personal accounts: in Medea Redux, a woman tells of her complex and ultimately tragic relationship with her grade school English teacher; in Iphigenia in Orem, a Utah businessman confides in a stranger in a Las Vegas hotel room, confessing a most chilling crime; and in A Gaggle of Saints, a young Mormon couple separately recounts the violent events of an anniversary weekend in New York City. All three are unblinking portraits of the complexities of evil in everyday life, exhibiting LaBute’s signature raw lyrical intensity.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781468305081"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1468305085"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 96,
+     "printType": "BOOK",
+     "categories": [
+      "Performing Arts"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.4.4.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=lEkjCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=lEkjCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=lEkjCQAAQBAJ&printsec=frontcover&dq=bash&hl=&cd=3&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=lEkjCQAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_Three_Plays.html?hl=&id=lEkjCQAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_Three_Plays-sample-epub.acsm?id=lEkjCQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_Three_Plays-sample-pdf.acsm?id=lEkjCQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=lEkjCQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "With the success of his first two films, In The Company of Men and Your Friends and Neighbors, writer-director Neil LaBute has been hailed as a first-rate dramatic talent with a caustic wit reminiscent of Stanley Kubrick. bash—a ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "f4yYCwAAQBAJ",
+    "etag": "5aWrRgVclu4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/f4yYCwAAQBAJ",
+    "volumeInfo": {
+     "title": "Bash Pocket Reference",
+     "subtitle": "Help for Power Users and Sys Admins",
+     "authors": [
+      "Arnold Robbins"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2016-02-17",
+     "description": "It’s simple: if you want to interact deeply with Mac OS X, Linux, and other Unix-like systems, you need to know how to work with the Bash shell. This concise little book puts all of the essential information about Bash right at your fingertips. You’ll quickly find answers to the annoying questions that generally come up when you’re writing shell scripts: What characters do you need to quote? How do you get variable substitution to do exactly what you want? How do you use arrays? Updated for Bash version 4.4, this book has the answers to these and other problems in a format that makes browsing quick and easy. Topics include: Invoking the shell Syntax Functions and variables Arithmetic expressions Command history Programmable completion Job control Shell options Command execution Coprocesses Restricted shells Built-in commands",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781491941560"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1491941561"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 160,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=f4yYCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=f4yYCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=f4yYCwAAQBAJ&printsec=frontcover&dq=bash&hl=&cd=4&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=f4yYCwAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_Pocket_Reference.html?hl=&id=f4yYCwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=f4yYCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "This concise little book puts all of the essential information about Bash right at your fingertips."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "OP1tAQP47b4C",
+    "etag": "TpkTEb3BCfI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/OP1tAQP47b4C",
+    "volumeInfo": {
+     "title": "Bash Guide for Beginners (Second Edition)",
+     "authors": [
+      "Machtelt Garrels"
+     ],
+     "publisher": "Fultus Corporation",
+     "publishedDate": "2010",
+     "description": "The Bash Guide for Beginners (Second Edition) discusses concepts useful in the daily life of the serious Bash user. While a basic knowledge of shell usage is required, it starts with a discussion of shell building blocks and common practices. Then it presents the grep, awk and sed tools that will later be used to create more interesting examples. The second half of the course is about shell constructs such as loops, conditional tests, functions and traps, and a number of ways to make interactive scripts. All chapters come with examples and exercises that will help you become familiar with the theory.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781596822016"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1596822015"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 214,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.2.0.preview.3",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=OP1tAQP47b4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=OP1tAQP47b4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=OP1tAQP47b4C&pg=PA1&dq=bash&hl=&cd=5&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=OP1tAQP47b4C&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_Guide_for_Beginners_Second_Edition.html?hl=&id=OP1tAQP47b4C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_Guide_for_Beginners_Second_Edition-sample-epub.acsm?id=OP1tAQP47b4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=OP1tAQP47b4C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Machtelt Garrels. Machtelt Garrels \u003cb\u003eBash\u003c/b\u003e Guide for Beginners Second Edition \u003cbr\u003e\nFultus TM Books \u003cb\u003eBash\u003c/b\u003e Guide for Beginners Second Edition by Machtelt Garrels \u003cbr\u003e\nCover."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "y6A4DwAAQBAJ",
+    "etag": "S0WxKD2/tzQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/y6A4DwAAQBAJ",
+    "volumeInfo": {
+     "title": "bash Cookbook",
+     "subtitle": "Solutions and Examples for bash Users",
+     "authors": [
+      "Carl Albing",
+      "JP Vossen"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2017-10-04",
+     "description": "For system administrators, programmers, and end users, shell command or carefully crafted shell script can save you time and effort, or facilitate consistency and repeatability for a variety of common tasks. This cookbook provides more than 300 practical recipes for using bash, the popular Unix shell that enables you to harness and customize the power of any Unix or Linux system. Ideal for new and experienced users alike—including proficient Windows users and sysadmins—this updated second edition helps you solve a wide range of problems. You’ll learn ways to handle input/output, file manipulation, program execution, administrative tasks, and many other challenges. Each recipe includes one or more scripting examples and a discussion of why the solution works. You’ll find recipes for problems including: Standard output and input, and executing commands Shell variables, shell logic, and arithmetic Intermediate shell tools and advanced scripting Searching for files with find, locate, and slocate Working with dates and times Creating shell scripts for various end-user tasks Working with tasks that require parsing Writing secure shell scripts Configuring and customizing bash",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781491975282"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1491975288"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 726,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.2.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=y6A4DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=y6A4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=y6A4DwAAQBAJ&printsec=frontcover&dq=bash&hl=&cd=6&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=y6A4DwAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-y6A4DwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1510.79,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1359.71,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=y6A4DwAAQBAJ&rdid=book-y6A4DwAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.51079E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.35971E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true
+     },
+     "pdf": {
+      "isAvailable": true
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=y6A4DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "You’ll learn ways to handle input/output, file manipulation, program execution, administrative tasks, and many other challenges. Each recipe includes one or more scripting examples and a discussion of why the solution works."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "dzBCH3x6fYEC",
+    "etag": "oI3BjttkRy0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/dzBCH3x6fYEC",
+    "volumeInfo": {
+     "title": "Learning the bash Shell",
+     "subtitle": "Unix Shell Programming",
+     "authors": [
+      "Cameron Newham"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2005-03-29",
+     "description": "O'Reilly's bestselling book on Linux's bash shell is at it again. Now that Linux is an established player both as a server and on the desktop Learning the bash Shell has been updated and refreshed to account for all the latest changes. Indeed, this third edition serves as the most valuable guide yet to the bash shell.As any good programmer knows, the first thing users of the Linux operating system come face to face with is the shell the UNIX term for a user interface to the system. In other words, it's what lets you communicate with the computer via the keyboard and display. Mastering the bash shell might sound fairly simple but it isn't. In truth, there are many complexities that need careful explanation, which is just what Learning the bash Shell provides.If you are new to shell programming, the book provides an excellent introduction, covering everything from the most basic to the most advanced features. And if you've been writing shell scripts for years, it offers a great way to find out what the new shell offers. Learning the bash Shell is also full of practical examples of shell commands and programs that will make everyday use of Linux that much easier. With this book, programmers will learn: How to install bash as your login shell The basics of interactive shell use, including UNIX file and directory structures, standard I/O, and background jobs Command line editing, history substitution, and key bindings How to customize your shell environment without programming The nuts and bolts of basic shell programming, flow control structures, command-line options and typed variables Process handling, from job control to processes, coroutines and subshells Debugging techniques, such as trace and verbose modes Techniques for implementing system-wide shell customization and features related to system security",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "0596555008"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780596555009"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 354,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "averageRating": 4.0,
+     "ratingsCount": 9,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "2.3.4.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=dzBCH3x6fYEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=dzBCH3x6fYEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=dzBCH3x6fYEC&printsec=frontcover&dq=bash&hl=&cd=7&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=dzBCH3x6fYEC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-dzBCH3x6fYEC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1174.79,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1057.31,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=dzBCH3x6fYEC&rdid=book-dzBCH3x6fYEC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.17479E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.05731E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true
+     },
+     "pdf": {
+      "isAvailable": true
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=dzBCH3x6fYEC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "With this book, programmers will learn: How to install bash as your login shell The basics of interactive shell use, including UNIX file and directory structures, standard I/O, and background jobs Command line editing, history substitution, ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "o3rxAAAAMAAJ",
+    "etag": "fjXun2awlsc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/o3rxAAAAMAAJ",
+    "volumeInfo": {
+     "title": "Bash on, recce!",
+     "subtitle": "memoirs of a Canadian Armoured Reconnaissance regimental officer, 17th Duke of York's Royal Canadian Hussars, 7th Canadian Reconnaissance Regiment, Montreal",
+     "authors": [
+      "Lorne E. Stephen"
+     ],
+     "publishedDate": "1997",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "WISC:89066407081"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": false
+     },
+     "pageCount": 237,
+     "printType": "BOOK",
+     "categories": [
+      "Biography & Autobiography"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.1.0.0.preview.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=o3rxAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=o3rxAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=o3rxAAAAMAAJ&q=bash&dq=bash&hl=&cd=8&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=o3rxAAAAMAAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_on_recce.html?hl=&id=o3rxAAAAMAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "NO_PAGES",
+     "embeddable": false,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=o3rxAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "NONE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "pZEGR2-_CbwC",
+    "etag": "IrllbBbpPTE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/pZEGR2-_CbwC",
+    "volumeInfo": {
+     "title": "Bash Quick Reference",
+     "authors": [
+      "Arnold Robbins"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2006-06-22",
+     "description": "In this quick reference, you'll find everything you need to know about the bash shell. Whether you print it out or read it on the screen, this PDF gives you the answers to the annoying questions that always come up when you're writing shell scripts: What characters do you need to quote? How do you get variable substitution to do exactly what you want? How do you use arrays? It's also helpful for interactive use. If you're a Unix user or programmer, or if you're using bash on Windows, you'll find this quick reference indispensable.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780596527761"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0596527764"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 72,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=pZEGR2-_CbwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=pZEGR2-_CbwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=pZEGR2-_CbwC&printsec=frontcover&dq=bash&hl=&cd=9&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=pZEGR2-_CbwC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_Quick_Reference.html?hl=&id=pZEGR2-_CbwC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=pZEGR2-_CbwC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "In this quick reference, you&#39;ll find everything you need to know about the bash shell."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "0LvYSCi7QsIC",
+    "etag": "axuo/nA3yMA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/0LvYSCi7QsIC",
+    "volumeInfo": {
+     "title": "Bash Shell",
+     "subtitle": "Essential Programs for Your Survival at Work: For Computer Programmers and Script-Writers",
+     "authors": [
+      "Larry L. Smith"
+     ],
+     "publisher": "LARRY L. SMITH",
+     "publishedDate": "2006-04-24",
+     "description": "This book, for UNIX-LINUX computer users, provides the beginner AND the 'guru' with practical, real-world examples and bash shell scripts that make tough jobs easy. With this book, you can ... - Make your boss happy right NOW!- Learn a new language.- Master an old language.- Write scripts that solve problems.- Provide Quality Assurance.- Be a master troubleshooter.- Analyze logs, verify data.- Make tough jobs easy!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781419648335"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1419648330"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 523,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.0.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=0LvYSCi7QsIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=0LvYSCi7QsIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=0LvYSCi7QsIC&printsec=frontcover&dq=bash&hl=&cd=10&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=0LvYSCi7QsIC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_Shell.html?hl=&id=0LvYSCi7QsIC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=0LvYSCi7QsIC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "This book, for UNIX-LINUX computer users, provides the beginner AND the &#39;guru&#39; with practical, real-world examples and bash shell scripts that make tough jobs easy. With this book, you can ... - Make your boss happy right NOW!"
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "n20iKDP88kQC",
+    "etag": "Feh3YXABijg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/n20iKDP88kQC",
+    "volumeInfo": {
+     "title": "Bash the Stock Bashers!",
+     "authors": [
+      "John E. Lux"
+     ],
+     "publisher": "Eagle Point Publishing",
+     "publishedDate": "2010-07-25",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781450728218"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1450728219"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.2.0.preview.3",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=n20iKDP88kQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=n20iKDP88kQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=n20iKDP88kQC&printsec=frontcover&dq=bash&hl=&cd=11&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=n20iKDP88kQC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_the_Stock_Bashers.html?hl=&id=n20iKDP88kQC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_the_Stock_Bashers-sample-epub.acsm?id=n20iKDP88kQC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=n20iKDP88kQC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "_q7ZgTUvft0C",
+    "etag": "laYY/YxBMjA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/_q7ZgTUvft0C",
+    "volumeInfo": {
+     "title": "From Bash to Z Shell",
+     "subtitle": "Conquering the Command Line",
+     "authors": [
+      "Oliver Kiddle",
+      "Peter Stephenson",
+      "Jerry Peek"
+     ],
+     "publisher": "Apress",
+     "publishedDate": "2007-03-01",
+     "description": "* In-depth, unique coverage of ZSH, one of most modern and powerful of all shells. Also covers Bash, the preferred shell for most serious Linux and Unix users. * Very strong author and tech review team: Co-author Peter Stephenson has been involved in the development of Zsh since the 1990s when he started to write the FAQ. For the last few years, he has served as coordinator of the shell's development. Tech Reviewers: Ed Schaefer is the \"Shell Corner\" columnist for SysAdmin Magazine and Bart Schaefer is one of the lead developers of Zsh development. * Book is immediately useful, packed with short example and suggestions that the reader can put to use in their shell environment. * Extensive coverage of interactive and advanced shell features, including shell extensions, completion functions, and shortcuts. * Great book for users of all expertise; perennial seller.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781430204022"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1430204028"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 472,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "averageRating": 1.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.3.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=_q7ZgTUvft0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=_q7ZgTUvft0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=_q7ZgTUvft0C&printsec=frontcover&dq=bash&hl=&cd=12&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=_q7ZgTUvft0C&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/From_Bash_to_Z_Shell.html?hl=&id=_q7ZgTUvft0C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/From_Bash_to_Z_Shell-sample-epub.acsm?id=_q7ZgTUvft0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/From_Bash_to_Z_Shell-sample-pdf.acsm?id=_q7ZgTUvft0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=_q7ZgTUvft0C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Also covers Bash, the preferred shell for most serious Linux and Unix users. * Very strong author and tech review team: Co-author Peter Stephenson has been involved in the development of Zsh since the 1990s when he started to write the FAQ."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "NJmhi6T0nGMC",
+    "etag": "g0qIGeGzSC4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/NJmhi6T0nGMC",
+    "volumeInfo": {
+     "title": "Pro Bash Programming",
+     "subtitle": "Scripting the Linux Shell",
+     "authors": [
+      "Chris Johnson"
+     ],
+     "publisher": "Apress",
+     "publishedDate": "2009-12-05",
+     "description": "The bash shell is a complete programming language, not merely a glue to combine external Linux commands. By taking full advantage of shell internals, shell programs can perform as snappily as utilities written in C or other compiled languages. And you will see how, without assuming Unix lore, you can write professional bash 4.0 programs through standard programming techniques. Complete bash coverage Teaches bash as a programming language Helps you master bash 4.0 features",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781430219989"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "143021998X"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 350,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.4.3.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=NJmhi6T0nGMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=NJmhi6T0nGMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=NJmhi6T0nGMC&printsec=frontcover&dq=bash&hl=&cd=13&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=NJmhi6T0nGMC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-NJmhi6T0nGMC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 2924.22,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 2924.22,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=NJmhi6T0nGMC&rdid=book-NJmhi6T0nGMC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 2.92422E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 2.92422E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Pro_Bash_Programming-sample-epub.acsm?id=NJmhi6T0nGMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Pro_Bash_Programming-sample-pdf.acsm?id=NJmhi6T0nGMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=NJmhi6T0nGMC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "The bash shell is a complete programming language, not merely a glue to combine external Linux commands."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "WPXkgFRd4OEC",
+    "etag": "OiZAFzo8cQ0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/WPXkgFRd4OEC",
+    "volumeInfo": {
+     "title": "Advanced Bash Scripting Guide 5.3 Volume 1",
+     "authors": [
+      "Mendel Cooper"
+     ],
+     "publisher": "Lulu.com",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781435752184"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "143575218X"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.0.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=WPXkgFRd4OEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=WPXkgFRd4OEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=WPXkgFRd4OEC&pg=PA122&dq=bash&hl=&cd=14&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=WPXkgFRd4OEC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Advanced_Bash_Scripting_Guide_5_3_Volume.html?hl=&id=WPXkgFRd4OEC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=WPXkgFRd4OEC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Pseudorandom numbers, using awk #!/bin/\u003cb\u003ebash\u003c/b\u003e # random2.sh: Returns a \u003cbr\u003e\npseudorandom number in the range 0 - 1. # Uses the awk rand() function. \u003cbr\u003e\nAWKSCRIPT=&#39; { # Command(s) # Note that srand() / parameters passed to awk \u003cbr\u003e\nsrand(); print&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "z9Hfx6q3UUUC",
+    "etag": "sDeN/xHKkdA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/z9Hfx6q3UUUC",
+    "volumeInfo": {
+     "title": "Bash Brothers",
+     "subtitle": "A Legacy Subpoenaed",
+     "authors": [
+      "Dale Tafoya"
+     ],
+     "publisher": "Potomac Books, Inc.",
+     "publishedDate": "2008",
+     "description": "Mark McGwire and Jose Canseco—the Bash Brothers—ushered in a new era of muscle-bound power hitters in baseball in the late 1980s. Suddenly balls were flying out of the parks like never before, and the rest of baseball stood up, took notice, and followed suit. Baseball’s bodybuilding revolution, with its resultant steroid infestation, was here to stay, and many experts today point to these two players as a large reason why. Author Dale Tafoya has interviewed more than 150 teammates, coaches, scouts, and friends who knew McGwire and Canseco during that era, including former A’s general manager Sandy Alderson, former team president Roy Eisenhardt, former commissioner Fay Vincent, Hall-of-Fame closer Dennis Eckersley, and 2004 Ford C. Frick award-winning legendary broadcaster Lon Simmons. They provide first-person commentary on what living and playing with the larger-than-life duo was like, and relate the shock and awe that followed both players and the team as well. Tafoya also investigates the players’ pre-Oakland careers, how they exploded upon reaching the majors with the A’s, and what happened when the two moved on. While Canseco has admitted his steroid use, McGwire ducked the question when Congress asked about his use by saying, “I am not here to discuss the past.” Tafoya investigates the claims of each. The Bash Brothers revolutionized baseball; Tafoya discusses whether it was for better or for worse and paints a colorful portrait of the duo’s rise to popularity and their ensuing exposure and shame. Bash Brothers: A Legacy Subpoenaed is the first book to fully investigate how these two players helped shape baseball for years to come.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781597971782"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1597971782"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 259,
+     "printType": "BOOK",
+     "categories": [
+      "Sports & Recreation"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.2.3.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=z9Hfx6q3UUUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=z9Hfx6q3UUUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=z9Hfx6q3UUUC&pg=PA130&dq=bash&hl=&cd=15&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=z9Hfx6q3UUUC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_Brothers.html?hl=&id=z9Hfx6q3UUUC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_Brothers-sample-epub.acsm?id=z9Hfx6q3UUUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_Brothers-sample-pdf.acsm?id=z9Hfx6q3UUUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=z9Hfx6q3UUUC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eBASH\u003c/b\u003e. BROTHERSBROTHERSBROTHERSBROTHERSBROTHERS. “It was a \u003cbr\u003e\nvery different-looking McGwire who addressed reporters after the game. He \u003cbr\u003e\nlooked dangerous, ready to explode. His responses were tightlipped and abrupt, \u003cbr\u003e\nand&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "Ok65AwAAQBAJ",
+    "etag": "LEic7LUPhos",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Ok65AwAAQBAJ",
+    "volumeInfo": {
+     "title": "Bash and the Pirate Pig",
+     "authors": [
+      "Burton Cole"
+     ],
+     "publisher": "B&H Publishing Group",
+     "publishedDate": "2013-09-01",
+     "description": "Written for boys 8 to 14, Bash and the Pirate Pig is the story of a cranky city kid named Raymond “Beamer” Boxby who must spend summer vacation at his younger cousin Bash Hinglehobb’s farm. Beamer prefers air conditioning and video games. He can’t see what good can come of this so-called country fun that includes riding cows, river rafting with a pig, or playing with skunks. But hang tight, Beamer, because Bash’s zany adventures with his \"Fishin' and Farmin' book\" (The Bible) just might lead to the coolest Discovery of all.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781433680670"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "143368067X"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 224,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "averageRating": 4.0,
+     "ratingsCount": 3,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Ok65AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Ok65AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=Ok65AwAAQBAJ&pg=PA172&dq=bash&hl=&cd=16&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=Ok65AwAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-Ok65AwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 490.1,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 441.09,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=Ok65AwAAQBAJ&rdid=book-Ok65AwAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 4.901E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 4.4109E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_and_the_Pirate_Pig-sample-epub.acsm?id=Ok65AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=Ok65AwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eBash\u003c/b\u003e jumped up. “Hey, let&#39;s take Henrietta Herbie to the show ring and practice.” \u003cbr\u003e\nA rope halter tied Henrietta Herbie to a hitching board. \u003cb\u003eBash\u003c/b\u003e slipped the halter off \u003cbr\u003e\nher head. “Hold her around the neck so she doesn&#39;t go anywhere.” I hugged my&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "0pwc9hDliE8C",
+    "etag": "VVNwR/Q2M50",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/0pwc9hDliE8C",
+    "volumeInfo": {
+     "title": "BBQ Bash: The Be-All, End-All Party Guide, from Barefoot to Black Tie",
+     "authors": [
+      "Karen Adler"
+     ],
+     "publisher": "ReadHowYouWant.com",
+     "publishedDate": "2010-05-07",
+     "description": "Any party with Karen Adler and Judith Fertig at the helm is bound to be a success. With 100 creative, delicious recipes for entertaining with the grill or smoker, BBQ Bash is the key to partying with a touch of panache, from casual backyard get-togethers to more elaborate ''black-tie'' barbecues. The versatile dishes - from elegant appetizers and entrees, to refreshing sides and salads, to decadent desserts - offer all the flavor and flair of crowd-pleasing party food without any of the fuss. Recipes include Pancetta-Wrapped Radicchio, Fennel, and Potato Bundles; Creole Coffee-Rubbed Filet Mignon with Silky Crab Butter; Piquillo Pepper-Stuffed Chicken with Salsa Verde; Provenal Grilled Salmon with Rosemary and Mint Aioli; Grilled Pink Grapefruit and Orange Salad with Avocado; Planked Portobellos with Fresh Herb Grilling Sauce; Wine-Splashed Peaches, Plums, and Berries; and Golden Raspberry Meringues with Pistachios. A comprehensive introduction spells out all the information anyone will ever need to know to host a dazzling barbecue bash from start to finish, with tips about charcoal and gas grilling, smoking, skewering, stir-grilling, planking, stovetop smoking, and even stocking the bar, setting the tables, and selecting the right music. Sidebars throughout feature time-saving, party-planning, and food-presentation tips, as well as suggested themed menus, cocktail suggestions and recipes, recipe variations, and much more.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781458756237"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1458756238"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 438,
+     "printType": "BOOK",
+     "categories": [
+      "Cooking"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.1.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=0pwc9hDliE8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=0pwc9hDliE8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=0pwc9hDliE8C&pg=PA124&dq=bash&hl=&cd=17&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=0pwc9hDliE8C&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/BBQ_Bash_The_Be_All_End_All_Party_Guide.html?hl=&id=0pwc9hDliE8C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=0pwc9hDliE8C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eBash\u003c/b\u003e. in. Gear. Smoked Spanish Paprika Sirloin Steak with Rustic Olive Salsa \u003cbr\u003e\nCarpetbagger Steak with Four Seasons Stuffings Creole Coffee–Rubbed Filet \u003cbr\u003e\nMignon with Silky Crab Butter Big Easy Grilled Beef Tenderloin Smoked Rib \u003cbr\u003e\nRoast&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "_7uw6kx71i4C",
+    "etag": "bqcsu/8k4M0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/_7uw6kx71i4C",
+    "volumeInfo": {
+     "title": "Advanced Bash Scripting Guide 5.3 Volume 2",
+     "authors": [
+      "Mendel Cooper"
+     ],
+     "publisher": "Lulu.com",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781435752191"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1435752198"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.0.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=_7uw6kx71i4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=_7uw6kx71i4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=_7uw6kx71i4C&pg=PA705&dq=bash&hl=&cd=18&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=_7uw6kx71i4C&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Advanced_Bash_Scripting_Guide_5_3_Volume.html?hl=&id=_7uw6kx71i4C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=_7uw6kx71i4C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "... taken from the \u003cb\u003ebash\u003c/b\u003e 2.05 documentation and from Ian McDonalds package (\u003cbr\u003e\nhttp://www.caliban.org/\u003cb\u003ebash\u003c/b\u003e/index.shtml#completion) You will in fact need \u003cb\u003ebash\u003c/b\u003e-\u003cbr\u003e\n2.05a for some features if [ &quot;${BASH_VERSION%.*}&quot; \\&lt; &quot;2.05&quot; ]; then echo &quot;You \u003cbr\u003e\nwill&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "wWjqCF9HLfYC",
+    "etag": "99INN/PKKzk",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/wWjqCF9HLfYC",
+    "volumeInfo": {
+     "title": "Shell Scripting",
+     "subtitle": "Expert Recipes for Linux, Bash, and more",
+     "authors": [
+      "Steve Parker"
+     ],
+     "publisher": "John Wiley & Sons",
+     "publishedDate": "2011-08-17",
+     "description": "A compendium of shell scripting recipes that can immediately be used, adjusted, and applied The shell is the primary way of communicating with the Unix and Linux systems, providing a direct way to program by automating simple-to-intermediate tasks. With this book, Linux expert Steve Parker shares a collection of shell scripting recipes that can be used as is or easily modified for a variety of environments or situations. The book covers shell programming, with a focus on Linux and the Bash shell; it provides credible, real-world relevance, as well as providing the flexible tools to get started immediately. Shares a collection of helpful shell scripting recipes that can immediately be used for various of real-world challenges Features recipes for system tools, shell features, and systems administration Provides a host of plug and play recipes for to immediately apply and easily modify so the wheel doesn't have to be reinvented with each challenge faced Come out of your shell and dive into this collection of tried and tested shell scripting recipes that you can start using right away!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781118166321"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1118166329"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 600,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.5.5.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=wWjqCF9HLfYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=wWjqCF9HLfYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=wWjqCF9HLfYC&printsec=frontcover&dq=bash&hl=&cd=19&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=wWjqCF9HLfYC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-wWjqCF9HLfYC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 3519.81,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 3519.81,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=wWjqCF9HLfYC&rdid=book-wWjqCF9HLfYC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 3.51981E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 3.51981E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Shell_Scripting-sample-epub.acsm?id=wWjqCF9HLfYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Shell_Scripting-sample-pdf.acsm?id=wWjqCF9HLfYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=wWjqCF9HLfYC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "With this book, Linux expert Steve Parker shares a collection of shell scripting recipes that can be used as is or easily modified for a variety of environments or situations."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "2x4DAwAAQBAJ",
+    "etag": "Pf1axmOwfhs",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/2x4DAwAAQBAJ",
+    "volumeInfo": {
+     "title": "Bash and the Chicken Coop Caper",
+     "authors": [
+      "Burton W. Cole"
+     ],
+     "publisher": "B&H Publishing Group",
+     "publishedDate": "2014-05",
+     "description": "When city boy Ray visits his cousin Bash on the farm the two boys get into some wild \"adventures,\" but Bash also teaches Ray about the fruit of the Spirit.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781433680700"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "143368070X"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": false
+     },
+     "pageCount": 211,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=2x4DAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=2x4DAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=2x4DAwAAQBAJ&pg=PA134&dq=bash&hl=&cd=20&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=2x4DAwAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_and_the_Chicken_Coop_Caper.html?hl=&id=2x4DAwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=2x4DAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eBash\u003c/b\u003e kicked my foot. “Can&#39;t. Your pant legs are tucked into your boots.” “Okay \u003cbr\u003e\nthen.” We dragged bales out of the top layer until we had an opening about six \u003cbr\u003e\nfeet square. We leaned over and pulled up the next layer. Fortress Builder \u003cb\u003eBash\u003c/b\u003e&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "5sCtmPWALMEC",
+    "etag": "5+TkSjEyBEY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/5sCtmPWALMEC",
+    "volumeInfo": {
+     "title": "Pirate School: The Birthday Bash",
+     "subtitle": "The Birthday Bash",
+     "authors": [
+      "Jeremy Strong"
+     ],
+     "publisher": "Penguin UK",
+     "publishedDate": "2003-04-03",
+     "description": "Patagonia Clatterbottom, the headteacher of Pirate School, is having a birthday. She takes the children to shop for a party and they are ambushed by the children of the School for Young Highwaypersons who take all the food. But Master Skittershins, the dancing master, secretly trains them in high kicks, etc and they go back to fight-dance the highwaypersons. They get the party food back and all ends happily when the highwaypersons turn up at the ship - but this time to join in the party.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780141909530"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0141909536"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 64,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.2.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=5sCtmPWALMEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=5sCtmPWALMEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=5sCtmPWALMEC&pg=PT57&dq=bash&hl=&cd=21&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=5sCtmPWALMEC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-5sCtmPWALMEC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 511.98,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 460.78,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=5sCtmPWALMEC&rdid=book-5sCtmPWALMEC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 5.1198E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 4.6078E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Pirate_School_The_Birthday_Bash-sample-epub.acsm?id=5sCtmPWALMEC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=5sCtmPWALMEC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "The Birthday \u003cb\u003eBash\u003c/b\u003e Jeremy Strong."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "rRroFiswzKgC",
+    "etag": "PRAW3uQP+Q4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/rRroFiswzKgC",
+    "volumeInfo": {
+     "title": "Riddle and Bash",
+     "subtitle": "African Performance and Literature Reviews",
+     "authors": [
+      "Chinenye Ce"
+     ],
+     "publisher": "African Books Collective",
+     "publishedDate": "2010",
+     "description": "The subsequent parts contain a look at new literatures and emerging tendencies in African writing, plus a chat on new Nigerian poetry and literary criticism. --",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9789783503403"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "9783503405"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 148,
+     "printType": "BOOK",
+     "categories": [
+      "Literary Criticism"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=rRroFiswzKgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=rRroFiswzKgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=rRroFiswzKgC&pg=PA7&dq=bash&hl=&cd=22&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=rRroFiswzKgC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Riddle_and_Bash.html?hl=&id=rRroFiswzKgC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Riddle_and_Bash-sample-epub.acsm?id=rRroFiswzKgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=rRroFiswzKgC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Having only touched upon this aspect of literary criticism in the works of \u003cbr\u003e\nChinweizu in the first essay collection, I have gone further in this volume, Riddle \u003cbr\u003e\nand \u003cb\u003eBash\u003c/b\u003e, to make a case for African orature as the starting point of critical \u003cbr\u003e\ndiscourse in&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "rQoNAAAAQBAJ",
+    "etag": "9OMK26Q2E18",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/rQoNAAAAQBAJ",
+    "volumeInfo": {
+     "title": "Birthday Bash!",
+     "subtitle": "A Reynolds Unwrapped Party . . .",
+     "authors": [
+      "Dan Reynolds"
+     ],
+     "publisher": "Andrews McMeel Publishing",
+     "publishedDate": "2013-07-16",
+     "description": "In Dan Reynolds's world, nerds play birthday party games like Pin the Tail on the Jackass, and women at the Maximum Insecurity Prison wonder if uniform stripes make them look fat. Reynolds draws a wild and wacky world that keeps everyone howling with laughter. In Birthday Bash!, Reynolds pays tribute to our annual aging rite, and his offbeat humor and hilarious style provide a perfect gift for everyone who wants to celebrate with major doses of quirky fun and clever frivolity.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781449449964"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1449449964"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 96,
+     "printType": "BOOK",
+     "categories": [
+      "Humor"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.2.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=rQoNAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=rQoNAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=rQoNAAAAQBAJ&pg=PT8&dq=bash&hl=&cd=23&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=rQoNAAAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-rQoNAAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 250.52,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 225.47,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=rQoNAAAAQBAJ&rdid=book-rQoNAAAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 2.5052E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 2.2547E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Birthday_Bash-sample-epub.acsm?id=rQoNAAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=rQoNAAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "nMRnXz5IgRYC",
+    "etag": "JG40XHJ4n+k",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/nMRnXz5IgRYC",
+    "volumeInfo": {
+     "title": "Town in a Pumpkin Bash",
+     "subtitle": "A Candy Holliday Murder Mystery",
+     "authors": [
+      "B.B. Haywood"
+     ],
+     "publisher": "Penguin",
+     "publishedDate": "2013-02-05",
+     "description": "In the quaint seaside village of Cape Willington, Maine, Candy Holliday has a mostly idyllic life, tending to the Blueberry Acres farm she runs with her father and occasionally stepping in to solve a murder or two… Halloween is fast approaching, and preparations for the Pumpkin Bash, Cape Willington’s annual autumn festival, are well underway. Candy is running this year’s haunted hayride, in the hopes of making some extra cash. But when she discovers a real dead body near some fake tombstones, Candy’s side job becomes a full-blown investigation to find out who turned a holiday attraction into a real horror show. Will Candy’s keen eye for detail unearth buried town secrets? As her search leads her through old graveyards and a haunted house, Candy will discover that not all of the skeletons hidden in this small town’s closets are Halloween decorations… INCLUDES DELICIOUS RECIPES!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781101623664"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1101623667"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 336,
+     "printType": "BOOK",
+     "categories": [
+      "Fiction"
+     ],
+     "averageRating": 4.5,
+     "ratingsCount": 2,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.2.2.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=nMRnXz5IgRYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=nMRnXz5IgRYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=nMRnXz5IgRYC&printsec=frontcover&dq=bash&hl=&cd=24&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=nMRnXz5IgRYC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-nMRnXz5IgRYC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 648.11,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 583.3,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=nMRnXz5IgRYC&rdid=book-nMRnXz5IgRYC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 6.4811E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 5.833E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Town_in_a_Pumpkin_Bash-sample-epub.acsm?id=nMRnXz5IgRYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=nMRnXz5IgRYC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "In the quaint seaside village of Cape Willington, Maine, Candy Holliday has a mostly idyllic life, tending to the Blueberry Acres farm she runs with her father and occasionally stepping in to solve a murder or two… Halloween is fast ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "ggOfBAAAQBAJ",
+    "etag": "JbJbQ49XVRQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ggOfBAAAQBAJ",
+    "volumeInfo": {
+     "title": "Tawny PaPawny and Duke's Big Birthday Bash",
+     "authors": [
+      "T. P. McKinnon"
+     ],
+     "publisher": "Lulu.com",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781300712770"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1300712775"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.2.0.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=ggOfBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=ggOfBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=ggOfBAAAQBAJ&pg=PA49&dq=bash&hl=&cd=25&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=ggOfBAAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Tawny_PaPawny_and_Duke_s_Big_Birthday_Ba.html?hl=&id=ggOfBAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=ggOfBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Well not exactly it&#39;s just the day that her parents brought him home and to \u003cbr\u003e\ncelebrate momma is allowing her to have a party and not just any party a Big \u003cbr\u003e\nBirthday \u003cb\u003eBash\u003c/b\u003e!! She can invite her friends and their pets tool Tawny has big plans \u003cbr\u003e\nfor this&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "rFE5BAAAQBAJ",
+    "etag": "QnCKFjTlx4k",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/rFE5BAAAQBAJ",
+    "volumeInfo": {
+     "title": "Bobby Banana's Birthday Bash",
+     "authors": [
+      "Dharshi Samarawickrama"
+     ],
+     "publisher": "WestBow Press",
+     "publishedDate": "2014-08",
+     "description": "An excited Bobby Banana celebrates his birthday... This book with colourful illustrations is aimed at 3 to 7 year olds, to improve their reading habits and to stimulate and arouse their imagination. The book conveys a subtle message and moral value to the reader. The Fruity Friends Series is a novel concept which is based on talking fruit families, giving life to fruits. Fruits are an essential source of vitamins and nutrients, which we need, to stay strong and healthy.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781490743233"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1490743235"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 24,
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.1.0.preview.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=rFE5BAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=rFE5BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=rFE5BAAAQBAJ&pg=PP2&dq=bash&hl=&cd=26&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=rFE5BAAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bobby_Banana_s_Birthday_Bash.html?hl=&id=rFE5BAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bobby_Banana_s_Birthday_Bash-sample-pdf.acsm?id=rFE5BAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=rFE5BAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Dharshi Samarawickrama. Bobby Banana&#39;s Birthday \u003cb\u003eBash\u003c/b\u003e Dharshi \u003cbr\u003e\nSamarawickrama Order this book online at www.trafford.com © Copyright 2014 \u003cbr\u003e\nSunithi. Front Matter."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "84_cAgAAQBAJ",
+    "etag": "noklDcKjw4o",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/84_cAgAAQBAJ",
+    "volumeInfo": {
+     "title": "Toocool: The Big Bash",
+     "subtitle": "",
+     "authors": [
+      "Phil Kettle"
+     ],
+     "publisher": "Ford Street Publishing",
+     "publishedDate": "2013-03-01",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781925000481"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1925000486"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 55,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=84_cAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=84_cAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=84_cAgAAQBAJ&pg=PT8&dq=bash&hl=&cd=27&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=84_cAgAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Toocool_The_Big_Bash.html?hl=&id=84_cAgAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true
+     },
+     "pdf": {
+      "isAvailable": true
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=84_cAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "... if I promise not to ask them any questions. Maybe weekdays aren&#39;t that bad. \u003cbr\u003e\nThey&#39;re just not as good as Saturdays – especially next Saturday. My team, the \u003cbr\u003e\nLegends, are playing the Browns in a game of 20/20 Big \u003cb\u003eBash\u003c/b\u003e cricket next \u003cbr\u003e\nSaturday."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "Dft9B24dTfUC",
+    "etag": "vap7OySeYMU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Dft9B24dTfUC",
+    "volumeInfo": {
+     "title": "Amartya Sen's Hindu Bash",
+     "subtitle": "",
+     "authors": [
+      "V.S. Sardesai"
+     ],
+     "publisher": "Readworthy",
+     "publishedDate": "2007-10-16",
+     "description": "The volume is an erudite work on Nobel Laureate Prof. Amartya Sen's perception of Hinduism and the Hindus as evident in his books The Argumentative Indian and Identity and Violence. It examines Sen's stinging views on Hindutva and Hindu culture. The author argues that the works engage in Hindu-baiting and scrutinizes certain discrepancies that have crept in as a result of accepting theories, such as Sri Rama was a myth and Ramayana is a parable, uncritically. The book also comments on Prof. Sen's allegations that Hindu political activists nowadays pay little heed to the 'tolerant' Hindu tradition and are bent upon rewriting history to suit their own ideologies. This painstaking analysis will prove extremely interesting to a wide variety of readers: the scholars of Indology and religion, historians and to the general readers as well.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9789350181195"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "9350181193"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 102,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.0.0.preview.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Dft9B24dTfUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Dft9B24dTfUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=Dft9B24dTfUC&pg=PA50&dq=bash&hl=&cd=28&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=Dft9B24dTfUC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-Dft9B24dTfUC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 187.6,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 168.84,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=Dft9B24dTfUC&rdid=book-Dft9B24dTfUC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.876E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.6884E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Amartya_Sen_s_Hindu_Bash-sample-pdf.acsm?id=Dft9B24dTfUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=Dft9B24dTfUC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "... admits that the Aryan invasion of India is recorded in no written document and \u003cbr\u003e\nit cannot yet be traced archaeologically. (A Cultural History of India, Clarendon \u003cbr\u003e\nPress, 1975, p. 21). B.K. Ghosh, also an exponent 50 | Amartya Sen&#39;s Hindu \u003cb\u003eBash\u003c/b\u003e\u003cbr\u003e\n."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "dtFCW4fTd-EC",
+    "etag": "//SICqSUTd8",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/dtFCW4fTd-EC",
+    "volumeInfo": {
+     "title": "A-B-C for Alex, Bash, and Company",
+     "subtitle": "A to Z Animal Tales from Around the World",
+     "authors": [
+      "Pascal K. Soman; Vickie A. Soman"
+     ],
+     "publisher": "iUniverse",
+     "publishedDate": "2012-06-15",
+     "description": "There is no better time in life to begin developing literacy and linguistic skills than as a toddler. Authors Pascal and Vickie Soman put this wisdom into practice in their new children’s book, ABC for Alex, Bash, and Company. Each page features a letter of the alphabet and a poem told by an animal whose name and species correspond with that letter. Your child will be exposed to the alphabet and exotic animals from around the world, and also to languages from all over the world. Each page also features three words—hello, thank you, and goodbye—in twenty-six different languages, complete with pronunciation guides. Helping your little one get off to a good start by exposing him or her to other languages is vital to improving the chances of mastering a second language later in life.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "1475930887"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9781475930887"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 68,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Nonfiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.4.3.0.preview.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=dtFCW4fTd-EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=dtFCW4fTd-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=dtFCW4fTd-EC&printsec=frontcover&dq=bash&hl=&cd=29&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=dtFCW4fTd-EC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-dtFCW4fTd-EC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 291.54,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 262.39,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=dtFCW4fTd-EC&rdid=book-dtFCW4fTd-EC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 2.9154E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 2.6239E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/A_B_C_for_Alex_Bash_and_Company-sample-pdf.acsm?id=dtFCW4fTd-EC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=dtFCW4fTd-EC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "There is no better time in life to begin developing literacy and linguistic skills than as a toddler. Authors Pascal and Vickie Soman put this wisdom into practice in their new childrens book, ABC for Alex, Bash, and Company."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "j_4uPuSw0bMC",
+    "etag": "Kk7TceMvUaQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/j_4uPuSw0bMC",
+    "volumeInfo": {
+     "title": "The Killer Cat's Birthday Bash",
+     "authors": [
+      "Anne Fine"
+     ],
+     "publisher": "Penguin UK",
+     "publishedDate": "2008-08-07",
+     "description": "It was my birthday. How was I supposed to know it wouldn't be the only party around town on that dark and dreary Halloween night? So things ended up in a bit of a mess. (Well, more than a mess, really. A complete disaster.) But it was not my fault so don't blame me . . . Another laugh-out-loud Killer Cat adventure, by the award-winning and celebrated Anne Fine. Perfect for readers of 7+.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780141917634"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0141917636"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 96,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.2.1.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=j_4uPuSw0bMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=j_4uPuSw0bMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=j_4uPuSw0bMC&pg=PT1&dq=bash&hl=&cd=30&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=j_4uPuSw0bMC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-j_4uPuSw0bMC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 426.51,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 383.86,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=j_4uPuSw0bMC&rdid=book-j_4uPuSw0bMC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 4.2651E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 3.8386E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Killer_Cat_s_Birthday_Bash-sample-epub.acsm?id=j_4uPuSw0bMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=j_4uPuSw0bMC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Books by Anne Fine The Diary of a Killer Cat The Return of the Killer Cat The \u003cbr\u003e\nKiller Cat Strikes Back The Killer Cat&#39;s Birthday \u003cb\u003eBash\u003c/b\u003e Jennifer&#39;s Diary Loudmouth \u003cbr\u003e\nLouis Notso Hotso Only a Show The Same Old Story Every Year Stranger \u003cbr\u003e\nDanger?"
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "BrbhtIvDnM4C",
+    "etag": "nwyO2O2TRnk",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/BrbhtIvDnM4C",
+    "volumeInfo": {
+     "title": "The Birthday Bash",
+     "authors": [
+      "Elizabeth Sorrells"
+     ],
+     "publisher": "iUniverse",
+     "publishedDate": "2011-02-03",
+     "description": "Murder has a way of ripping all wounds wide open, but Marion Mae has been a survivor all her life and she was not about to stop now. Looking upon her brothers battered remains; she tries to absorb the details of his homicide. The images of watching his heart stop. Instead, Maes mind is suddenly opened to morbid memories that are returning to her for the fi rst time. Rage consumes her as she struggles to accept the lies circulating about Sevens last days on earth. As the police and district attorneys offi ce attempt to gloss over mistakes, the suspect list grows; Mae becomes determined to set the record straight. Even with her broken heart, Mae refused to rest until the memory of her brother was repaired. But the closer she comes to the truth, the harder it is to accept. Mae needs answers before she can go on with her life. As she attempts to uncover the motive for his murder and discover who exactly was involved, she soon discovers that the details of Sevens life and death are far murkier than she could have imagined.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781450280501"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1450280501"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 376,
+     "printType": "BOOK",
+     "categories": [
+      "Fiction"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.2.1.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=BrbhtIvDnM4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=BrbhtIvDnM4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=BrbhtIvDnM4C&pg=PT13&dq=bash&hl=&cd=31&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=BrbhtIvDnM4C&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-BrbhtIvDnM4C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 728.34,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 655.51,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=BrbhtIvDnM4C&rdid=book-BrbhtIvDnM4C&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 7.2834E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 6.5551E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Birthday_Bash-sample-epub.acsm?id=BrbhtIvDnM4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Birthday_Bash-sample-pdf.acsm?id=BrbhtIvDnM4C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=BrbhtIvDnM4C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "Y-vTBAAAQBAJ",
+    "etag": "GzuDeqsSALc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Y-vTBAAAQBAJ",
+    "volumeInfo": {
+     "title": "Bash? in America",
+     "authors": [
+      "Sander Zulauf"
+     ],
+     "publisher": "iUniverse",
+     "publishedDate": "2014",
+     "description": "only two people at our moon viewing party and one at a time -Sander Zulauf In Bashō in America, 17th century haiku master Matsuo Bashō leaves his Lake Biwa \"abode of illusion\" to visit an \"abode of illusion\" on Lake George. \"In this stunning collection Sander Zulauf makes a convincing bid to become our American Bashō. Poem after brief poem struck me right between the eyes, with shocks of recognized truth.\" -X.J. Kennedy",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781491742396"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1491742399"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 52,
+     "printType": "BOOK",
+     "categories": [
+      "Poetry"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Y-vTBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Y-vTBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=Y-vTBAAAQBAJ&pg=PP4&dq=bash&hl=&cd=32&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=Y-vTBAAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Bash_in_America.html?hl=&id=Y-vTBAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Bash_in_America-sample-pdf.acsm?id=Y-vTBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=Y-vTBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "SYs13LMrfcgC",
+    "etag": "7hRDoTwuIJ8",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/SYs13LMrfcgC",
+    "volumeInfo": {
+     "title": "Retro Beach Bash",
+     "subtitle": "A Sun Lover's Guide to Food and Fun",
+     "authors": [
+      "Linda Everett"
+     ],
+     "publisher": "Collectors Pr",
+     "publishedDate": "2003-04-01",
+     "description": "Grab your beach blanket, your surfboard and your shades -- it's time for a beach party! With more than 100 recipes for beach picnics and bonfire barbecues, Retro Beach Bash is the beach lover's companion for fun in the sun. Surf through recipes and cooking tips for simple yet gourmet beach cuisine that will astound your bronzed buddies. From Corona del Mar Clambake and Nana Kuli's Kona Burger to Grilled Fruit or Beach Bunny Cake, you'll find mouth-watering ideas for all courses, plus peachy thirst quenchers like the Balboa Island Offshore Breeze and Crabfest Coolers! Packed with nostalgic photographs and authentic artifacts from the 1950s, you'll blast into the past with surfer lingo, expert sandcastle-building and kite-flying skills, and tips for driving through the dunes. Turn toasting marshmallows into a fine art and beachcombing into a treasure hunt. Retro Beach Bash is more than a great cookbook -- it's a must-have for fun-filled seaside adventures!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "1888054751"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9781888054750"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 128,
+     "printType": "BOOK",
+     "categories": [
+      "Cooking"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=SYs13LMrfcgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=SYs13LMrfcgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=SYs13LMrfcgC&pg=PT83&dq=bash&hl=&cd=33&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=SYs13LMrfcgC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Retro_Beach_Bash.html?hl=&id=SYs13LMrfcgC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=SYs13LMrfcgC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "IAHDAwAAQBAJ",
+    "etag": "hdXYaeyJETY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/IAHDAwAAQBAJ",
+    "volumeInfo": {
+     "title": "The Birthday Bash: Murder on Kauai",
+     "authors": [
+      "Joseph Cools"
+     ],
+     "publisher": "Lulu.com",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781105547874"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1105547876"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=IAHDAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=IAHDAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=IAHDAwAAQBAJ&pg=PA160&dq=bash&hl=&cd=34&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=IAHDAwAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/The_Birthday_Bash_Murder_on_Kauai.html?hl=&id=IAHDAwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=IAHDAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "... and went through Diego&#39;s things. Of course, what he found wasn&#39;t evidence, \u003cbr\u003e\nsince the search was not exactly legal, but it did yield some very interesting \u003cbr\u003e\ninformation that Kino could follow up with. Chapter Seven The Birthday \u003cb\u003eBash\u003c/b\u003e “Ok \u003cbr\u003e\nKino,&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "mykZBAAAQBAJ",
+    "etag": "8/PYCEbjj8c",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/mykZBAAAQBAJ",
+    "volumeInfo": {
+     "title": "How To Draw Your Own Story: Monster Bash",
+     "authors": [
+      "Don Bolognese"
+     ],
+     "publisher": "StarWalk Kids Media",
+     "publishedDate": "2014-04-30",
+     "description": "How many monsters do you need to throw a party? Follow the step-by-step instructions and before you know it you'll have learned to draw enough monsters to illustrate this story of a crazy monster bash!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781623347093"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1623347092"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 48,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Nonfiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=mykZBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=mykZBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=mykZBAAAQBAJ&pg=PT9&dq=bash&hl=&cd=35&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=mykZBAAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-mykZBAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 295.02,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 265.52,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=mykZBAAAQBAJ&rdid=book-mykZBAAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 2.9502E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 2.6552E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/How_To_Draw_Your_Own_Story_Monster_Bash-sample-pdf.acsm?id=mykZBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=mykZBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Dracula will be lonely at the Monster \u003cb\u003eBash\u003c/b\u003e all by himself. He&#39;ll need some friends\u003cbr\u003e\n—like his pals “Frankie” and “Harry.” This is going to be a BIG party. The more. A \u003cbr\u003e\nrectangle is the base for his head. Add soft lines for detail, like eyes, ears, mouth\u003cbr\u003e\n&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "5sRyCftTwicC",
+    "etag": "O5vN3jsBNB0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/5sRyCftTwicC",
+    "volumeInfo": {
+     "title": "Splish-Splash Bible Bash",
+     "subtitle": "A 13-Week Children's Ministry Program for Mixed Ages",
+     "authors": [
+      "Cook Communications Ministries"
+     ],
+     "publisher": "David C Cook",
+     "publishedDate": "2004-08",
+     "description": "Splish-Splash Bible Bash is a children's ministry program for mixed ages that sends kids off to surf watery Bible stories and learn some important truths. Each lessson opens with a gathering time for prayer and music, followed by a lively, humorous puppet presentation. Then kids splash into the Bible with interactive stories that put them right on the scene. A choice of application activities makes usre that kids see how Bible truths relate to their lives. Preschoolers can join in the fun with elementary age kids, or they can enjoy activities specially planned for the little ones.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "0781442117"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780781442114"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 307,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "2.0.1.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=5sRyCftTwicC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=5sRyCftTwicC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=5sRyCftTwicC&pg=PA152&dq=bash&hl=&cd=36&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=5sRyCftTwicC&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Splish_Splash_Bible_Bash.html?hl=&id=5sRyCftTwicC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Splish_Splash_Bible_Bash-sample-pdf.acsm?id=5sRyCftTwicC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=5sRyCftTwicC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "5DG6IcIT14IC",
+    "etag": "XsqtQE43/jE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/5DG6IcIT14IC",
+    "volumeInfo": {
+     "title": "The Chocolate Bridal Bash",
+     "authors": [
+      "JoAnna Carl"
+     ],
+     "publisher": "Penguin",
+     "publishedDate": "2006-08-01",
+     "description": "Caught up in a whirl of champagne and china patterns, bride-to-be Lee McKinney has butted heads with her future mother-in-law over every detail of the wedding bash. The last thing she needs is trouble with her own mother. But this is bigger than the hot versus cold hors d’oeuvres debate: Sally McKinney doesn’t even want to be at the wedding if it takes place in Warner Pier, her hometown. Irked that her mom might be MIA on the Big Day, Lee heads to her aunt’s chocolate shop, TenHuis Chocolade, for advice. There, the bride is shocked to learn that years earlier, her mother ran away on what would have been her own wedding day—hours before her fiancé was found dead, an apparent suicide. Now, to smooth things over with her mother—and ease her own way down the aisle—Lee must untangle a mystery older than she is....",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781101563755"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1101563753"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 240,
+     "printType": "BOOK",
+     "categories": [
+      "Fiction"
+     ],
+     "averageRating": 3.0,
+     "ratingsCount": 5,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.3.2.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=5DG6IcIT14IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=5DG6IcIT14IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=5DG6IcIT14IC&pg=PT142&dq=bash&hl=&cd=37&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=5DG6IcIT14IC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-5DG6IcIT14IC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 648.11,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 583.3,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=5DG6IcIT14IC&rdid=book-5DG6IcIT14IC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 6.4811E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 5.833E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Chocolate_Bridal_Bash-sample-epub.acsm?id=5DG6IcIT14IC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=5DG6IcIT14IC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "buJDBAAAQBAJ",
+    "etag": "pao3iTvrRXY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/buJDBAAAQBAJ",
+    "volumeInfo": {
+     "title": "The Diary of Dennis the Menace: Bash Street Bandit",
+     "authors": [
+      "Steven Butler"
+     ],
+     "publisher": "Penguin UK",
+     "publishedDate": "2015-02-05",
+     "description": "Get ready for the fourth brilliant Diary of Dennis the Menace book: Bash Street Bandit! Steven Butler is an actor, dancer and trained circus performer, and has been a fan of The Beano since childhood. He has appeared in the Wizard of Oz in London's West End and was previously Henry in Horrid Henry Live and Horrid! His primary school headmaster was the fantastically funny author Jeremy Strong. Steven's first novel, The Wrong Pong, was shortlisted for the prestigious Roald Dahl Funny Prize in 2009",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780141355832"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0141355832"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 176,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.2.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=buJDBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=buJDBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=buJDBAAAQBAJ&pg=PA169&dq=bash&hl=&cd=38&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=buJDBAAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/The_Diary_of_Dennis_the_Menace_Bash_Stre.html?hl=&id=buJDBAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Diary_of_Dennis_the_Menace_Bash_Stre-sample-epub.acsm?id=buJDBAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Diary_of_Dennis_the_Menace_Bash_Stre-sample-pdf.acsm?id=buJDBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=buJDBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Packed to the rafters with puzzles, activities, funnies and over one thousand \u003cbr\u003e\nstickers of all your Beano favourites, from Dennis and Gnasher to Calamity \u003cbr\u003e\nJames and the \u003cb\u003eBash\u003c/b\u003e Street Kids. KIDS RULE IN BEANOTOWN! WANT MORE \u003cbr\u003e\nDENNIS&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "9uWlAwAAQBAJ",
+    "etag": "HIJMETbw8KE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/9uWlAwAAQBAJ",
+    "volumeInfo": {
+     "title": "Charlie and the Tooth Fairy and Charlie and the Big Birthday Bash",
+     "authors": [
+      "Hilary Mckay"
+     ],
+     "publisher": "Hachette UK",
+     "publishedDate": "2014-06-19",
+     "description": "Charlie is an irresistibly funny little brother who manages to get into all kinds of scrapes. Whether he's trying to hinder or help his brother Max and best friend Henry, trouble is guaranteed! Tooth Fairy Charlie has four wobbly teeth and cannot wait for the tooth fairy to arrive. There must be some way to make them fall out quickly . . . Big Birthday Bash Why doesn't Max want a party to celebrate his birthday? It doesn't matter, Charlie is going to throw him one anyway!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781444919264"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1444919261"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 160,
+     "printType": "BOOK",
+     "categories": [
+      "Juvenile Fiction"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.4.4.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=9uWlAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=9uWlAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=9uWlAwAAQBAJ&pg=PT34&dq=bash&hl=&cd=39&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=9uWlAwAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Charlie_and_the_Tooth_Fairy_and_Charlie.html?hl=&id=9uWlAwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Charlie_and_the_Tooth_Fairy_and_Charlie-sample-epub.acsm?id=9uWlAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=9uWlAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "added Charlie. &#39;Not me!&#39; said Henry. &#39;The tooth fairy,&#39; said Charlie, &#39;is a waste of \u003cbr\u003e\nteeth. And if you don&#39;t believe us, ask Max!&#39; C 1 Tuesday, Four days before the \u003cbr\u003e\nBig \u003cb\u003eBash\u003c/b\u003e. The."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "2LgnBgAAQBAJ",
+    "etag": "lxmhsvVJa1U",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/2LgnBgAAQBAJ",
+    "volumeInfo": {
+     "title": "FLIP OUTS -- Bird Bash",
+     "subtitle": "Color Your Own Cartoon!",
+     "authors": [
+      "John Kurtz"
+     ],
+     "publisher": "Courier Dover Publications",
+     "publishedDate": "2015-04-15",
+     "description": "Animated action awaits with this flip book! Just flip the pages to see what happens when a trio of birds gather on a wire, then turn the book over for a different episode on the other side involving a bird, a worm, and a juicy apple. Afterward you can color the pictures and bring your own versions to life! See every Dover book in print at www.doverpublications.com",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780486794853"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0486794857"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 64,
+     "printType": "BOOK",
+     "categories": [
+      "Art"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=2LgnBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=2LgnBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=2LgnBgAAQBAJ&pg=PT21&dq=bash&hl=&cd=40&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=2LgnBgAAQBAJ&dq=bash&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/FLIP_OUTS_Bird_Bash.html?hl=&id=2LgnBgAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=2LgnBgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   }
+  ]
+ }

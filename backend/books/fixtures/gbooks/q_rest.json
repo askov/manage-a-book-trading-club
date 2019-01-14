@@ -1,0 +1,3220 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 500,
+  "items": [
+   {
+    "kind": "books#volume",
+    "id": "4lZcsRwXo6MC",
+    "etag": "XkmUEcv2ccc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/4lZcsRwXo6MC",
+    "volumeInfo": {
+     "title": "REST API Design Rulebook",
+     "authors": [
+      "Mark Masse"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2011-10-25",
+     "description": "The basic rules of REST APIs - \"many nouns, few verbs, stick with HTTP\" - seem easy, but that simplicity and power require discipline to work smoothly. This brief guide provides next steps for implementing complex projects on simple and extensible foundations.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781449310509"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1449310508"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 94,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.1.0.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=4lZcsRwXo6MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=4lZcsRwXo6MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=4lZcsRwXo6MC&printsec=frontcover&dq=rest&hl=&cd=1&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=4lZcsRwXo6MC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/REST_API_Design_Rulebook.html?hl=&id=4lZcsRwXo6MC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=4lZcsRwXo6MC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "This brief guide provides next steps for implementing complex projects on simple and extensible foundations."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "W7X4jgvvdikC",
+    "etag": "0yK3pK4rk/4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/W7X4jgvvdikC",
+    "volumeInfo": {
+     "title": "The Rest of God",
+     "subtitle": "Restoring Your Soul by Restoring Sabbath",
+     "authors": [
+      "Mark Buchanan"
+     ],
+     "publisher": "Thomas Nelson",
+     "publishedDate": "2007-03-11",
+     "description": "Widely-acclaimed author Mark Buchanan states that what we've really lost is \"the rest of God-the rest God bestows and, with it, that part of Himself we can know only through stillness.\" Stillness as a virtue is a foreign concept in our society, but there is wisdom in God's own rhythm of work and rest. Jesus practiced Sabbath among those who had turned it into a dismal thing, a day for murmuring and finger-wagging, and He reminded them of the day's true purpose: liberation-to heal, to feed, to rescue, to celebrate, to lavish and relish life abundant. With this book, Buchanan reminds us of this and gives practical advice for restoring the sabbath in our lives.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781418553517"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1418553514"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 240,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 2,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.4.3.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=W7X4jgvvdikC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=W7X4jgvvdikC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=W7X4jgvvdikC&printsec=frontcover&dq=rest&hl=&cd=2&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=W7X4jgvvdikC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-W7X4jgvvdikC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 960.72,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 864.65,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=W7X4jgvvdikC&rdid=book-W7X4jgvvdikC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 9.6072E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 8.6465E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Rest_of_God-sample-epub.acsm?id=W7X4jgvvdikC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=W7X4jgvvdikC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "With this book, Buchanan reminds us of this and gives practical advice for restoring the sabbath in our lives."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "u_g_uPZO-tkC",
+    "etag": "gI0JIDshDeA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/u_g_uPZO-tkC",
+    "volumeInfo": {
+     "title": "The Rest Is Noise",
+     "subtitle": "Listening to the Twentieth Century",
+     "authors": [
+      "Alex Ross"
+     ],
+     "publisher": "Farrar, Straus and Giroux",
+     "publishedDate": "2007-10-16",
+     "description": "The scandal over modern music has not died down. While paintings by Pablo Picasso and Jackson Pollock sell for a hundred million dollars or more, shocking musical works from Stravinsky's Rite of Spring onward still send ripples of unease through audiences. At the same time, the influence of modern music can be felt everywhere. Avant-garde sounds populate the soundtracks of Hollywood thrillers. Minimalist music has had a huge effect on rock, pop, and dance music from the Velvet Underground onward. Alex Ross, the brilliant music critic for The New Yorker, shines a bright light on this secret world, and shows how it has pervaded every corner of twentieth century life. The Rest Is Noise takes the reader inside the labyrinth of modern sound. It tells of maverick personalities who have resisted the cult of the classical past, struggled against the indifference of a wide public, and defied the will of dictators. Whether they have charmed audiences with the purest beauty or battered them with the purest noise, composers have always been exuberantly of the present, defying the stereotype of classical music as a dying art. Ross, in this sweeping and dramatic narrative, takes us from Vienna before the First World War to Paris in the twenties, from Hitler's Germany and Stalin's Russia to downtown New York in the sixties and seventies. We follow the rise of mass culture and mass politics, of dramatic new technologies, of hot and cold wars, of experiments, revolutions, riots, and friendships forged and broken. In the tradition of Simon Schama's The Embarrassment of Riches and Louis Menand's The Metaphysical Club, the end result is not so much a history of twentieth-century music as a history of the twentieth century through its music.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "1429932880"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9781429932882"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 640,
+     "printType": "BOOK",
+     "categories": [
+      "History"
+     ],
+     "averageRating": 4.0,
+     "ratingsCount": 679,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.7.8.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=u_g_uPZO-tkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=u_g_uPZO-tkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=u_g_uPZO-tkC&printsec=frontcover&dq=rest&hl=&cd=3&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=u_g_uPZO-tkC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-u_g_uPZO-tkC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1276.76,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1149.08,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=u_g_uPZO-tkC&rdid=book-u_g_uPZO-tkC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.27676E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.14908E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Rest_Is_Noise-sample-epub.acsm?id=u_g_uPZO-tkC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=u_g_uPZO-tkC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "The Rest Is Noise takes the reader inside the labyrinth of modern sound."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "mRO3xuoTTeoC",
+    "etag": "FPuuOla6alQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/mRO3xuoTTeoC",
+    "volumeInfo": {
+     "title": "Civilization",
+     "subtitle": "The West and the Rest",
+     "authors": [
+      "Niall Ferguson"
+     ],
+     "publisher": "Penguin",
+     "publishedDate": "2011-11-01",
+     "description": "From the bestselling author of The Ascent of Money and The Square and the Tower Western civilization’s rise to global dominance is the single most important historical phenomenon of the past five centuries. How did the West overtake its Eastern rivals? And has the zenith of Western power now passed? Acclaimed historian Niall Ferguson argues that beginning in the fifteenth century, the West developed six powerful new concepts, or “killer applications”—competition, science, the rule of law, modern medicine, consumerism, and the work ethic—that the Rest lacked, allowing it to surge past all other competitors. Yet now, Ferguson shows how the Rest have downloaded the killer apps the West once monopolized, while the West has literally lost faith in itself. Chronicling the rise and fall of empires alongside clashes (and fusions) of civilizations, Civilization: The West and the Rest recasts world history with force and wit. Boldly argued and teeming with memorable characters, this is Ferguson at his very best.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781101548028"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1101548029"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 432,
+     "printType": "BOOK",
+     "categories": [
+      "History"
+     ],
+     "averageRating": 3.5,
+     "ratingsCount": 9,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "2.16.14.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=mRO3xuoTTeoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=mRO3xuoTTeoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=mRO3xuoTTeoC&printsec=frontcover&dq=rest&hl=&cd=4&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=mRO3xuoTTeoC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Civilization.html?hl=&id=mRO3xuoTTeoC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Civilization-sample-epub.acsm?id=mRO3xuoTTeoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=mRO3xuoTTeoC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Boldly argued and teeming with memorable characters, this is Ferguson at his very best."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "oHfbJ0bDznMC",
+    "etag": "00oSM4mshZY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/oHfbJ0bDznMC",
+    "volumeInfo": {
+     "title": "And All the Rest of It",
+     "authors": [
+      "Theo Hendriks"
+     ],
+     "publisher": "Troubador Publishing Ltd",
+     "publishedDate": "2007-12-01",
+     "description": "An elderly writer, driven by fear, guilt and loneliness, seeks an alternative existence to that which he fails to understand. At odds with an ever-changing world, and unsure of his place within that world, he sets out on a journey of self-discovery. This portrait is of a man and modernity, painted in colours of sickness and death.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781906221140"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1906221146"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 184,
+     "printType": "BOOK",
+     "categories": [
+      "Authors"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.1.0.preview.3",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=oHfbJ0bDznMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=oHfbJ0bDznMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=oHfbJ0bDznMC&printsec=frontcover&dq=rest&hl=&cd=5&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=oHfbJ0bDznMC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/And_All_the_Rest_of_It.html?hl=&id=oHfbJ0bDznMC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/And_All_the_Rest_of_It-sample-epub.acsm?id=oHfbJ0bDznMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/And_All_the_Rest_of_It-sample-pdf.acsm?id=oHfbJ0bDznMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=oHfbJ0bDznMC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "An elderly writer, driven by fear, guilt and loneliness, seeks an alternative existence to that which he fails to understand."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "ZQoRlgepwuUC",
+    "etag": "KQHR5qxTFvI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ZQoRlgepwuUC",
+    "volumeInfo": {
+     "title": "Технология Web-сервисов платформы Java",
+     "authors": [
+      "Машнин Тимур Сергеевич"
+     ],
+     "publisher": "БХВ-Петербург",
+     "publishedDate": "2012",
+     "description": "Рассмотрены основы технологии Web-сервисов в спецификациях первого и второго уровня, реализация технологии Web-сервисов в виде стандартов платформы Java и в таких распространенных Java-стеках Web-сервисов, как Metro, СXF и Axis2. Материал книги сопровождается более 70 примерами с подробным анализом исходных кодов. На сайте издательства находятся примеры проектов из книги, а также дополнительные материалы. Файлы для книги можно скачать по ссылке ftp://ftp.bhv.ru/9785977507783.zip",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9785977507783"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "597750778X"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 560,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "averageRating": 3.5,
+     "ratingsCount": 2,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.4.0.0.preview.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=ZQoRlgepwuUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=ZQoRlgepwuUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "ru",
+     "previewLink": "http://books.google.ru/books?id=ZQoRlgepwuUC&printsec=frontcover&dq=rest&hl=&cd=6&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=ZQoRlgepwuUC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-ZQoRlgepwuUC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 382.8,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 344.52,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=ZQoRlgepwuUC&rdid=book-ZQoRlgepwuUC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 3.828E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 3.4452E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_Web_%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE-sample-pdf.acsm?id=ZQoRlgepwuUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=ZQoRlgepwuUC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Рассмотрены основы технологии Web-сервисов в спецификациях первого и второго уровня, реализация технологии Web-сервисов в виде ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "3ngEugMMa9YC",
+    "etag": "K7EPhBNgMAo",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/3ngEugMMa9YC",
+    "volumeInfo": {
+     "title": "Never at Rest",
+     "subtitle": "A Biography of Isaac Newton",
+     "authors": [
+      "Richard S. Westfall"
+     ],
+     "publisher": "Cambridge University Press",
+     "publishedDate": "1983-04-29",
+     "description": "This richly detailed 1981 biography captures both the personal life and the scientific career of Isaac Newton, presenting a fully rounded picture of Newton the man, the scientist, the philosopher, the theologian, and the public figure. Professor Westfall treats all aspects of Newton's career, but his account centres on a full description of Newton's achievements in science. Thus the core of the work describes the development of the calculus, the experimentation that altered the direction of the science of optics, and especially the investigations in celestial dynamics that led to the law of universal gravitation.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "0521274354"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780521274357"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 908,
+     "printType": "BOOK",
+     "categories": [
+      "Biography & Autobiography"
+     ],
+     "averageRating": 3.5,
+     "ratingsCount": 2,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.1.1.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=3ngEugMMa9YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=3ngEugMMa9YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=3ngEugMMa9YC&printsec=frontcover&dq=rest&hl=&cd=7&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=3ngEugMMa9YC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Never_at_Rest.html?hl=&id=3ngEugMMa9YC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=3ngEugMMa9YC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Thus the core of the work describes the development of the calculus, the experimentation that altered the direction of the science of optics, and especially the investigations in celestial dynamics that led to the law of universal ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "fcTHuXgLMpUC",
+    "etag": "uklH64USnfM",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/fcTHuXgLMpUC",
+    "volumeInfo": {
+     "title": "Rest",
+     "subtitle": "Experiencing God's Peace in a Restless World",
+     "authors": [
+      "Siang-Yang Tan"
+     ],
+     "publisher": "Regent College Publishing",
+     "publishedDate": "2003",
+     "description": "\"Come to Me all you who labor and are heavy laden, and I will give you rest.\" Bringing a distinctly Christian perspective to the subject of finding true rest in the midst of daily pressures, Siang-Yang Tan diagnoses what ails us and provides thoroughly practical steps to help us respond to Jesus' invitation. \"In this book, Siang-Yang Tan draws from a richness of experience to write with warmth and compassion. Since he himself knows the difficulty of slowing down in these hyperactive times, he is able to give practical guidelines to others, drawn from a wealth of information found in the Scriptures, empirical research, and psychological reports. . . . If rest is not easy for you to put into practice, learn from an author who is growing at a healthy pace and willing to bring others along on the journey.\" -from the Foreword, by Dr. Gary R. Collins SIANG-YANG TAN is professor of psychology at Fuller Theological Seminary. He also serves as Senior Pastor of First Evangelical Church in Glendale, California. He has authored or co-authored eight previous books, including Disciplines of the Holy Spirit and Understanding Depression. He is an associate editor of The Journal of Psychology and Christianity.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "157383274X"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9781573832748"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 228,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=fcTHuXgLMpUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=fcTHuXgLMpUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=fcTHuXgLMpUC&printsec=frontcover&dq=rest&hl=&cd=8&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=fcTHuXgLMpUC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Rest.html?hl=&id=fcTHuXgLMpUC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=fcTHuXgLMpUC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "&quot;In this book, Siang-Yang Tan draws from a richness of experience to write with warmth and compassion."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "1D24-cGQRdsC",
+    "etag": "vbTKvZ4Xvvs",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/1D24-cGQRdsC",
+    "volumeInfo": {
+     "title": "REST in Practice",
+     "subtitle": "Hypermedia and Systems Architecture",
+     "authors": [
+      "Jim Webber",
+      "Savas Parastatidis",
+      "Ian Robinson"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2010-09-15",
+     "description": "Why don't typical enterprise projects go as smoothly as projects you develop for the Web? Does the REST architectural style really present a viable alternative for building distributed systems and enterprise-class applications? In this insightful book, three SOA experts provide a down-to-earth explanation of REST and demonstrate how you can develop simple and elegant distributed hypermedia systems by applying the Web's guiding principles to common enterprise computing problems. You'll learn techniques for implementing specific Web technologies and patterns to solve the needs of a typical company as it grows from modest beginnings to become a global enterprise. Learn basic Web techniques for application integration Use HTTP and the Web’s infrastructure to build scalable, fault-tolerant enterprise applications Discover the Create, Read, Update, Delete (CRUD) pattern for manipulating resources Build RESTful services that use hypermedia to model state transitions and describe business protocols Learn how to make Web-based solutions secure and interoperable Extend integration patterns for event-driven computing with the Atom Syndication Format and implement multi-party interactions in AtomPub Understand how the Semantic Web will impact systems design",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "1449396925"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9781449396923"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 448,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.8.5.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=1D24-cGQRdsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=1D24-cGQRdsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=1D24-cGQRdsC&printsec=frontcover&dq=rest&hl=&cd=9&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=1D24-cGQRdsC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-1D24-cGQRdsC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1342.79,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1208.51,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=1D24-cGQRdsC&rdid=book-1D24-cGQRdsC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.34279E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.20851E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true
+     },
+     "pdf": {
+      "isAvailable": true
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=1D24-cGQRdsC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "In this insightful book, three SOA experts provide a down-to-earth explanation of REST and demonstrate how you can develop simple and elegant distributed hypermedia systems by applying the Web&#39;s guiding principles to common enterprise ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "5EikAwAAQBAJ",
+    "etag": "fL0vZXxY45c",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/5EikAwAAQBAJ",
+    "volumeInfo": {
+     "title": "Power In Rest",
+     "authors": [
+      "Ryo Leong"
+     ],
+     "publisher": "Partridge Publishing",
+     "publishedDate": "2014-05",
+     "description": "Rest is a much sought after commodity especially for those living in modern, urban cities. The concept of rest was introduced immediately after the genesis of creation when God rested on the seventh day. God's rest promises more than mere physical rejuvenation. Jesus urged all to come to Him and He will give us rest for our souls. Yet many, including Christians, fail to find rest in God. In this book, you will discover: - What is God's idea of rest? - What are the benefits of God's rest? - How to enter into God's rest? - How to be fruitful in life through resting in God? There is much more to be achieved from the position of rest than we can ever imagine!",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781482899252"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1482899256"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 108,
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=5EikAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=5EikAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=5EikAwAAQBAJ&printsec=frontcover&dq=rest&hl=&cd=10&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=5EikAwAAQBAJ&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Power_In_Rest.html?hl=&id=5EikAwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Power_In_Rest-sample-pdf.acsm?id=5EikAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=5EikAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Jesus urged all to come to Him and He will give us rest for our souls. Yet many, including Christians, fail to find rest in God. In this book, you will discover: - What is God&#39;s idea of rest? - What are the benefits of God&#39;s rest?"
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "QOa0AAAAIAAJ",
+    "etag": "V5aoEqy+oAw",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/QOa0AAAAIAAJ",
+    "volumeInfo": {
+     "title": "Activity and rest",
+     "subtitle": "the life and work of Mrs. William Archer. Compiled and arranged by A.R. Caton. With a foreword by Mary Murray and a pref. by Lockhart Anderson",
+     "authors": [
+      "Annie Rose Caton"
+     ],
+     "publishedDate": "1936",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "UCAL:B4316270"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": false
+     },
+     "pageCount": 149,
+     "printType": "BOOK",
+     "categories": [
+      "Body, Mind & Spirit"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=QOa0AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=QOa0AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=QOa0AAAAIAAJ&q=rest&dq=rest&hl=&cd=11&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=QOa0AAAAIAAJ&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Activity_and_rest.html?hl=&id=QOa0AAAAIAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "NO_PAGES",
+     "embeddable": false,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=QOa0AAAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "NONE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "mliOXLigQvoC",
+    "etag": "UB28pD/pQfU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/mliOXLigQvoC",
+    "volumeInfo": {
+     "title": "Rest in Pieces",
+     "subtitle": "The Curious Fates of Famous Corpses",
+     "authors": [
+      "Bess Lovejoy"
+     ],
+     "publisher": "Simon and Schuster",
+     "publishedDate": "2013-03-12",
+     "description": "A “marvelously macabre” (Kirkus Reviews) history of the bizarre afterlives of corpses of the celebrated and notorious dead. For some of the most influential figures in history, death marked the start of a new adventure. The famous deceased have been stolen, burned, sold, pickled, frozen, stuffed, impersonated, and even filed away in a lawyer’s office. Their fingers, teeth, toes, arms, legs, skulls, hearts, lungs, and nether regions have embarked on voyages that crisscross the globe and stretch the imagination. Counterfeiters tried to steal Lincoln’s corpse. Einstein’s brain went on a cross-country road trip. And after Lord Horatio Nelson perished at Trafalgar, his sailors submerged him in brandy—which they drank. From Alexander the Great to Elvis Presley, and from Beethoven to Dorothy Parker, Rest in Pieces connects the lives of the famous dead to the hilarious and horrifying adventures of their corpses, and traces the evolution of cultural attitudes toward death.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781451655018"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1451655010"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 352,
+     "printType": "BOOK",
+     "categories": [
+      "Biography & Autobiography"
+     ],
+     "averageRating": 4.0,
+     "ratingsCount": 7,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.9.8.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=mliOXLigQvoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=mliOXLigQvoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=mliOXLigQvoC&printsec=frontcover&dq=rest&hl=&cd=12&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=mliOXLigQvoC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-mliOXLigQvoC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1041.37,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 937.23,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=mliOXLigQvoC&rdid=book-mliOXLigQvoC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.04137E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 9.3723E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Rest_in_Pieces-sample-epub.acsm?id=mliOXLigQvoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=mliOXLigQvoC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "From Alexander the Great to Elvis Presley, and from Beethoven to Dorothy Parker, Rest in Pieces connects the lives of the famous dead to the hilarious and horrifying adventures of their corpses, and traces the evolution of cultural ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "7k6fDAAAQBAJ",
+    "etag": "TsnjrTdqwMQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/7k6fDAAAQBAJ",
+    "volumeInfo": {
+     "title": "Rest",
+     "subtitle": "Why You Get More Done When You Work Less",
+     "authors": [
+      "Alex Soojung-Kim Pang"
+     ],
+     "publisher": "Penguin UK",
+     "publishedDate": "2016-12-06",
+     "description": "In our 24-7 global economy, rest feels like a luxury at best and a weakness at worst. We see work and rest as competitors - but what if they're actually partners in a productive, balanced life? Blending rigorous scientific research with examples of writers, painters and thinkers - from Darwin to Stephen King - Silicon Valley futurist and business consultant Alex Soojung-Kim Pang exposes how we've underestimated the power of rest for our success. Though it's as natural as breathing, it's also a skill we can all learn to boost our creativity and productivity. Full of tips for upping our downtime, from sleep to hobbies to vacation, Rest is a new roadmap for finding renewed energy and inspiration, and getting more done.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780241974346"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0241974348"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 232,
+     "printType": "BOOK",
+     "categories": [
+      "Health & Fitness"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.11.9.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=7k6fDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=7k6fDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=7k6fDAAAQBAJ&printsec=frontcover&dq=rest&hl=&cd=13&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=7k6fDAAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-7k6fDAAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1110.28,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 999.25,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=7k6fDAAAQBAJ&rdid=book-7k6fDAAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.11028E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 9.9925E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Rest-sample-epub.acsm?id=7k6fDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=7k6fDAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "In our 24-7 global economy, rest feels like a luxury at best and a weakness at worst. We see work and rest as competitors - but what if they&#39;re actually partners in a productive, balanced life?"
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "SR0XwNOdGkgC",
+    "etag": "zhI8hs2FvkI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/SR0XwNOdGkgC",
+    "volumeInfo": {
+     "title": "Rabbit at Rest",
+     "authors": [
+      "John Updike"
+     ],
+     "publisher": "Random House",
+     "publishedDate": "2010-08-26",
+     "description": "Winner of the Pulitzer Prize, the Howells Medal, and the National Book Critics Circle Award In John Updike’s fourth and final novel about Harry “Rabbit” Angstrom, the hero has acquired a Florida condo, a second grandchild, and a troubled, overworked heart. His son, Nelson, is behaving erratically; his daughter-in-law, Pru, is sending him mixed signals; and his wife, Janice, decides in midlife to return to the world of work. As, through the year of 1989, Reagan’s debt-ridden, AIDS-plagued America yields to that of the first George Bush, Rabbit explores the bleak terrain of late middle age, looking for reasons to live and opportunities to make peace with a remorselessly accumulating past.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780307744104"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0307744108"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 608,
+     "printType": "BOOK",
+     "categories": [
+      "Fiction"
+     ],
+     "averageRating": 3.5,
+     "ratingsCount": 11,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.8.4.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=SR0XwNOdGkgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=SR0XwNOdGkgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=SR0XwNOdGkgC&printsec=frontcover&dq=rest&hl=&cd=14&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=SR0XwNOdGkgC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Rabbit_at_Rest.html?hl=&id=SR0XwNOdGkgC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Rabbit_at_Rest-sample-epub.acsm?id=SR0XwNOdGkgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=SR0XwNOdGkgC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Winner of the Pulitzer Prize, the Howells Medal, and the National Book Critics Circle Award In John Updike’s fourth and final novel about Harry “Rabbit” Angstrom, the hero has acquired a Florida condo, a second grandchild, and a ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "H1IEAAAAQAAJ",
+    "etag": "ywvYcBAPGh0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/H1IEAAAAQAAJ",
+    "volumeInfo": {
+     "title": "The rest",
+     "authors": [
+      "Claude Magnay"
+     ],
+     "publishedDate": "1849",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "OXFORD:590645065"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.1.0.full.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=H1IEAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=H1IEAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=H1IEAAAAQAAJ&printsec=frontcover&dq=rest&hl=&cd=15&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=H1IEAAAAQAAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-H1IEAAAAQAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FREE",
+     "isEbook": true,
+     "buyLink": "https://play.google.com/store/books/details?id=H1IEAAAAQAAJ&rdid=book-H1IEAAAAQAAJ&rdot=1&source=gbs_api"
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "ALL_PAGES",
+     "embeddable": true,
+     "publicDomain": true,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false,
+      "downloadLink": "http://books.google.ru/books/download/The_rest.epub?id=H1IEAAAAQAAJ&hl=&output=epub&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "downloadLink": "http://books.google.ru/books/download/The_rest.pdf?id=H1IEAAAAQAAJ&hl=&output=pdf&sig=ACfU3U3QZA6kksNDxZX73HJhnxumX50nDQ&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=H1IEAAAAQAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "SA1EtSL4SawC",
+    "etag": "DMidOABF3Wo",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/SA1EtSL4SawC",
+    "volumeInfo": {
+     "title": "Building Web Applications with Erlang",
+     "subtitle": "Working with REST and Web Sockets on Yaws",
+     "authors": [
+      "Zachary Kessin"
+     ],
+     "publisher": "\"O'Reilly Media, Inc.\"",
+     "publishedDate": "2012-06-07",
+     "description": "\"Working with REST and Web-Sockets on Yaws\"--Cover.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781449309961"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1449309968"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 133,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.0.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=SA1EtSL4SawC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=SA1EtSL4SawC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=SA1EtSL4SawC&printsec=frontcover&dq=rest&hl=&cd=16&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=SA1EtSL4SawC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Building_Web_Applications_with_Erlang.html?hl=&id=SA1EtSL4SawC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=SA1EtSL4SawC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "&quot;Working with REST and Web-Sockets on Yaws&quot;--Cover."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "NZgHIFJeZvcC",
+    "etag": "4nC//lTzwts",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/NZgHIFJeZvcC",
+    "volumeInfo": {
+     "title": "REST: From Research to Practice",
+     "authors": [
+      "Erik Wilde",
+      "Cesare Pautasso"
+     ],
+     "publisher": "Springer Science & Business Media",
+     "publishedDate": "2011-08-04",
+     "description": "This volume provides an overview and an understanding of REST (Representational State Transfer). Discussing the constraints of REST the book focuses on REST as a type of web architectural style. The focus is on applying REST beyond Web applications (i.e., in enterprise environments), and in reusing established and well-understood design patterns when doing so. The reader will be able to understand how RESTful systems can be designed and deployed, and what the results are in terms of benefits and challenges encountered in the process. Since REST is relatively new as an approach for designing Web Services, the more advanced part of the book collects a number of challenges to some of the assumptions and constraints of REST, and looks at current research work on how REST can be extended and applied to scenarios that often are considered not to be a good match for REST. This work will help readers to reach a deeper understanding of REST on a practical as well as on an advanced level.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781441983039"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1441983031"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 528,
+     "printType": "BOOK",
+     "categories": [
+      "Technology & Engineering"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.7.6.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=NZgHIFJeZvcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=NZgHIFJeZvcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=NZgHIFJeZvcC&pg=PA1&dq=rest&hl=&cd=17&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=NZgHIFJeZvcC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-NZgHIFJeZvcC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 9096.47,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 9096.47,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=NZgHIFJeZvcC&rdid=book-NZgHIFJeZvcC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 9.09647E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 9.09647E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/REST_From_Research_to_Practice-sample-epub.acsm?id=NZgHIFJeZvcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/REST_From_Research_to_Practice-sample-pdf.acsm?id=NZgHIFJeZvcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=NZgHIFJeZvcC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "... E. Wilde and C. Pautasso (eds.), \u003cb\u003eREST\u003c/b\u003e: From Research to Practice, DOI \u003cbr\u003e\n10.1007/978-1-4419-8303-90, © Springer Science+Business Media, LLC 2011 1 \u003cbr\u003e\ntook the architectural principles of the Web into account (Vinoski Introduction."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "I0tUOmqIrAQC",
+    "etag": "JUUaM2dRXi0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/I0tUOmqIrAQC",
+    "volumeInfo": {
+     "title": "Timber Framing for the Rest of Us",
+     "subtitle": "A Guide to Contemporary Post and Beam Construction",
+     "authors": [
+      "Rob Roy"
+     ],
+     "publisher": "New Society Publishers",
+     "publishedDate": "2004-04-01",
+     "description": "A manual for all without traditional skills who want to build with timber framing.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "0865715084"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780865715080"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 176,
+     "printType": "BOOK",
+     "categories": [
+      "House & Home"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "3.1.1.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=I0tUOmqIrAQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=I0tUOmqIrAQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=I0tUOmqIrAQC&pg=PA14&dq=rest&hl=&cd=18&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=I0tUOmqIrAQC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Timber_Framing_for_the_Rest_of_Us.html?hl=&id=I0tUOmqIrAQC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Timber_Framing_for_the_Rest_of_Us-sample-pdf.acsm?id=I0tUOmqIrAQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=I0tUOmqIrAQC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eRest\u003c/b\u003e. of. Us. Strong, functional, and attractive timber-framed buildings are made \u003cbr\u003e\nby farmers, carpenters, and owner-builders throughout the world, and only a \u003cbr\u003e\nsmall proportion of these projects involve traditional timber framing. Most of these\u003cbr\u003e\n&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "1ZqsiYN2TTIC",
+    "etag": "uxZGQQedTxg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/1ZqsiYN2TTIC",
+    "volumeInfo": {
+     "title": "Technology and the Rest of Culture",
+     "authors": [
+      "Arien Mack"
+     ],
+     "publisher": "Ohio State University Press",
+     "publishedDate": "2001",
+     "description": "From the printing press to Palm Pilots, we often rush to embrace new inventions that promise to make life easier. Yet the history of modern warfare suggests that new technologies can also have drastic and dire consequences. Technology and the Rest of Culture explores this tension by identifying the many ways in which technology shapes our society, investigating whether culture has an impact on the rate and direction of technological achievement, and describing how technology seems to have taken on a life and culture of its own. Nicholas Humphrey, Marvin Minsky, Peter Galison, and Joshua Lederberg explore the complex relationship between science and technology, showing that scientific advancement has often followed technological achievements, rather than the other way around. Ira Katznelson, Alan Ryan, Paul Gewirtz, and Robert McC. Adams consider how shifts in the means and terms of communication affect democracy, free expression, and the law. Rosalind Williams, George Kateb, John Hollander, and Robert L. Herbert challenge the notion that technological images and themes express primarily logic, utility, functionality, and rationality, asserting instead that violent, aggressive, and destructive images are all too often the end result of technology. At times somber, at times playful, but always challenging and thought-provoking, Technology and the Rest of Culture culls many academic disciplines to discover important elements about one of the most central characteristics of life in the twenty-first century.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "081420869X"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780814208694"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 395,
+     "printType": "BOOK",
+     "categories": [
+      "Science"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.2.0.preview.3",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=1ZqsiYN2TTIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=1ZqsiYN2TTIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=1ZqsiYN2TTIC&pg=PA79&dq=rest&hl=&cd=19&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=1ZqsiYN2TTIC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Technology_and_the_Rest_of_Culture.html?hl=&id=1ZqsiYN2TTIC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Technology_and_the_Rest_of_Culture-sample-epub.acsm?id=1ZqsiYN2TTIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=1ZqsiYN2TTIC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eRest\u003c/b\u003e. of. Culture: Keynote. BY ARNO PENZIAS I have trouble understanding the \u003cbr\u003e\ntitle to my own article. What do these two much-used terms — technology and \u003cbr\u003e\nculture — really mean? My favorite definition of technology comes from John&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "v8mW3ezNr4UC",
+    "etag": "KL3Fk+hshlA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/v8mW3ezNr4UC",
+    "volumeInfo": {
+     "title": "No Place of Rest",
+     "subtitle": "Jewish Literature, Expulsion, and the Memory of Medieval France",
+     "authors": [
+      "Susan L. Einbinder"
+     ],
+     "publisher": "University of Pennsylvania Press",
+     "publishedDate": "2009",
+     "description": "No Place of Rest pursues the literary traces of the traumatic expulsion of Jews from France in 1306. Through careful readings of liturgical, philosophical, memorial, and medical texts, Susan Einbinder reveals how medieval Jews asserted their identity in exile.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "0812241150"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780812241150"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 267,
+     "printType": "BOOK",
+     "categories": [
+      "Literary Criticism"
+     ],
+     "averageRating": 2.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=v8mW3ezNr4UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=v8mW3ezNr4UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=v8mW3ezNr4UC&printsec=frontcover&dq=rest&hl=&cd=20&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=v8mW3ezNr4UC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/No_Place_of_Rest.html?hl=&id=v8mW3ezNr4UC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/No_Place_of_Rest-sample-epub.acsm?id=v8mW3ezNr4UC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=v8mW3ezNr4UC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "No Place of Rest pursues the literary traces of the traumatic expulsion of Jews from France in 1306."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "ugTPAAAAMAAJ",
+    "etag": "27VPO63guqk",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ugTPAAAAMAAJ",
+    "volumeInfo": {
+     "title": "How to Sleep and Rest Better",
+     "authors": [
+      "Donald Anderson Laird"
+     ],
+     "publishedDate": "1937",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "IND:32000007246640"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": false
+     },
+     "pageCount": 83,
+     "printType": "BOOK",
+     "categories": [
+      "Sleep"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.1.1.0.preview.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=ugTPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=ugTPAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=ugTPAAAAMAAJ&q=rest&dq=rest&hl=&cd=21&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=ugTPAAAAMAAJ&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/How_to_Sleep_and_Rest_Better.html?hl=&id=ugTPAAAAMAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "NO_PAGES",
+     "embeddable": false,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=ugTPAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "NONE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "0xAVDQAAQBAJ",
+    "etag": "uHmbIJjMI9o",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/0xAVDQAAQBAJ",
+    "volumeInfo": {
+     "title": "The Way of Rest",
+     "subtitle": "Finding The Courage to Hold Everything in Love",
+     "authors": [
+      "Jeff Foster"
+     ],
+     "publisher": "Sounds True",
+     "publishedDate": "2016-10-01",
+     "description": "The Way of Rest gathers nearly 200 of Jeff Foster’s most inspiring essays, poems, and reflections on restoring and reviving ourselves when we feel exhausted or defeated. Drawing from his personal journey—including his own struggles with illness and depression—Jeff invites us to contemplate “the Way of Rest” and its potential to transform our experience of: • Imperfection—how we are “gloriously flawed” yet complete exactly as we are • Not knowing—how we come to trust in the greater intelligence of life • Melancholy and loneliness—how we learn to release the healing energies of “exquisite sensitivity” • Ordinary moments—recognizing and receiving “the closest thing of all” • Discomfort and discontent—how our frustrations become an opening to deep peace • Love—rediscovering who we are beyond our carefully constructed facades • Silence—discovering the vibrancy of living by letting go of thoughts and concepts “I hope the words in this book inspire, challenge, and encourage you. But most of all, I hope they help you remember that you are life, inseparable from the power that grows the flowers and gives birth to galaxies,” writes Jeff Foster. The Way of Rest brings you his companionship and support whenever you need it most.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781622037926"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1622037928"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 352,
+     "printType": "BOOK",
+     "categories": [
+      "Body, Mind & Spirit"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.8.8.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=0xAVDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=0xAVDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=0xAVDQAAQBAJ&printsec=frontcover&dq=rest&hl=&cd=22&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=0xAVDQAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-0xAVDQAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1505.02,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1354.52,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=0xAVDQAAQBAJ&rdid=book-0xAVDQAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.50502E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.35452E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Way_of_Rest-sample-epub.acsm?id=0xAVDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=0xAVDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Drawing from his personal journey—including his own struggles with illness and depression—Jeff invites us to contemplate “the Way of Rest” and its potential to transform our experience of: • Imperfection—how we are “gloriously ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "Qc8CAAAAQAAJ",
+    "etag": "ICXMgAMGtas",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Qc8CAAAAQAAJ",
+    "volumeInfo": {
+     "title": "The saints everlasting rest: or, A treatise of the blessed state of the saints in heaven ... abridged by B.Fawcett",
+     "authors": [
+      "Richard Baxter"
+     ],
+     "publishedDate": "1759",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "OXFORD:600092445"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "full-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=Qc8CAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=Qc8CAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=Qc8CAAAAQAAJ&pg=PA69&dq=rest&hl=&cd=23&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=Qc8CAAAAQAAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-Qc8CAAAAQAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FREE",
+     "isEbook": true,
+     "buyLink": "https://play.google.com/store/books/details?id=Qc8CAAAAQAAJ&rdid=book-Qc8CAAAAQAAJ&rdot=1&source=gbs_api"
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "ALL_PAGES",
+     "embeddable": true,
+     "publicDomain": true,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "downloadLink": "http://books.google.ru/books/download/The_saints_everlasting_rest_or_A_treatis.pdf?id=Qc8CAAAAQAAJ&hl=&output=pdf&sig=ACfU3U3lvpETS8jDSAZ5ob5b5eslHvnC3g&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=Qc8CAAAAQAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "The Scripture also mentions, by Name, those who have entered into this \u003cb\u003eRest\u003c/b\u003e. As \u003cbr\u003e\nEnoch, Abraham, Lazarus, the Thief that was crucified with Christ, &amp;c. And if there \u003cbr\u003e\nbe a \u003cb\u003eRest\u003c/b\u003e sor these, sure there is a \u003cb\u003eRest\u003c/b\u003e sor all Believers. But it is vain to heap&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "MM4kNEeph_QC",
+    "etag": "s3Rp3HeVcQQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/MM4kNEeph_QC",
+    "volumeInfo": {
+     "title": "The Rich and the Rest of Us",
+     "authors": [
+      "Tavis Smiley",
+      "Cornel West"
+     ],
+     "publisher": "Hay House, Inc",
+     "publishedDate": "2012-04-17",
+     "description": "Record unemployment and rampant corporate avarice, empty houses but homeless families, dwindling opportunities in an increasingly paralyzed nation—these are the realities of 21st-century America, land of the free and home of the new middle class poor. Award-winning broadcaster Tavis Smiley and Dr. Cornel West, one of the nation’s leading democratic intellectuals, co-hosts of Public Radio’s Smiley & West, now take on the \"P\" word—poverty. The Rich and the Rest of Us is the next step in the journey that began with \"The Poverty Tour: A Call to Conscience.\" Smiley and West’s 18-city bus tour gave voice to the plight of impoverished Americans of all races, colors, and creeds. With 150 million Americans persistently poor or near poor, the highest numbers in over five decades, Smiley and West argue that now is the time to confront the underlying conditions of systemic poverty in America before it’s too late. By placing the eradication of poverty in the context of the nation’s greatest moments of social transformation— such as the abolition of slavery, woman’s suffrage, and the labor and civil rights movements—ending poverty is sure to emerge as America’s 21st‑century civil rights struggle. As the middle class disappears and the safety net is shredded, Smiley and West, building on the legacy of Martin Luther King, Jr., ask us to confront our fear and complacency with 12 poverty changing ideas. They challenge us to re-examine our assumptions about poverty in America—what it really is and how to eliminate it now.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781401940645"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1401940641"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 232,
+     "printType": "BOOK",
+     "categories": [
+      "Philosophy"
+     ],
+     "averageRating": 4.0,
+     "ratingsCount": 16,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.2.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=MM4kNEeph_QC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=MM4kNEeph_QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=MM4kNEeph_QC&printsec=frontcover&dq=rest&hl=&cd=24&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=MM4kNEeph_QC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-MM4kNEeph_QC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1215.79,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1094.21,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=MM4kNEeph_QC&rdid=book-MM4kNEeph_QC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.21579E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.09421E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Rich_and_the_Rest_of_Us-sample-epub.acsm?id=MM4kNEeph_QC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/The_Rich_and_the_Rest_of_Us-sample-pdf.acsm?id=MM4kNEeph_QC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=MM4kNEeph_QC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "The Rich and the Rest of Us is the next step in the journey that began with &quot;The Poverty Tour: A Call to Conscience.&quot; Smiley and West’s 18-city bus tour gave voice to the plight of impoverished Americans of all races, colors, and creeds."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "X_wCAAAAQAAJ",
+    "etag": "28jdZ1GUDJg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/X_wCAAAAQAAJ",
+    "volumeInfo": {
+     "title": "History of the sabbath, or day of holy rest",
+     "authors": [
+      "John Tyrrell Baylee (the younger.)"
+     ],
+     "publishedDate": "1857",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "OXFORD:600106061"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "full-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=X_wCAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=X_wCAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=X_wCAAAAQAAJ&printsec=frontcover&dq=rest&hl=&cd=25&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=X_wCAAAAQAAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-X_wCAAAAQAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FREE",
+     "isEbook": true,
+     "buyLink": "https://play.google.com/store/books/details?id=X_wCAAAAQAAJ&rdid=book-X_wCAAAAQAAJ&rdot=1&source=gbs_api"
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "ALL_PAGES",
+     "embeddable": true,
+     "publicDomain": true,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false,
+      "downloadLink": "http://books.google.ru/books/download/History_of_the_sabbath_or_day_of_holy_re.epub?id=X_wCAAAAQAAJ&hl=&output=epub&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "downloadLink": "http://books.google.ru/books/download/History_of_the_sabbath_or_day_of_holy_re.pdf?id=X_wCAAAAQAAJ&hl=&output=pdf&sig=ACfU3U15y2LwQAp8Xdqmu71V3MBfJIc4wg&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=X_wCAAAAQAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "vkCukNvSbJcC",
+    "etag": "ALgKHSxHLKM",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/vkCukNvSbJcC",
+    "volumeInfo": {
+     "title": "Effective REST Services via .NET",
+     "subtitle": "For .NET Framework 3.5",
+     "authors": [
+      "Kenn Scribner",
+      "Scott Seely"
+     ],
+     "publisher": "FT Press",
+     "publishedDate": "2009-04-17",
+     "description": "Build Web Services Better and Faster with RESTful Techniques and .NET Technologies Developers are rapidly discovering the power of REST to simplify the development of even the most sophisticated Web services–and today’s .NET platform is packed with tools for effective REST development. Now, for the first time, there’s a complete, practical guide to building REST-based services with .NET development technologies. Long-time .NET and Web services developers and authors Kenn Scribner and Scott Seely explain why REST fits so smoothly into the Internet ecosystem, why RESTful services are so much easier to build, what it means to be RESTful, and how to identify behaviors that are not RESTful. Next, they review the core Internet standards and .NET technologies used to develop RESTful solutions and show exactly how to apply them on both the client and server side. Using detailed code examples, Scribner and Seely begin with simple ASP.NET techniques, and then introduce increasingly powerful options–including Windows Communication Foundation (WCF) and Microsoft’s cloud computing initiative, Azure. Coverage includes • Accessing RESTful services from desktop applications, using Windows Forms and WPF • Supporting Web client operations using Silverlight 2.0, JavaScript, and other technologies • Understanding how IIS 7.0 processes HTTP requests and using that knowledge to build better REST services • Constructing REST services based on traditional ASP.NET constructs • Utilizing the ASP.NET MVC Framework to implement RESTful services more effectively • Taking advantage of WCF 3.5’s powerful REST-specific capabilities • Creating RESTful data views effortlessly with ADO.NET Data Services • Leveraging Microsoft’s Azure cloud-computing platform to build innovative new services • Choosing the right .NET technology for each REST application or service",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780321561558"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0321561554"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 480,
+     "printType": "BOOK",
+     "categories": [
+      "Computers"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 2,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.4.2.0.preview.3",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=vkCukNvSbJcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=vkCukNvSbJcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=vkCukNvSbJcC&pg=PR19&dq=rest&hl=&cd=26&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=vkCukNvSbJcC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Effective_REST_Services_via_NET.html?hl=&id=vkCukNvSbJcC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=vkCukNvSbJcC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Moreover, you might not even need the parser; \u003cb\u003eREST\u003c/b\u003e services can return data in \u003cbr\u003e\nany format they want. With \u003cb\u003eREST\u003c/b\u003e, the wire format is driven by the requirements of \u003cbr\u003e\nthe application, not by the protocol that the application uses. This is why the&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "DDorAAAAYAAJ",
+    "etag": "hy3hIawY9LI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/DDorAAAAYAAJ",
+    "volumeInfo": {
+     "title": "Human Performance as a Function of the Work-rest Cycle",
+     "subtitle": "A Review of Selected Studies",
+     "authors": [
+      "Lockheed-Georgia Company. Human Factors Research Dept",
+      "James T. Ray"
+     ],
+     "publisher": "National Academies",
+     "publishedDate": "1961",
+     "description": "Studies relating to the effects of different work-rest cycles on man's performance are reviewed in this report. Included are only those studies in which (1) observations of performance extend for 24 hours or longer, and (2) results pertain to the general problem of optimizing performance through the scheduling of work and rest periods. While several specific conclusions are supported by the studies reviewed, the number of generalizations relating to optimal work-rest cycles, sleep-wakefulness cycles, and the durations of the work, rest, and sleep periods. The need for additional long-term experimentation is evident. (Author).",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "NAP:14042"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": false
+     },
+     "pageCount": 32,
+     "printType": "BOOK",
+     "categories": [
+      "Flight crews"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=DDorAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=DDorAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=DDorAAAAYAAJ&pg=PR3&dq=rest&hl=&cd=27&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=DDorAAAAYAAJ&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Human_Performance_as_a_Function_of_the_W.html?hl=&id=DDorAAAAYAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "ALL_PAGES",
+     "embeddable": false,
+     "publicDomain": true,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=DDorAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Many flights will be of such a duration that, as in submarines, crew members must \u003cbr\u003e\nalternate between periods of work and \u003cb\u003erest\u003c/b\u003e. The limitations on numbers of crew \u003cbr\u003e\nmembers to provide relief, however, will be much more severe than for any&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "lYHb8v5y4b8C",
+    "etag": "GG/J0IUXl5A",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/lYHb8v5y4b8C",
+    "volumeInfo": {
+     "title": "When Women Long for Rest",
+     "authors": [
+      "Cindi McMenamin"
+     ],
+     "publisher": "Harvest House Publishers",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780736936804"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0736936807"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.0.1.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=lYHb8v5y4b8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=lYHb8v5y4b8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=lYHb8v5y4b8C&printsec=frontcover&dq=rest&hl=&cd=28&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=lYHb8v5y4b8C&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-lYHb8v5y4b8C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 959.54,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 863.59,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=lYHb8v5y4b8C&rdid=book-lYHb8v5y4b8C&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 9.5954E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 8.6359E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/When_Women_Long_for_Rest-sample-epub.acsm?id=lYHb8v5y4b8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/When_Women_Long_for_Rest-sample-pdf.acsm?id=lYHb8v5y4b8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=lYHb8v5y4b8C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "-Bbx45fk2s0C",
+    "etag": "WMKTxoSb57M",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/-Bbx45fk2s0C",
+    "volumeInfo": {
+     "title": "REST",
+     "subtitle": "a computer system for estimating logging residue by using the line-intersect method",
+     "authors": [
+      "A. Jeff Martin",
+      "Northeastern Forest Experiment Station (Radnor, Pa.)",
+      "United States. Forest Service"
+     ],
+     "publishedDate": "1975",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "MINN:31951D02995498I"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 4,
+     "printType": "BOOK",
+     "categories": [
+      "Nature"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "full-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=-Bbx45fk2s0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=-Bbx45fk2s0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=-Bbx45fk2s0C&pg=PP2&dq=rest&hl=&cd=29&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=-Bbx45fk2s0C&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book--Bbx45fk2s0C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FREE",
+     "isEbook": true,
+     "buyLink": "https://play.google.com/store/books/details?id=-Bbx45fk2s0C&rdid=book--Bbx45fk2s0C&rdot=1&source=gbs_api"
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "ALL_PAGES",
+     "embeddable": true,
+     "publicDomain": true,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "downloadLink": "http://books.google.ru/books/download/REST.pdf?id=-Bbx45fk2s0C&hl=&output=pdf&sig=ACfU3U2Zg3FNCx6j36L72qsTN3_6hoTQ9Q&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=-Bbx45fk2s0C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "\u003cb\u003eREST\u003c/b\u003e incorporates the methods developed by Bailey, along with some additional \u003cbr\u003e\nmeasures for assigning the residue volumes (or weights) to the appropriate \u003cbr\u003e\ndiameter and length classes. This information can be subdivided further by \u003cbr\u003e\nspecies&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "vOKwH6q47bsC",
+    "etag": "xS5L62OxS8o",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/vOKwH6q47bsC",
+    "volumeInfo": {
+     "title": "Homeschooling for the Rest of Us",
+     "subtitle": "How Your One-of-a-Kind Family Can Make Homeschooling and Real Life Work",
+     "authors": [
+      "Sonya Haskins"
+     ],
+     "publisher": "Bethany House",
+     "publishedDate": "2010-01-01",
+     "description": "Homeschooling parents are under great pressure. Besides trying to balance teaching responsibilities and family life, they often face unrealistic expectations from relatives, churches, other homeschoolers, and society at large. Even parents considering homeschooling sense the need to be perfect. Sonya Haskins doesn't want any more families to give up on homeschooling. In this book she shares affirming stories and practical ideas from dozens of everyday families who successfully deal with cluttered schedules, academic struggles, sibling squabbles, and other real-life issues. Instead of learning a one-size-fits-all approach, readers will discover how to evaluate their own family's strengths and weaknesses and set their own goals for success.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781441212542"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "144121254X"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 176,
+     "printType": "BOOK",
+     "categories": [
+      "Education"
+     ],
+     "averageRating": 4.5,
+     "ratingsCount": 40,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "0.4.2.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=vOKwH6q47bsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=vOKwH6q47bsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=vOKwH6q47bsC&printsec=frontcover&dq=rest&hl=&cd=30&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=vOKwH6q47bsC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-vOKwH6q47bsC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 558.0,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 502.2,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=vOKwH6q47bsC&rdid=book-vOKwH6q47bsC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 5.58E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 5.022E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Homeschooling_for_the_Rest_of_Us-sample-epub.acsm?id=vOKwH6q47bsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=vOKwH6q47bsC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "In this book she shares affirming stories and practical ideas from dozens of everyday families who successfully deal with cluttered schedules, academic struggles, sibling squabbles, and other real-life issues."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "IrXBnFYNyz4C",
+    "etag": "PcZxcCCdoks",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/IrXBnFYNyz4C",
+    "volumeInfo": {
+     "title": "Rest",
+     "subtitle": "Living in Sabbath Simplicity",
+     "authors": [
+      "Keri Wyatt Kent"
+     ],
+     "publisher": "Zondervan",
+     "publishedDate": "2008-12-23",
+     "description": "Keri Wyatt Kent invites readers to rediscover the ancient practice of Sabbath in this practical and accessible book. Kent’s experiences as a retreat leader and a journalist collide as she offers true, interview-based stories along with scripturally based advice and guidance on how to live in a rhythm of work and rest she calls “Sabbath simplicity.” Based on what Jesus taught about Sabbath and how he practiced it, Kent explores six aspects of Sabbath as Christian spiritual practice: resting, reconnecting, revising, pausing, playing, and praying. These are the antidote to our restlessness, isolation, and our hurried lives, workaholism, and self-absorption. Living a nonlegalistic, sanely paced, God-focused life leads us to freedom and grace, joy and connection. A group study guide is included, making this book an excellent choice for small groups.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780310563778"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0310563771"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": false
+     },
+     "pageCount": 224,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "averageRating": 4.5,
+     "ratingsCount": 29,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.2.3.0.preview.2",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=IrXBnFYNyz4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=IrXBnFYNyz4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=IrXBnFYNyz4C&pg=PT22&dq=rest&hl=&cd=31&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=IrXBnFYNyz4C&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-IrXBnFYNyz4C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 900.72,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 810.65,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=IrXBnFYNyz4C&rdid=book-IrXBnFYNyz4C&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 9.0072E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 8.1065E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Rest-sample-epub.acsm?id=IrXBnFYNyz4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=IrXBnFYNyz4C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Loehr&#39;s discovery about how tennis players \u003cb\u003erest\u003c/b\u003e between points in a tennis match \u003cbr\u003e\nbrings up another important point: we need to \u003cb\u003erest\u003c/b\u003e more often than just once a \u003cbr\u003e\nweek. God made our bodies to need sleep. When we sleep, our bodies \u003cbr\u003e\nrejuvenate&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "nmJ0DQAAQBAJ",
+    "etag": "G2JnJZBHeEY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/nmJ0DQAAQBAJ",
+    "volumeInfo": {
+     "title": "The Best of the Rest of Brutally Huge",
+     "authors": [
+      "Bill Davis"
+     ],
+     "publisher": "Lulu.com",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781365090165"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1365090167"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=nmJ0DQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=nmJ0DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=nmJ0DQAAQBAJ&pg=PA160&dq=rest&hl=&cd=32&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=nmJ0DQAAQBAJ&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/The_Best_of_the_Rest_of_Brutally_Huge.html?hl=&id=nmJ0DQAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=nmJ0DQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Beginning intermediates (arms 14-17 inches) do this routine: Days Mon Tues \u003cbr\u003e\nWed Thur Fri Sat Sun Workout A B \u003cb\u003eRest\u003c/b\u003e A B \u003cb\u003eRest rest\u003c/b\u003e Intermediates (arms 17-18 \u003cbr\u003e\ninches) should work out on these days: Days Mon Tues Wed Thur Fri Sat Sun&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "MVl0CgAAQBAJ",
+    "etag": "1J0rerFJbbE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/MVl0CgAAQBAJ",
+    "volumeInfo": {
+     "title": "The Radical Pursuit of Rest",
+     "subtitle": "Escaping the Productivity Trap",
+     "authors": [
+      "John Koessler",
+      "Mark Galli"
+     ],
+     "publisher": "InterVarsity Press",
+     "publishedDate": "2016-01-28",
+     "description": "We live in a culture that values activity, achievement and accomplishment. Whether in our careers, churches, schools or families, busyness is the norm in our lives, and anything less makes us feel unproductive and anxious. We have to work all the harder, then, to pursue true rest in a 24-7 world that is constantly in motion. John Koessler understands that rest is not automatic or easy to attain. He names the modern-day barriers to becoming people of rest and presents a unique perspective on how pursuing rest leads us to the heart of God. With honest, biblical reflections on trends in our culture and churches, he exposes our misconceptions regarding the concept of rest, as well as offering correction and practices to align our ideas with God's ideal. The book includes reflection and discussion questions designed for both individual and group use. You will discover the true meaning behind Jesus' idea of the yoke of rest and restoration for your mind, body and soul.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9780830844449"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "0830844449"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 176,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "2.3.3.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=MVl0CgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=MVl0CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=MVl0CgAAQBAJ&pg=PA44&dq=rest&hl=&cd=33&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=MVl0CgAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-MVl0CgAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 635.98,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 572.38,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=MVl0CgAAQBAJ&rdid=book-MVl0CgAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 6.3598E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 5.7238E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true
+     },
+     "pdf": {
+      "isAvailable": true
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=MVl0CgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Escaping the Productivity Trap John Koessler. ductivity in the Christian life. But \u003cbr\u003e\nbefore \u003cb\u003erest\u003c/b\u003e can be a practice, it must be a spiritual location. \u003cb\u003eRest\u003c/b\u003e is a state of \u003cbr\u003e\nbeing that is essential to Christian living; it is the engine that drives all Christian \u003cbr\u003e\naction."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "kQpz3MXjM_8C",
+    "etag": "kwDiB1rVJF4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/kQpz3MXjM_8C",
+    "volumeInfo": {
+     "title": "More Technology for the Rest of Us",
+     "subtitle": "A Second Primer on Computing for the Non-IT Librarian",
+     "authors": [
+      "Nancy Courtney"
+     ],
+     "publisher": "ABC-CLIO",
+     "publishedDate": "2010",
+     "description": "In this valuable book, 11 chapters each overview a technology of interest to librarians working in the field today. * 11 chapters explain technology topics of interest to librarians * Contributors are IT librarians from academic and public libraries * Each chapter offers both print and online resources for further information * A glossary of terms clarifies library technology topics discussed in the book * A selected bibliography also enables further research",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781591589396"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1591589398"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 172,
+     "printType": "BOOK",
+     "categories": [
+      "Language Arts & Disciplines"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.2.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=kQpz3MXjM_8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=kQpz3MXjM_8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=kQpz3MXjM_8C&pg=PR7&dq=rest&hl=&cd=34&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=kQpz3MXjM_8C&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/More_Technology_for_the_Rest_of_Us.html?hl=&id=kQpz3MXjM_8C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/More_Technology_for_the_Rest_of_Us-sample-epub.acsm?id=kQpz3MXjM_8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/More_Technology_for_the_Rest_of_Us-sample-pdf.acsm?id=kQpz3MXjM_8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=kQpz3MXjM_8C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "This book is a continuation of Technology for the \u003cb\u003eRest\u003c/b\u003e of Us: A Primer on \u003cbr\u003e\nComputer Technologies for the Low-Tech Librarian (Libraries Unlimited, 2005). \u003cbr\u003e\nAs with the earlier volume, the idea is to provide an introductory set of readings \u003cbr\u003e\non&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "6Hf7D9UPVe4C",
+    "etag": "jofZkQ2DacU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/6Hf7D9UPVe4C",
+    "volumeInfo": {
+     "title": "Rest In Pieces",
+     "authors": [
+      "Ruzbeh N. Bharucha"
+     ],
+     "publisher": "Diamond Pocket Books (P) Ltd.",
+     "publishedDate": "2005",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "8189182846"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9788189182847"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 152,
+     "printType": "BOOK",
+     "categories": [
+      "Indic fiction (English)"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.0.1.0.preview.1",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=6Hf7D9UPVe4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=6Hf7D9UPVe4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=6Hf7D9UPVe4C&printsec=frontcover&dq=rest&hl=&cd=35&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=6Hf7D9UPVe4C&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Rest_In_Pieces.html?hl=&id=6Hf7D9UPVe4C"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=6Hf7D9UPVe4C&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "K4B5AwAAQBAJ",
+    "etag": "M/wbamXBcjY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/K4B5AwAAQBAJ",
+    "volumeInfo": {
+     "title": "101 Rhythmic Rest Patterns for Drums",
+     "authors": [
+      "Grover C. Yaus"
+     ],
+     "publisher": "Alfred Music",
+     "publishedDate": "1999-11-16",
+     "description": "Division of measure includes counting rest values as well as note values. A mistake in counting note values while playing is heard and corrected by the instructor, but counting rest values is a silent business and difficult at times for the instructor to detect just where the mistake was made, or who made the mistake. 101 Rhythmic Rest Patterns will help solve that problem, as the unison feature will enable the instructor and the whole ensemble to count aloud all in unison, on any or all rest patterns until each rest pattern is perfect.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781457452154"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1457452154"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 24,
+     "printType": "BOOK",
+     "categories": [
+      "Music"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "1.2.1.0.preview.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=K4B5AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=K4B5AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=K4B5AwAAQBAJ&pg=PT1&dq=rest&hl=&cd=36&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=K4B5AwAAQBAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-K4B5AwAAQBAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 519.56,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 467.6,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=K4B5AwAAQBAJ&rdid=book-K4B5AwAAQBAJ&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 5.1956E8,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 4.676E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/101_Rhythmic_Rest_Patterns_for_Drums-sample-pdf.acsm?id=K4B5AwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=K4B5AwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Division of measure includes counting \u003cb\u003erest\u003c/b\u003e values as well as note values. A \u003cbr\u003e\nmistake in counting note values while playing is heard and corrected by the \u003cbr\u003e\ninstructor, but counting \u003cb\u003erest\u003c/b\u003e values is a SILENT business and difficult at times for \u003cbr\u003e\nthe&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "nmQbp1y9BNMC",
+    "etag": "JDT3uJHw1ck",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/nmQbp1y9BNMC",
+    "volumeInfo": {
+     "title": "Rest in Peace",
+     "subtitle": "A Cultural History of Death and the Funeral Home in Twentieth-Century America",
+     "authors": [
+      "Gary Laderman"
+     ],
+     "publisher": "Oxford University Press",
+     "publishedDate": "2003-03-06",
+     "description": "Though it has often been passionately criticized--as fraudulent, exploitative, even pagan--the American funeral home has become nearly as inevitable as death itself, an institution firmly embedded in our culture. But how did the funeral home come to hold such a position? What is its history? And is it guilty of the charges sometimes leveled against it? In Rest in Peace, Gary Laderman traces the origins of American funeral rituals, from the evolution of embalming techniques during and after the Civil War and the shift from home funerals to funeral homes at the turn of the century, to the increasing subordination of priests, ministers, and other religious figures to the funeral director throughout the twentieth century. In doing so he shows that far from manipulating vulnerable mourners, as Jessica Mitford claimed in her best-selling The American Way of Death (1963), funeral directors are highly respected figures whose services reflect the community's deepest needs and wishes. Indeed, Laderman shows that funeral directors generally give the people what they want when it is time to bury our dead. He reveals, for example, that the open casket, often criticized as barbaric, provides a deeply meaningful moment for friends and family who must say goodbye to their loved one. But he also shows how the dead often come back to life in the popular imagination to disturb the peace of the living. Drawing upon interviews with funeral directors, major historical events like the funerals of John F. Kennedy and Rudolf Valentino, films, television, newspaper reports, proposals for funeral reform, and other primary sources, Rest in Peace cuts through the rhetoric to show us the reality--and the real cultural value--of the American funeral.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_10",
+       "identifier": "0195343972"
+      },
+      {
+       "type": "ISBN_13",
+       "identifier": "9780195343977"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 296,
+     "printType": "BOOK",
+     "categories": [
+      "Social Science"
+     ],
+     "averageRating": 5.0,
+     "ratingsCount": 1,
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": true,
+     "contentVersion": "1.0.4.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=nmQbp1y9BNMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=nmQbp1y9BNMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=nmQbp1y9BNMC&printsec=frontcover&dq=rest&hl=&cd=37&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=nmQbp1y9BNMC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-nmQbp1y9BNMC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1437.1,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 1293.39,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=nmQbp1y9BNMC&rdid=book-nmQbp1y9BNMC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.4371E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 1.29339E9,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Rest_in_Peace-sample-epub.acsm?id=nmQbp1y9BNMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Rest_in_Peace-sample-pdf.acsm?id=nmQbp1y9BNMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=nmQbp1y9BNMC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "In Rest in Peace, Gary Laderman traces the origins of American funeral rituals, from the evolution of embalming techniques during and after the Civil War and the shift from home funerals to funeral homes at the turn of the century, to the ..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "AhMEiGVLTMYC",
+    "etag": "wLLCZbWkZtA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/AhMEiGVLTMYC",
+    "volumeInfo": {
+     "title": "Enter the Rest",
+     "authors": [
+      "Israel Harel"
+     ],
+     "publisher": "Xulon Press",
+     "publishedDate": "2012-07-01",
+     "description": "Israel Harel casts a completely new light on the New Testament book of Hebrews that will educate even the most seasoned Christ follower. The author explores the backdrop of Jewish culture and concerns into which the Epistle to the Hebrews was written, unpacking the references to Jewish history to help the modern reader (Jew or Gentile) better understand what Jesus has done for each of us. He explores the questions and difficulties addressed in the epistle, while discussing long-standing trends in Judaism and how Jesus fulfills Biblical Judaism and transcends Rabbinical Judaism. Through these discussions, one theme comes through loud and clear: the Epistle to the Hebrews is a strong call to intimacy with God in the Holy of Holies. It is a call to enter into the Sabbath rest of God, into the place where He is all in all. srael Harel was born to a secular Jewish family who came as pioneers to the Land of Israel in the early 20th century. Israel heard the Gospel for the first time as a hippie in the early seventies. Not wanting anybody to tell him what to do, he ran away from God for six years. After living homeless in the streets and spending two and a half years in a mental hospital, Israel finally gave himself up and surrendered to Jesus, who did a great work of healing in Israel's life. He came back to Israel and helped pioneer many Evangelistic works around the country. He has also reached out to lost people for the Lord in South Africa and the US. After serving in foreign lands for ten years he came back to Israel and led the work of starting a new Hebrew speaking Messianic congregation in the Jezreel valley (Armageddon) in north Israel. Israel has used his teaching and speaking gifts in many parts of the world. He is married to Shlomit and has three sons.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781622306596"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1622306597"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": false
+     },
+     "pageCount": 294,
+     "printType": "BOOK",
+     "categories": [
+      "Religion"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "preview-1.0.0",
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=AhMEiGVLTMYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=AhMEiGVLTMYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=AhMEiGVLTMYC&pg=PA283&dq=rest&hl=&cd=38&source=gbs_api",
+     "infoLink": "http://books.google.ru/books?id=AhMEiGVLTMYC&dq=rest&hl=&source=gbs_api",
+     "canonicalVolumeLink": "https://books.google.com/books/about/Enter_the_Rest.html?hl=&id=AhMEiGVLTMYC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "NOT_FOR_SALE",
+     "isEbook": false
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=AhMEiGVLTMYC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Faith is first and foremost expressed in \u003cb\u003erest\u003c/b\u003e — \u003cb\u003erest\u003c/b\u003e in Him. It is written that ceasing \u003cbr\u003e\nfrom our own efforts and the “muscle” of our hearts, and instead receiving from \u003cbr\u003e\nGod all that He has without rebellion, and without objecting to what He gives&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "b30_A-A07SQC",
+    "etag": "Mq9ndxgkmMc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/b30_A-A07SQC",
+    "volumeInfo": {
+     "title": "Travelers Rest",
+     "authors": [
+      "Travelers Rest Historical Society"
+     ],
+     "publisher": "Arcadia Publishing",
+     "publishedDate": "2011-03-21",
+     "description": "The little town in upstate South Carolina, embraced by nearby Paris Mountain and the foothills of the Blue Ridge Mountains, is intriguing by its name alone, “Travelers Rest.” It sits at the foot of the Appalachian Mountains, yet it is only a half-day’s journey from the Atlantic Ocean. This village has always been a place where travelers stopped. Situated on a crossroad of Cherokee trade trails, it became a rest stop for drovers moving their livestock over the mountains. Inns and rest camps developed, and the town of Travelers Rest grew around them. Scots-Irish settled the former Cherokee lands, and patriots were ceded land for Revolutionary War service. In 1887, the new railroad afforded access to factories and markets and improved transportation for tourists. Travelers Rest is proud of its history and eagerly looks forward to a thriving future built on a solid foundation of education, commerce, and community activities.",
+     "industryIdentifiers": [
+      {
+       "type": "ISBN_13",
+       "identifier": "9781439640715"
+      },
+      {
+       "type": "ISBN_10",
+       "identifier": "1439640718"
+      }
+     ],
+     "readingModes": {
+      "text": true,
+      "image": true
+     },
+     "pageCount": 128,
+     "printType": "BOOK",
+     "categories": [
+      "Photography"
+     ],
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "4.6.6.0.preview.3",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=b30_A-A07SQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=b30_A-A07SQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=b30_A-A07SQC&pg=PT10&dq=rest&hl=&cd=39&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=b30_A-A07SQC&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-b30_A-A07SQC"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FOR_SALE",
+     "isEbook": true,
+     "listPrice": {
+      "amount": 1072.75,
+      "currencyCode": "RUB"
+     },
+     "retailPrice": {
+      "amount": 965.48,
+      "currencyCode": "RUB"
+     },
+     "buyLink": "https://play.google.com/store/books/details?id=b30_A-A07SQC&rdid=book-b30_A-A07SQC&rdot=1&source=gbs_api",
+     "offers": [
+      {
+       "finskyOfferType": 1,
+       "listPrice": {
+        "amountInMicros": 1.07275E9,
+        "currencyCode": "RUB"
+       },
+       "retailPrice": {
+        "amountInMicros": 9.6548E8,
+        "currencyCode": "RUB"
+       }
+      }
+     ]
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "PARTIAL",
+     "embeddable": true,
+     "publicDomain": false,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Travelers_Rest-sample-epub.acsm?id=b30_A-A07SQC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.ru/books/download/Travelers_Rest-sample-pdf.acsm?id=b30_A-A07SQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=b30_A-A07SQC&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "SAMPLE",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Commissioned in 1808, the first Travelers \u003cb\u003eRest\u003c/b\u003e post office was in the home of Maj\u003cbr\u003e\n. Thomas Edwards near the presentday location of New Liberty Baptist Church. \u003cbr\u003e\nYears before this event, the little village of Travelers \u003cb\u003eRest\u003c/b\u003e was becoming&nbsp;..."
+    }
+   },
+   {
+    "kind": "books#volume",
+    "id": "oCpDAQAAMAAJ",
+    "etag": "OHjRqKJ0CMU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/oCpDAQAAMAAJ",
+    "volumeInfo": {
+     "title": "The Saints' Everlasting Rest",
+     "subtitle": "And, A Call to the Unconverted",
+     "authors": [
+      "Richard Baxter"
+     ],
+     "publishedDate": "1841",
+     "industryIdentifiers": [
+      {
+       "type": "OTHER",
+       "identifier": "UIUC:30112069918149"
+      }
+     ],
+     "readingModes": {
+      "text": false,
+      "image": true
+     },
+     "pageCount": 616,
+     "printType": "BOOK",
+     "maturityRating": "NOT_MATURE",
+     "allowAnonLogging": false,
+     "contentVersion": "0.1.1.0.full.1",
+     "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+     },
+     "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=oCpDAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=oCpDAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+     },
+     "language": "en",
+     "previewLink": "http://books.google.ru/books?id=oCpDAQAAMAAJ&pg=PA341&dq=rest&hl=&cd=40&source=gbs_api",
+     "infoLink": "https://play.google.com/store/books/details?id=oCpDAQAAMAAJ&source=gbs_api",
+     "canonicalVolumeLink": "https://market.android.com/details?id=book-oCpDAQAAMAAJ"
+    },
+    "saleInfo": {
+     "country": "RU",
+     "saleability": "FREE",
+     "isEbook": true,
+     "buyLink": "https://play.google.com/store/books/details?id=oCpDAQAAMAAJ&rdid=book-oCpDAQAAMAAJ&rdot=1&source=gbs_api"
+    },
+    "accessInfo": {
+     "country": "RU",
+     "viewability": "ALL_PAGES",
+     "embeddable": true,
+     "publicDomain": true,
+     "textToSpeechPermission": "ALLOWED",
+     "epub": {
+      "isAvailable": false
+     },
+     "pdf": {
+      "isAvailable": false
+     },
+     "webReaderLink": "http://play.google.com/books/reader?id=oCpDAQAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+     "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+     "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+     "textSnippet": "Retire into some secret place, at a time the most convenient to thyself, and laying \u003cbr\u003e\naside all worldly thoughts, with all possible seriousness and reverence, look up \u003cbr\u003e\ntoward heaven ; remember there is thine everlasting \u003cb\u003erest\u003c/b\u003e, study its excellency&nbsp;..."
+    }
+   }
+  ]
+ }
