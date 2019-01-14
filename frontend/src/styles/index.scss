@@ -63,3 +63,10 @@ body {
 //   background: url('../assets/info_icon.svg') no-repeat center;
 //   background-size: 100%;
 // }
+
+.book-container {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 128px);
+}

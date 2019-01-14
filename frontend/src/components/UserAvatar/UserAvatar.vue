@@ -66,6 +66,7 @@ export default Vue.extend({
   height: 110px;
   border-radius: 50%;
   overflow: hidden;
+  flex-shrink: 0;
   img {
     width: 100%;
     height: 100%;

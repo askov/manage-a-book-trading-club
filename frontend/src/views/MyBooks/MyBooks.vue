@@ -106,9 +106,9 @@
         this.totalBooks -= 1;
       },
       handlePageChange(page: number) {
-        // console.log('#change', this.currentPage);
-        this.getMyBooks(page);
-
+        if (page !== this.currentPage) {
+          this.getMyBooks(page);
+        }
       },
     },
   });
@@ -117,11 +117,6 @@
 
 <style scoped
        lang="scss">
-  .book-container {
-    display: grid;
-    grid-gap: 20px;
-    justify-content: space-between;
-    grid-template-columns: repeat(auto-fill, 128px);
-  }
+
 
 </style>

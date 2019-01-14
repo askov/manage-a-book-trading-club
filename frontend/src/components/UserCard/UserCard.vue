@@ -1,11 +1,15 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div class="user-card rounded bg-white p-1 mb-1 d-flex shadow">
+    <div class="user-card rounded bg-white p-1 d-flex mb-1 shadow">
       <router-link :to="{name: 'user-details', params:{id: user.id}}" class="p-0">
         <UserAvatar :avatar="user.avatar" :size="'middle'" :title="'Show user details'"/>
       </router-link>
       <div class="text-secondary ml-2 d-flex align-items-center">
         {{user.username}}
+      </div>
+      <div class="text-secondary ml-2 d-flex align-items-center">
+        <!-- <b-badge>books: {{user.books_added}}</b-badge> -->
+        <router-link :to="{name: 'user-books', params: {id: user.id}}"><b-badge variant="primary">books: {{user.books_added}}</b-badge></router-link>
       </div>
     </div>
   </transition>
@@ -71,31 +75,6 @@ export default Vue.extend({
       background: linear-gradient(to top, white, transparent);
     }
   }
-  // &__add {
-  //   display: none;
-  //   position: absolute;
-  //   cursor: pointer;
-  //   top: 0;
-  //   // left: 67px;
-  //   right: 0;
-  //   width: 50px;
-  //   // width: 100%;
-  //   height: 100%;
-  //   background: url('../../assets/round_plus.svg') no-repeat center;
-  //   background-color: white;
-  //   background-position: center center;
-  //   background-size: 30px;
-  //   opacity: 0.5;
-  //   &:hover {
-  //     opacity: 0.7;
-  //   }
-  //   // background-color: rgba(255, 255, 255, 0.5);
-  // }
-  // $p: &;
-  // &:hover {
-  //   #{$p}__add {
-  //     display: block;
-  //   }
-  // }
+
 }
 </style>

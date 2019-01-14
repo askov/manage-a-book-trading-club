@@ -88,7 +88,16 @@ interface IUserConciseInfo {
   readonly id: number;
   readonly username: string;
   readonly avatar: string;
+  readonly books_added: number;
 }
+
+interface IPublicProfile extends IUserConciseInfo{
+  readonly city: string;
+  readonly state: string;
+  readonly first_name: string;
+  readonly last_name: string;
+}
+
 // interface LoginServerResponseFieldError {
 //   username?: string;
 //   password?: string;

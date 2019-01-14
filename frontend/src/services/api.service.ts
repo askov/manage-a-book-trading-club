@@ -24,8 +24,8 @@ export default {
     return axiosInstance.http.get('books/');
   },
 
-  getUserBooks(page: number) {
-    let url = 'books/my/';
+  getUserBooks(page: number, userId?: number) {
+    let url = userId ? `users/${userId}/books/` : 'books/my/';
     if (page && page > 1) {
       url += `?page=${page}`;
     }
@@ -47,6 +47,9 @@ export default {
       url += `?page=${page}`;
     }
     return axiosInstance.http.get(url);
+  },
+  getUserDetails(userId: number) {
+    return axiosInstance.http.get(`/users/${userId}`);
   },
   // Google books api
   googleBookApiSearch(q = '', startIndex = 0, maxResults = 10) {

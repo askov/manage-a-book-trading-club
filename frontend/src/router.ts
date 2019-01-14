@@ -55,6 +55,13 @@ const router = new Router({
           path: ':id(\\d+)',
           name: 'user-details',
           component: () => import('./views/Users/UserDetails.vue'),
+          children: [
+            {
+              path: 'books',
+              name: 'user-books',
+              component: () => import('./views/Users/UserBooks.vue'),
+            },
+          ],
         },
 
       ],
