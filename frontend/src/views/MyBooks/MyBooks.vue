@@ -16,7 +16,7 @@
                          :book="book"
                          :key="index"></ConciseBookCard>
       </div>
-      <h6>You have no books in your collection yet. You can always add new books to exchange using the <router-link to='book-store'>book store service</router-link> to add new books.</h6>
+      <h6 v-show="totalBooks === 0">You have no books in your collection yet. You can always add new books to exchange using the <router-link to='book-store'>book store service</router-link> to add new books.</h6>
     </div>
 
     <b-modal v-model="modal.show"

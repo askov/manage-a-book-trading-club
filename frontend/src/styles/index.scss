@@ -1,9 +1,22 @@
 html {
   font-size: 14px;
+  height: 100%;
 }
 body {
+  height: 100%;
 }
 
+.app-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.app-content {
+  flex: 1 0 auto;
+}
+.app-footer {
+  flex: 0 0 auto;
+}
 .standard-form {
   max-width: 450px !important;
 }

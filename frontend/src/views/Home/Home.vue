@@ -1,12 +1,21 @@
 <template>
-  <div class="home container">
-      <h1 class="my-4 text-center text-lg-left light-color text-white">Books in trade</h1>
+  <div class="container-fluid p-0">
+      <!-- <h1 class="my-4 text-center text-lg-left light-color text-white">Books in trade</h1> -->
+      <div class="row">
+        <section class="landing-block-1">
+          <h1 class="w-100 text-center text-light landing-h1">Exchange your books. Simple. Free</h1>
+          <div class="w-100 text-center mt-5">
+              <!-- <b-btn variant="success" class="landing-register-button">Join us now</b-btn> -->
+              <router-link class="btn bg-success text-light landing-register-button" to="/signup">Join us now</router-link>
+          </div>
+        </section>
+      </div>
 
-      <div class="row text-center text-lg-left" >
+      <!-- <div class="row text-center text-lg-left" >
         <BookCard v-for="book in books"
                   v-bind:key="book.id"
                   v-bind:book="book"/>
-      </div>
+      </div> -->
   </div>
 </template>
 
@@ -46,3 +55,32 @@ export default Vue.extend({
   },
 });
 </script>
+
+
+
+<style scoped
+       lang="scss">
+
+.landing-block-1 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: calc(100vh - 54px);
+  width: 100%;
+  background-image: url(../../assets/library_1.jpg);
+  background-size: cover;
+}
+.landing-register-button {
+  width: 200px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+.landing-h1 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+</style>
