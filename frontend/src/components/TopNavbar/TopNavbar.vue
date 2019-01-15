@@ -4,7 +4,7 @@
     <router-link to="/">
       <b-navbar-brand>
         <img class="mbtc-logo" src="@/assets/books-logo.svg" alt="book trading club">
-        <span>Book exchange</span>
+        <span class="logo-text">Book exchange</span>
       </b-navbar-brand>
     </router-link>
     <b-collapse is-nav id="nav_collapse">
@@ -63,7 +63,10 @@ export default Vue.extend({
   height: 30px;
   margin-right: 5px;
   & + span {
-    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
   }
 }
+
 </style>

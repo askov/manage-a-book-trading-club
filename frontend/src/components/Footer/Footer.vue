@@ -3,11 +3,11 @@
     <!-- created by alex askov {{year}} -->
     <div class="w-100">
       <div class="d-flex justify-content-center w-100">
-        <a href="https://github.com/askov" class="mr-2"
+        <a href="https://github.com/askov" class="mr-2 text-light"
           target="_blank"><span class="fab fa-github fa-2x social-button-mini"></span></a>
-        <a href="https://www.freecodecamp.com/aleks-askov" class="mr-2"
+        <a href="https://www.freecodecamp.com/aleks-askov" class="mr-2 text-light"
           target="_blanket"><span class="fab fa-free-code-camp fa-2x social-button-mini"></span></a>
-        <a href="https://twitter.com/AleksandrAskov"
+        <a href="https://twitter.com/AleksandrAskov" class="text-light"
           target="_blanket"><span class="fab fa-twitter fa-2x social-button-mini"></span></a>
       </div>
 

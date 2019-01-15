@@ -3,8 +3,8 @@
       <!-- <h1 class="my-4 text-center text-lg-left light-color text-white">Books in trade</h1> -->
       <div class="row">
         <section class="landing-block-1">
-          <h1 class="w-100 text-center text-light landing-h1">Exchange your books. Simple. Free</h1>
-          <div class="w-100 text-center mt-5">
+          <div class="w-100 text-center landing-center-block">
+          <h1 class="w-100 text-center text-light landing-h1 mb-5">Exchange your books. Simple. Free</h1>
               <!-- <b-btn variant="success" class="landing-register-button">Join us now</b-btn> -->
               <router-link class="btn bg-success text-light landing-register-button" to="/signup">Join us now</router-link>
           </div>
@@ -69,6 +69,7 @@ export default Vue.extend({
   width: 100%;
   background-image: url(../../assets/library_1.jpg);
   background-size: cover;
+  position: relative;
 }
 .landing-register-button {
   width: 200px;
@@ -82,5 +83,11 @@ export default Vue.extend({
   font-size: 5rem;
   text-transform: uppercase;
   margin-top: 100px;
+}
+.landing-center-block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
 }
 </style>
