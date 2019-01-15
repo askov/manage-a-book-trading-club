@@ -15,7 +15,7 @@ class BookViewSet(viewsets.ModelViewSet):
         try:
             return Book.objects.filter(owner=self.kwargs['user_pk'])
         except KeyError:
-            return Book.objects.filter()
+            return Book.objects.all()
 
 
     def get_permissions(self):

@@ -32,12 +32,18 @@ router.register(r'users', UserViewSet, base_name='user')
 
 # Books
 from books.views import BookViewSet
-router.register(r'books', BookViewSet, base_name='book')
+from trade_requests.views import TradeRequestViewSet
 
-domains_router = routers.NestedSimpleRouter(router, r'users', lookup='user')
-domains_router.register(r'books', BookViewSet, base_name='user-books')
+router.register(r'books', BookViewSet, base_name='book')
+books_router = routers.NestedSimpleRouter(router, r'books', lookup='book')
+books_router.register(r'trade_requests', TradeRequestViewSet, base_name='book-trade-requests')
+
+
+users_router = routers.NestedSimpleRouter(router, r'users', lookup='user')
+users_router.register(r'books', BookViewSet, base_name='user-books')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^accounts/', include('users.urls')),
-] + router.urls + domains_router.urls + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    # url(r'^', include('trade_requests.urls')),
+] + router.urls + users_router.urls + books_router.urls + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'users',
     'files',
     'books',
+    'trade_requests',
 ]
 
 MIDDLEWARE = [
