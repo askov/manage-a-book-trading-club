@@ -35,21 +35,20 @@ class TradeRequestViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(data=reqdata)
         serializer.is_valid(raise_exception=True)
 
-        # TODO: add custom messages: case 1: own book, case 2: there is accepted request already
         # Book onwer check
         target_book_owner = Book.objects.get(pk=kwargs['book_pk']).owner
         if (request.user == target_book_owner):
-            raise PermissionDenied()
+            raise PermissionDenied('You can not create trade request for your own book')
 
         # Request by current user is already created
         currentuser_requests = TradeRequest.objects.filter(created_by=request.user).count()
         if (currentuser_requests > 0):
-            raise PermissionDenied()
+            raise PermissionDenied('Only one trading request per user is allowed for book')
 
         # There is already accepted request
         accepted_requests = TradeRequest.objects.filter(target=kwargs['book_pk'], status='accepted').count()
         if (accepted_requests > 0):
-            raise PermissionDenied()
+            raise PermissionDenied('Only one trade request can have accepted status')
 
         # Success
         self.perform_create(serializer)
@@ -58,17 +57,23 @@ class TradeRequestViewSet(viewsets.ModelViewSet):
 
 
     def partial_update(self, request, pk=None, book_pk=None):
-        print('THIS IS PARTIAL UPDATE')
-        print('current user', request.user)
-        print('book id', book_pk)
         target_book_owner = Book.objects.get(pk=book_pk)
-        print('target_book owner', target_book_owner.owner)
+
+        # User is not book owner
         if (request.user != target_book_owner.owner):
-            print('OK: user is book owner')
-            trade_request = TradeRequest.objects.get(pk=pk)
-            serializer = TradeRequestUpdateSerializer(trade_request, data=request.data, partial=True)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(serializer.data)
-        else:
-            raise PermissionDenied()
+            raise PermissionDenied('Only book owner can change trading request status')
+
+        # Don't change status if already accepted or declined
+        trade_request = TradeRequest.objects.get(pk=pk)
+        if (trade_request.status != 'pending'):
+            raise PermissionDenied('You can not change trade request status different from pending')
+
+        # Success
+        serializer = TradeRequestUpdateSerializer(trade_request, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        # Decline all trade requests for this book, if owner accepted
+        if (request.data.get('status') == 'accepted'):
+            TradeRequest.objects.filter(target=book_pk).exclude(pk=pk).update(status='declined')
+        return Response(serializer.data)
