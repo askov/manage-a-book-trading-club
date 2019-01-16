@@ -45,5 +45,5 @@ users_router.register(r'books', BookViewSet, base_name='user-books')
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^accounts/', include('users.urls')),
-    # url(r'^', include('trade_requests.urls')),
+    url(r'^', include('trade_requests.urls')),
 ] + router.urls + users_router.urls + books_router.urls + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -6,9 +6,11 @@ from trade_requests.serializers import TradeRequestSerializer, TradeRequestUpdat
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
-
+from rest_framework.decorators import action
 
 class TradeRequestViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated]
+
     def get_serializer_class(self):
         if self.request.method == 'PATCH':
             return TradeRequestUpdateSerializer
@@ -20,13 +22,13 @@ class TradeRequestViewSet(viewsets.ModelViewSet):
         except KeyError:
             return TradeRequest.objects.all().order_by('-updated_at')
 
-    def get_permissions(self):
-        permission_classes = []
+    # def get_permissions(self):
+    #     permission_classes = []
 
-        if not self.action in ['list', 'retrieve']:
-            permission_classes = [IsAuthenticated]
+    #     if not self.action in ['list', 'retrieve']:
+    #         permission_classes = [IsAuthenticated]
 
-        return [permission() for permission in permission_classes]
+    #     return [permission() for permission in permission_classes]
 
 
     def create(self, request, *args, **kwargs):
@@ -41,7 +43,7 @@ class TradeRequestViewSet(viewsets.ModelViewSet):
             raise PermissionDenied('You can not create trade request for your own book')
 
         # Request by current user is already created
-        currentuser_requests = TradeRequest.objects.filter(created_by=request.user).count()
+        currentuser_requests = TradeRequest.objects.filter(target=kwargs['book_pk'], created_by=request.user).count()
         if (currentuser_requests > 0):
             raise PermissionDenied('Only one trading request per user is allowed for book')
 
@@ -76,4 +78,38 @@ class TradeRequestViewSet(viewsets.ModelViewSet):
         # Decline all trade requests for this book, if owner accepted
         if (request.data.get('status') == 'accepted'):
             TradeRequest.objects.filter(target=book_pk).exclude(pk=pk).update(status='declined')
+        return Response(serializer.data)
+
+
+class TradeRequestReadOnlyViewSet(viewsets.GenericViewSet):
+    """
+    Readonly viewset for user trade requests (cabinet)
+    """
+    queryset = TradeRequest.objects.all()
+    serializer_class = TradeRequestSerializer
+    permission_classes = [IsAuthenticated]
+
+    # TODO: how to DRY this pagination part?
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    def incoming(self, request):
+        incoming_tr = TradeRequest.objects.filter(target__owner=request.user).order_by('-updated_at')
+
+        page = self.paginate_queryset(incoming_tr)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(incoming_tr, many=True)
+        return Response(serializer.data)
+
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    def outcoming(self, request):
+        outcoming_tr = TradeRequest.objects.filter(created_by=request.user).order_by('-updated_at')
+
+        page = self.paginate_queryset(outcoming_tr)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(outcoming_tr, many=True)
         return Response(serializer.data)
