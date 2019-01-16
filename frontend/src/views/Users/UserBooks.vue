@@ -1,14 +1,16 @@
 <template>
-  <div class="container mt-5" v-if="totalBooks">
+  <div class="mt-5"
+       v-if="totalItems">
     <div>
-      <b-pagination size="md" v-show="showPagination"
-                    :total-rows="totalBooks"
+      <b-pagination size="md"
+                    v-show="showPagination"
+                    :total-rows="totalItems"
                     align="center"
-                    v-model="currentPage"
+                    v-model="page"
                     :per-page="10"
                     @change="handlePageChange"></b-pagination>
       <div class="book-container">
-        <ConciseBookCard v-for="(book, index) of books"
+        <ConciseBookCard v-for="(book, index) of items"
                          :book="book"
                          :key="index"></ConciseBookCard>
       </div>
@@ -18,51 +20,40 @@
 
 
 <script lang="ts">
-import Vue from 'vue';
-import ConciseBookCard from '@/components/ConciseBookCard/ConciseBookCard.vue';
-import apiService from '@/services/api.service';
+  import Vue from 'vue';
+  // Components
+  import ConciseBookCard from '@/components/ConciseBookCard/ConciseBookCard.vue';
+  // Services
+  import apiService from '@/services/api.service';
+  // Mixins
+  import PaginationMixin from '@/mixins/pagination.mixin';
 
-export default Vue.extend({
-  name: 'userBooks',
-  components: {
-    ConciseBookCard,
-  },
-  data(): {
-    books: IBookResponse[];
-    totalBooks: number;
-    currentPage: number;
-    showPagination: boolean;
+  export default PaginationMixin.extend({
+    name: 'userBooks',
+    components: {
+      ConciseBookCard,
+    },
+    data(): {
+      items: IBookResponse[];
     } {
       return {
-        books: [],
-        totalBooks: 0,
-        currentPage: 1,
-        showPagination: false,
+        items: [],
       };
     },
-  mounted() {
-    this.getBooks(this.currentPage);
-  },
-  methods: {
-    handlePageChange(page: number) {
-      if (page !== this.currentPage) {
-        this.getBooks(page);
-      }
+    mounted() {
+      console.log('router', this.$route);
     },
-    getBooks(page: number) {
-      apiService.getUserBooks(page, +this.$route.params.id).then((res: any) => {
-        this.books = res.data.results;
-        this.totalBooks = res.data.count;
-        if (res.data.next || res.data.previous) {
-          this.showPagination = true;
-        }
-      }, (err: any) => {
-        console.log('#error', err);
-      });
+
+    methods: {
+      getItems(page: number) {
+        apiService.getUserBooks(page, +this.$route.params.userId)
+          .then(this.handleItemsGetSuccess, this.handleItemsGetError);
+      },
     },
-  },
-});
+  });
+
 </script>
 
-<style scoped lang="scss">
+<style scoped
+       lang="scss">
 </style>

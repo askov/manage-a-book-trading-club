@@ -9,20 +9,22 @@
     </router-link>
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav class="ml-auto" v-if="isLoggedIn">
+        <b-nav-item to="/users">Users</b-nav-item>
         <b-nav-item to="/profile">
           {{username}}
           <UserAvatar class="ml-2" :avatar="avatar" :size="'small'" :title="'My profile'"/>
         </b-nav-item>
+        <b-nav-item to="/trade-requests">Trade requests</b-nav-item>
         <b-nav-item to="/my-books">My books</b-nav-item>
         <b-nav-item to="/book-store">Book store</b-nav-item>
         <b-nav-item @click="logOut()" class="d-block">Log out</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto" v-else>
+        <b-nav-item to="/users">Users</b-nav-item>
         <b-nav-item to="/signup">Register</b-nav-item>
         <b-nav-item to="/login">Log in</b-nav-item>
-        <!-- <router-link to="/signup" class="nav-link">Register</router-link> -->
-        <!-- <router-link to="/login" class="nav-link">Log in</router-link> -->
       </b-navbar-nav>
+
     </b-collapse>
   </b-navbar>
 </template>

@@ -9,13 +9,18 @@
         <div class="border profile-info-row">{{profile.city}} <span class="top-left-label">City</span></div>
         <div class="border profile-info-row">{{profile.last_name}} <span class="top-left-label">Last name</span></div>
         <div class="border profile-info-row">
-          <router-link :to="{name: 'user-books'}">
-            <b-badge variant="primary">{{profile.books_added}} </b-badge> <span v-if="profile.books_added > 0"> Show details</span>
-          </router-link><span class="top-left-label">Books added </span>
+          <b-badge variant="primary">{{profile.books_added}}</b-badge>
+          <span class="top-left-label">Books added </span>
         </div>
+
       </div>
     </div>
-
+        <div class="alert alert-light"
+             v-if="profile.books_added > 0"
+             role="alert">
+          Watch
+          <router-link :to="{name: 'user-books'}">books</router-link> added by {{profile.first_name || profile.username}} now!
+        </div>
   </div>
 </template>
 

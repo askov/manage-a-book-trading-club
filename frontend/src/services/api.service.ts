@@ -1,6 +1,14 @@
 import axiosInstance from '@/services/http.service';
 
 export default {
+  // Helpers
+  _createPaginatedUrl(url: string, page: number): string {
+    let pUrl = url;
+    if (page && page > 1) {
+      pUrl += `?page=${page}`;
+    }
+    return pUrl;
+  },
   // # Auth
   signUp(form: UserRegistrationForm) {
     return axiosInstance.http.post('accounts/register/', form);
@@ -25,11 +33,8 @@ export default {
   },
 
   getUserBooks(page: number, userId?: number) {
-    let url = userId ? `users/${userId}/books/` : 'books/my/';
-    if (page && page > 1) {
-      url += `?page=${page}`;
-    }
-    return axiosInstance.http.get(url);
+    const url = userId ? `users/${userId}/books/` : 'books/my/';
+    return axiosInstance.http.get(this._createPaginatedUrl(url, page));
   },
 
   addNewBook(book: IGoogleBook) {
@@ -40,17 +45,28 @@ export default {
     return axiosInstance.http.delete(`books/${bookId}`);
   },
 
+  // # Trade requests
+  getIncomingTradeRequests(page: number) {
+    return axiosInstance.http.get(this._createPaginatedUrl('trade_requests/incoming', page));
+  },
+
+  getOutcomingTradeRequests(page: number) {
+     return axiosInstance.http.get(this._createPaginatedUrl('trade_requests/outcoming', page));
+  },
+  // TODO: REDO this
+  patchTradeRequestStatus(bookId: number, trId: number, status: string) {
+    return axiosInstance.http.patch(`/books/${bookId}/trade_requests/${trId}/`, {status});
+  },
+
   // # Users
   getUsers(page: number) {
-    let url = 'users/';
-    if (page && page > 1) {
-      url += `?page=${page}`;
-    }
-    return axiosInstance.http.get(url);
+    return axiosInstance.http.get(this._createPaginatedUrl('users/', page));
   },
+
   getUserDetails(userId: number) {
     return axiosInstance.http.get(`/users/${userId}`);
   },
+
   // Google books api
   googleBookApiSearch(q = '', startIndex = 0, maxResults = 10) {
     return axiosInstance.http({

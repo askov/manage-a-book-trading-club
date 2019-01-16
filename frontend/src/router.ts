@@ -43,30 +43,79 @@ const router = new Router({
     },
     {
       path: '/users',
-      // name: 'users',
+      name: 'users',
+      redirect: {name: 'user-list'},
       component: () => import('./views/Users/UserIndex.vue'),
       children: [
         {
           path: '',
           name: 'user-list',
           component: () => import('./views/Users/UserList.vue'),
+          meta: {
+            bc: 'All',
+          },
         },
         {
-          path: ':id(\\d+)',
+          path: ':userId(\\d+)',
           name: 'user-details',
-          component: () => import('./views/Users/UserDetails.vue'),
+          redirect: {name: 'user-public-profile'},
+          component: () => import('./views/Users/UserDetailsIndex.vue'),
+          meta: {
+            bc: 'user id',
+          },
           children: [
             {
               path: 'books',
               name: 'user-books',
               component: () => import('./views/Users/UserBooks.vue'),
+              meta: {
+                bc: 'Books',
+              },
+              children: [
+                {
+                  path: ':bookId(\\d+)',
+                  name: 'user-book-details',
+                  component: () => import('./views/Users/UserBookDetails.vue'),
+                  meta: {
+                    bc: 'book id',
+                  },
+                },
+              ],
+            },
+            {
+              path: 'profile',
+              name: 'user-public-profile',
+              component: () => import('./views/Users/UserDetails.vue'),
+              meta: {
+                bc: 'Profile',
+              },
             },
           ],
         },
-
       ],
       meta: {
         requiresAuth: false,
+        bc: 'Users',
+      },
+    },
+    {
+      path: '/trade-requests',
+      component: () => import('./views/TradeRequests/TradeRequests.vue'),
+      redirect: '/trade-requests/incoming',
+      children: [
+        {
+          path: 'incoming',
+          name: 'incoming-tr',
+          component: () => import('./views/TradeRequests/Incoming.vue'),
+        },
+        {
+          path: 'outcoming',
+          name: 'outcoming-tr',
+          component: () => import('./views/TradeRequests/Outcoming.vue'),
+        },
+      ],
+      meta: {
+        requiresAuth: true,
       },
     },
     {

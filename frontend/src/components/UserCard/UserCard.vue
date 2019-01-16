@@ -1,12 +1,12 @@
 <template>
   <transition name="fade" mode="out-in">
     <div class="user-card rounded bg-white p-1 d-flex mb-1 shadow">
-      <router-link :to="{name: 'user-details', params:{id: user.id}}" class="p-0 d-flex align-items-center">
+      <router-link :to="{name: 'user-details', params:{userId: user.id}}" class="p-0 d-flex align-items-center">
         <UserAvatar :avatar="user.avatar" :size="'middle'" :title="'Show user details'"/>
         <span class="ml-3">{{user.username}}</span>
       </router-link>
       <div class="text-secondary ml-2 d-flex align-items-center">
-        <router-link :to="{name: 'user-books', params: {id: user.id}}"><b-badge variant="primary">books: {{user.books_added}}</b-badge></router-link>
+        <router-link :to="{name: 'user-books', params: {userId: user.id}}"><b-badge variant="primary">books: {{user.books_added}}</b-badge></router-link>
       </div>
     </div>
   </transition>

@@ -98,13 +98,28 @@ interface IPublicProfile extends IUserConciseInfo{
   readonly last_name: string;
 }
 
-// interface LoginServerResponseFieldError {
-//   username?: string;
-//   password?: string;
-// }
+interface ILinkItem {
+  readonly title: string;
+  readonly name: string;
+}
 
-// interface LoginServerResponseNonFieldError {
-//   non_field_errors: Array<string>;
-// }
+interface ITradeRequestUser {
+  readonly id: number;
+  readonly username: string;
+}
 
-// type LoginServerResponse = LoginServerResponseFieldError | LoginServerResponseNonFieldError;
+interface ITradeRequestBook {
+  readonly id: number;
+  readonly title: string;
+  readonly link: string;
+}
+
+interface ITradeRequest {
+  readonly id: number;
+  status: string;
+  readonly created_by: ITradeRequestUser;
+  readonly target_owner: ITradeRequestUser;
+  readonly target: ITradeRequestBook;
+  readonly message: string;
+}
+

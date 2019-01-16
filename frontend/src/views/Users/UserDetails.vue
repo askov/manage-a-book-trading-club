@@ -1,8 +1,7 @@
 <template>
-  <div class="bg-light rounded p-5">
+  <div class="py-5">
     <PublicProfile :profile="profile" />
     <router-view/>
-
   </div>
 </template>
 
@@ -10,7 +9,6 @@
 <script lang="ts">
 import Vue from 'vue';
 import apiService from '../../services/api.service';
-// import SignupForm from '@/components/SignupForm/SignupForm.vue';
 import PublicProfile from '@/components/PublicProfile/PublicProfile.vue';
 
 export default Vue.extend({
@@ -26,9 +24,7 @@ export default Vue.extend({
     };
   },
   mounted() {
-    console.log('#mounted details', this.$route.params.id);
-    apiService.getUserDetails(+this.$route.params.id).then((res: any) => {
-      console.log('#success', res);
+    apiService.getUserDetails(+this.$route.params.userId).then((res: any) => {
       this.profile = res.data;
     }, (err: any) => {
       this.$router.push('/404');

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="mt-5">
     <h6 class="text-secondary text-center mt-2">
       <b-badge variant="primary">users found: {{totalUsers}}</b-badge>
     </h6>
@@ -10,7 +10,7 @@
         :is-full-page="false"
         :color="'#007bff'"
       ></loading>
-      <virtual-list :size="70" :remain="8" class="custom-scroll-1 py-2 px-5" :tobottom="loadMore">
+      <virtual-list :size="70" :remain="8" class="custom-scroll-1 py-2" :tobottom="loadMore">
         <UserCard v-for="(user, index) of users" :key="index" :user="user"/>
       </virtual-list>
     </div>
@@ -51,6 +51,7 @@ export default Vue.extend({
     };
   },
   mounted() {
+    console.log('mounted userlist');
     this.getUsers(this.currentPage);
   },
   methods: {

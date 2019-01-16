@@ -1,6 +1,7 @@
 <template>
   <div>
-      <div class="container">
+      <div class="container my-5">
+        <BreadCrumbs />
         <router-view/>
       </div>
   </div>
@@ -9,10 +10,12 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import BreadCrumbs from '@/components/BreadCrumbs/BreadCrumbs.vue';
 
 export default Vue.extend({
   name: 'userIndex',
   components: {
+    BreadCrumbs,
   },
 
 });
