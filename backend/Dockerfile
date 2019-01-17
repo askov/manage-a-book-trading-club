@@ -8,3 +8,5 @@
  RUN chmod +x wait-for-it.sh
  RUN python -m venv _pyvenv
  RUN pip install -r requirements.txt
+ RUN apt-get update
+ RUN apt-get install graphviz
