@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-light rounded p-5 my-5">
+  <div class="">
     <ul class="nav nav-pills">
       <li class="nav-item" v-for="(link, index) of links" :key="index">
         <!-- Style bug -->

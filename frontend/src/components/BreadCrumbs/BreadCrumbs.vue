@@ -21,6 +21,7 @@ export default Vue.extend({
         });
         return lastK;
       };
+      console.log(this.$route.matched);
       return this.$route.matched.map((el: any) => {
         return {
           text: findValueByUrl(el.path) || el.meta.bc,

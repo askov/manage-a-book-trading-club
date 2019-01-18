@@ -141,7 +141,7 @@ export default Vue.extend({
             this.modal.book
           ) as IGoogleBook)
           .then((res: any) => {
-            this.$router.push('my-books');
+            this.$router.push({name: 'myBooks'});
           });
       }
     },

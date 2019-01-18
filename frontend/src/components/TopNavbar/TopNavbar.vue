@@ -8,19 +8,27 @@
       </b-navbar-brand>
     </router-link>
     <b-collapse is-nav id="nav_collapse">
-      <b-navbar-nav class="ml-auto" v-if="isLoggedIn">
+      <b-navbar-nav>
         <b-nav-item to="/users">Users</b-nav-item>
-        <b-nav-item to="/profile">
+        <b-nav-item to="/">Books</b-nav-item>
+
+        <!-- <b-nav-item href="#" disabled>Disabled</b-nav-item> -->
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto" v-if="isLoggedIn">
+        <b-nav-item to="/cabinet">Cabinet</b-nav-item>
+
+        <!-- <b-nav-item to="/users">Users</b-nav-item> -->
+        <b-nav-item :to="{name: 'profile'}">
           {{username}}
           <UserAvatar class="ml-2" :avatar="avatar" :size="'small'" :title="'My profile'"/>
         </b-nav-item>
-        <b-nav-item to="/trade-requests">Trade requests</b-nav-item>
+        <!-- <b-nav-item to="/trade-requests">Trade requests</b-nav-item>
         <b-nav-item to="/my-books">My books</b-nav-item>
-        <b-nav-item to="/book-store">Book store</b-nav-item>
+        <b-nav-item to="/book-store">Book store</b-nav-item> -->
         <b-nav-item @click="logOut()" class="d-block">Log out</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto" v-else>
-        <b-nav-item to="/users">Users</b-nav-item>
+        <!-- <b-nav-item to="/users">Users</b-nav-item> -->
         <b-nav-item to="/signup">Register</b-nav-item>
         <b-nav-item to="/login">Log in</b-nav-item>
       </b-navbar-nav>
@@ -53,7 +61,7 @@ export default Vue.extend({
   methods: {
     logOut() {
       user.dispatchLogOut();
-      this.$router.push('/');
+      this.$router.push({name: 'home'});
     },
   },
   watch: {},

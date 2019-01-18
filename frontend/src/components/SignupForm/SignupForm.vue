@@ -218,7 +218,7 @@ export default Vue.extend({
       }
       user.dispatchSignUp(this.form).then(() => {
         user.dispatchObtainProfile();
-        this.$router.push('profile');
+        this.$router.push({name: 'profile'});
       } , (err: ServerErrors) => {
         this.updateServerErrors(err);
       });

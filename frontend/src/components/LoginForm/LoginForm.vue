@@ -125,7 +125,7 @@ export default Vue.extend({
       const {serverErrors, ...form} = this.form;
       user.dispatchLogIn(form).then((res) => {
         user.dispatchObtainProfile();
-        this.$router.push('profile');
+        this.$router.push({name: 'profile'});
       } , (err: ServerErrors) => {
         this.updateServerErrors(err);
       });

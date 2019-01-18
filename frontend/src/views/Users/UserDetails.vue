@@ -27,7 +27,7 @@ export default Vue.extend({
     apiService.getUserDetails(+this.$route.params.userId).then((res: any) => {
       this.profile = res.data;
     }, (err: any) => {
-      this.$router.push('/404');
+      this.$router.push({name: '404'});
     });
   },
 });
