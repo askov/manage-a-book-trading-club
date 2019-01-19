@@ -3,7 +3,7 @@
     <h6 class="text-secondary text-center mt-2">
       <b-badge variant="primary">books in collection: {{totalItems}}</b-badge>
     </h6>
-    <div class="bg-light rounded p-4 mt-3">
+    <div class="bg-light rounded mt-3">
       <b-pagination size="md"
                     v-show="showPagination"
                     :total-rows="totalItems"

@@ -3,7 +3,7 @@
     <h6 class="text-secondary text-center mt-2" v-show="totalItems > 0">
       <b-badge variant="success">books discovered: {{totalItems}}</b-badge>
     </h6>
-    <div class="vld-parent bg-light rounded p-4 mt-3" v-show="totalItems > 0 || isLoading">
+    <div class="vld-parent bg-light rounded mt-3" v-show="totalItems > 0 || isLoading">
       <loading
         :active.sync="isLoading"
         :can-cancel="false"
