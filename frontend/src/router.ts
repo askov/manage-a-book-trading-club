@@ -121,11 +121,20 @@ const router = new Router({
             {
               path: 'books',
               name: 'user-books',
-              component: () => import('./views/Users/UserBooks.vue'),
+              redirect: {name: 'user-book-list'},
+              component: () => import('./views/Users/UserBooksIndex.vue'),
               meta: {
                 bc: 'Books',
               },
               children: [
+                {
+                  path: '',
+                  name: 'user-book-list',
+                  component: () => import('./views/Users/UserBooks.vue'),
+                  meta: {
+                    bc: 'All',
+                  },
+                },
                 {
                   path: ':bookId(\\d+)',
                   name: 'user-book-details',

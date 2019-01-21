@@ -1,8 +1,8 @@
 <template>
   <div class="container my-5">
-    <div class="row px-3">
+    <!-- <div class="row px-3">
       <BreadCrumbs />
-    </div>
+    </div> -->
     <div class="row px-3">
       <ul class="nav nav-pills">
         <li class="nav-item" v-for="(link, index) of links" :key="index">

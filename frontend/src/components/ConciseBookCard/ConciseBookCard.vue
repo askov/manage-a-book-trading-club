@@ -1,7 +1,11 @@
 <template>
   <transition name="fade" mode="out-in">
     <div class="concise-book-card shadow">
-      <img :src="book.thumbnail_link" alt="book-cover" @error="handleImageLoadError">
+      <img :src="book.thumbnail_link"
+           alt="book-cover"
+           @error="handleImageLoadError"
+           @click="handleImageClick"
+      />
       <div class="concise-book-card__panel">
         <span
           role="button"
@@ -73,7 +77,7 @@ import apiService from '../../services/api.service';
 
 
 export default Vue.extend({
-  name: 'TopNavbar',
+  name: 'ConciseBookCard',
   data(): {
     isLoaded: boolean;
   } {
@@ -93,6 +97,9 @@ export default Vue.extend({
     },
     handleImageLoadError(event: any) {
       event.target.src = require('@/assets/no_cover_thumb.gif');
+    },
+    handleImageClick() {
+      this.$router.push({name: 'user-book-details', params: {bookId: `${this.book.id}`}});
     },
     // handleImageLoadError(event: any) {
     //   event.target.src = this.getImgUrl();
@@ -120,6 +127,7 @@ export default Vue.extend({
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
   }
   &__panel {
     display: flex;

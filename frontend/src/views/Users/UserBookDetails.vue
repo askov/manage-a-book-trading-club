@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5">
+  <div class="">
     User book details
     <!-- <PublicProfile :profile="profile" /> -->
     <!-- <router-view/> -->

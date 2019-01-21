@@ -34,7 +34,7 @@ interface ComponentData {
 }
 
 export default Vue.extend({
-  name: 'TopNavbar',
+  name: 'BookCard',
   data(): ComponentData {
     return {
       isLoaded: false,
