@@ -44,11 +44,6 @@ export default Vue.extend({
     book: {
       type: Object as () => IGoogleBook,
     },
-    // image: String,
-    // authors: String,
-    // previewLink: String,
-    // title: String,
-    // description: String,
   },
   computed: {},
   methods: {
@@ -63,7 +58,6 @@ export default Vue.extend({
     },
     handleAddClick(book: any) {
       evb.bus.$emit(evb.event.ADD_NEW_BOOK, book);
-      // this.$refs.addBookRef.show();
     },
   },
   watch: {},
@@ -80,10 +74,6 @@ export default Vue.extend({
     width: 64px;
     height: 100%;
     object-fit: cover;
-    // position: relative;
-    // z-index: 2;
-  }
-  &__title {
   }
   &__description {
     font-size: 12px;
@@ -108,10 +98,8 @@ export default Vue.extend({
     position: absolute;
     cursor: pointer;
     top: 0;
-    // left: 67px;
     right: 0;
     width: 50px;
-    // width: 100%;
     height: 100%;
     background: url('../../assets/round_plus.svg') no-repeat center;
     background-color: white;
@@ -121,7 +109,6 @@ export default Vue.extend({
     &:hover {
       opacity: 0.7;
     }
-    // background-color: rgba(255, 255, 255, 0.5);
   }
   $p: &;
   &:hover {

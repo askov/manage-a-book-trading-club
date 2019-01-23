@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import BookCard from '@/components/BookCard/BookCard.vue';
+import BookCard from '@/components/BookCard/index.vue';
 import apiService from '@/services/api.service';
 
 interface Book {

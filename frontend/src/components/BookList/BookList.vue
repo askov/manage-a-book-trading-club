@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import BookCard from '@/components/BookCard/BookCard.vue';
+import BookCard from '@/components/BookCard/index.vue';
 import Loading from 'vue-loading-overlay';
 
 export default Vue.extend({
