@@ -29,13 +29,12 @@
 <script lang="ts">
 import Vue from 'vue';
 import evb from '@/services/eventBus.service';
-interface ComponentData {
-  isLoaded: boolean;
-}
 
 export default Vue.extend({
   name: 'BookCard',
-  data(): ComponentData {
+  data(): {
+     isLoaded: boolean,
+  } {
     return {
       isLoaded: false,
     };
@@ -45,7 +44,6 @@ export default Vue.extend({
       type: Object as () => IGoogleBook,
     },
   },
-  computed: {},
   methods: {
     handleImageLoadError(event: any) {
       event.target.src = this.getImgUrl();
@@ -60,7 +58,6 @@ export default Vue.extend({
       evb.bus.$emit(evb.event.ADD_NEW_BOOK, book);
     },
   },
-  watch: {},
 });
 </script>
 
