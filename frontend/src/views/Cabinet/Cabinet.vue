@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import BreadCrumbs from '@/components/BreadCrumbs/BreadCrumbs.vue';
+import BreadCrumbs from '@/components/BreadCrumbs/index.vue';
 
 export default Vue.extend({
   name: 'Cabinet',

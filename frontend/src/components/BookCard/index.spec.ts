@@ -1,8 +1,15 @@
+/* tslint:disable:no-unused-expression*/
+'use strict';
 import BookCard from './index.vue';
-import {expect} from 'chai';
-import { shallowMount } from '@vue/test-utils';
-const sinon = require('sinon');
+import {
+  expect
+} from 'chai';
+import {
+  shallowMount
+} from '@vue/test-utils';
+import sinon from 'sinon';
 
+// @TODO: mock filter
 
 describe('BookCard', () => {
   const book: IGoogleBook = {
@@ -16,11 +23,18 @@ describe('BookCard', () => {
     description: 'description',
   };
 
-  const handleAddClick = sinon.spy(BookCard.methods, 'handleAddClick')
+  const handleAddClick = sinon.spy();
   const wrapper = shallowMount(BookCard, {
-    propsData: { book },
+    propsData: {
+      book,
+    },
   });
-
+  wrapper.setMethods({
+    handleAddClick,
+  });
+  it('renders with isLoaded equal to false', () => {
+    expect(wrapper.vm.isLoaded).to.be.false;
+  });
   it('renders a tag with provided src', () => {
     expect(wrapper.find('a').attributes('href')).to.equal(book.previewLink);
   });
@@ -37,7 +51,6 @@ describe('BookCard', () => {
     expect(wrapper.find('b-badge').text()).to.equal(book.authors);
   });
   it('sets isLoaded to true after image load triggered', () => {
-    expect(wrapper.vm.isLoaded).to.be.false;
     wrapper.find('img').trigger('load');
     expect(wrapper.vm.isLoaded).to.be.true;
   });
@@ -45,8 +58,9 @@ describe('BookCard', () => {
     wrapper.find('img').trigger('error');
     expect(wrapper.find('img').attributes('src')).to.not.equal(book.thumbnailLink);
   });
-  it('changes image src after image error triggered', () => {
+  it('renders add button that calls handleAddClick with book obj as arg on click', () => {
     wrapper.find('.book-card__add').trigger('click');
-    expect(handleAddClick.calledOnce).to.be.true;
+    expect(handleAddClick.callCount).to.equal(1);
+    expect(handleAddClick.calledWithMatch(book)).to.be.true;
   });
 });
