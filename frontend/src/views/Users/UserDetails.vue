@@ -9,7 +9,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import apiService from '../../services/api.service';
-import PublicProfile from '@/components/PublicProfile/PublicProfile.vue';
+import PublicProfile from '@/components/PublicProfile/index.vue';
 
 export default Vue.extend({
   name: 'userDetails',

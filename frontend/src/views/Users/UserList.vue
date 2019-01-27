@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import UserCard from '@/components/UserCard/UserCard.vue';
+import UserCard from '@/components/UserCard/index.vue';
 import Loading from 'vue-loading-overlay';
 import apiService from '@/services/api.service';
 

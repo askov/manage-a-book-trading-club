@@ -40,7 +40,7 @@
   import apiService from '@/services/api.service';
   import evb from '@/services/eventBus.service';
   // Components
-  import ConciseBookCard from '@/components/ConciseBookCard/ConciseBookCard.vue';
+  import ConciseBookCard from '@/components/ConciseBookCard/index.vue';
   // Mixins
   import PaginationMixin from '@/mixins/pagination.mixin';
 

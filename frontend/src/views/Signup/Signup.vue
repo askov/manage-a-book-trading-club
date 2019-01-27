@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import SignupForm from '@/components/SignupForm/SignupForm.vue';
+import SignupForm from '@/components/SignupForm/index.vue';
 
 export default Vue.extend({
   name: 'signup',

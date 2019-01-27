@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import ProfileForm from '@/components/ProfileForm/ProfileForm.vue';
+import ProfileForm from '@/components/ProfileForm/index.vue';
 
 export default Vue.extend({
   name: 'Profile',

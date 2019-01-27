@@ -24,7 +24,7 @@
 <script lang="ts">
   import Vue from 'vue';
   // Components
-  import TradeRequestCard from '@/components/TradeRequestCard/TradeRequestCard.vue';
+  import TradeRequestCard from '@/components/TradeRequestCard/index.vue';
   // Services
   import apiService from '@/services/api.service';
   import evb from '@/services/eventBus.service';

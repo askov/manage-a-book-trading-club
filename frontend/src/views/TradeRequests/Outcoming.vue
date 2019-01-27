@@ -26,7 +26,7 @@
   // Mixins
   import PaginationMixin from '@/mixins/pagination.mixin';
   // Components
-  import TradeRequestCard from '@/components/TradeRequestCard/TradeRequestCard.vue';
+  import TradeRequestCard from '@/components/TradeRequestCard/index.vue';
 
   export default PaginationMixin.extend({
     name: 'OutcomingTradeRequests',

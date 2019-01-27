@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import LoginForm from '@/components/LoginForm/LoginForm.vue';
+import LoginForm from '@/components/LoginForm/index.vue';
 
 export default Vue.extend({
   name: 'login',

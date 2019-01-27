@@ -22,7 +22,7 @@
 <script lang="ts">
   import Vue from 'vue';
   // Components
-  import ConciseBookCard from '@/components/ConciseBookCard/ConciseBookCard.vue';
+  import ConciseBookCard from '@/components/ConciseBookCard/index.vue';
   // Services
   import apiService from '@/services/api.service';
   // Mixins

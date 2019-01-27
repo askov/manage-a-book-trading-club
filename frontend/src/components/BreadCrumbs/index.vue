@@ -12,12 +12,13 @@
     name: 'BreadCrumbs',
     computed: {
       bc(this: any) {
+        console.log(this.$route);
         const keys = Object.keys(this.$route.params);
         const findValueByUrl = (url: string) => {
           let lastK;
           keys.forEach((k) => {
             if (url.endsWith(k + '(\\d+)')) {
-              lastK = `${this.$route.params[k]}`;
+              lastK = this.$route.params[k];
             }
           });
           return lastK;

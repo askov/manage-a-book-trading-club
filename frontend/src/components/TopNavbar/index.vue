@@ -43,7 +43,7 @@
 <script lang="ts">
   import Vue from 'vue';
   import user from '@/store/modules/user';
-  import UserAvatar from '@/components/UserAvatar/UserAvatar.vue';
+  import UserAvatar from '@/components/UserAvatar/index.vue';
 
   export default Vue.extend({
     name: 'TopNavbar',

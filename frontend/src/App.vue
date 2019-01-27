@@ -32,9 +32,9 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import TopNavbar from '@/components/TopNavbar/TopNavbar.vue';
+  import TopNavbar from '@/components/TopNavbar/index.vue';
   import user from '@/store/modules/user';
-  import Footer from '@/components/Footer/Footer.vue';
+  import Footer from '@/components/Footer/index.vue';
 
 
   export default Vue.extend({
