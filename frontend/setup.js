@@ -2,8 +2,9 @@
 
 const { JSDOM } = require('jsdom');
 
-const jsdom = new JSDOM('<!doctype html><html><body></body></html>', {
-  url: "http://localhost"
+const jsdom = new JSDOM('', {
+  url: "http://localhost",
+  // url: '',
 });
 const { window } = jsdom;
 
@@ -25,4 +26,15 @@ global.requestAnimationFrame = function (callback) {
 global.cancelAnimationFrame = function (id) {
   clearTimeout(id);
 };
+
 copyProps(window, global);
+
+// console.log(JSON.stringify(global.window.location))
+const location = JSON.parse(JSON.stringify(global.window.location))
+delete global.window.location;
+global.window.location = location
+// console.log(( Object.getOwnPropertyDescriptors(global.window.location.assign)))
+// // Object.defineProperty(global.window.location, 'assign', {
+// //   writable: true,
+// //   value: ''
+// // });
