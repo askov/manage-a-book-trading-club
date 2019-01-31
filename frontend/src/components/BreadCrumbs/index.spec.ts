@@ -5,15 +5,20 @@ import {
   expect
 } from 'chai';
 import {
+  createLocalVue,
   shallowMount,
 } from '@vue/test-utils';
+import BootstrapVue from 'bootstrap-vue';
 
 
 describe('BreadCrumbs', () => {
   let wrapper: any;
 
   const createWrapper = ($route: any): any => {
+    const localVue = createLocalVue();
+    localVue.use(BootstrapVue);
     return shallowMount(BreadCrumbs, {
+      localVue,
       mocks: {
         $route,
       },
@@ -29,7 +34,7 @@ describe('BreadCrumbs', () => {
   it('should render b-breadcrumb component', () => {
     const route = createEmptyRoute();
     wrapper = createWrapper(route);
-    expect(wrapper.contains('b-breadcrumb')).to.be.true;
+    expect(wrapper.contains('bbreadcrumb-stub')).to.be.true;
   });
 
   it('should contain appropriate computed bc of Array type ', () => {

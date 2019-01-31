@@ -5,12 +5,19 @@ import {
   expect
 } from 'chai';
 import {
-  shallowMount
+  createLocalVue,
+  shallowMount,
 } from '@vue/test-utils';
+import BootstrapVue from 'bootstrap-vue';
+import VirtualScrollList from 'vue-virtual-scroll-list';
 
 
 describe('BookList', () => {
+  const localVue = createLocalVue();
+  localVue.use(BootstrapVue);
+  localVue.component('virtual-list', VirtualScrollList);
   const wrapper = shallowMount(BookList, {
+    localVue,
     propsData: {
       books: [],
       isLoading: false,
@@ -18,7 +25,7 @@ describe('BookList', () => {
   });
 
   it('renders virtual-list component', () => {
-    expect(wrapper.contains('virtual-list')).to.be.true;
+    expect(wrapper.contains('virtual-list-stub')).to.be.true;
   });
 
   it('contains invisible virtual list parent when book list is empty', () => {
@@ -45,7 +52,7 @@ describe('BookList', () => {
     wrapper.setProps({
       books,
     });
-    expect(wrapper.find('b-badge').text()).to.equal(`books discovered: ${books.length}`);
+    expect(wrapper.find('bbadge-stub').text()).to.equal(`books discovered: ${books.length}`);
   });
 
 });

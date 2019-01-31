@@ -5,11 +5,13 @@ import {
   expect
 } from 'chai';
 import {
+  createLocalVue,
   shallowMount
 } from '@vue/test-utils';
 import sinon from 'sinon';
+import BootstrapVue from 'bootstrap-vue';
+import ellipsis from '@/filters/ellipsis';
 
-// @TODO: mock filter
 
 describe('BookCard', () => {
   const book: IGoogleBook = {
@@ -24,7 +26,11 @@ describe('BookCard', () => {
   };
 
   const handleAddClick = sinon.spy();
+  const localVue = createLocalVue();
+  localVue.use(BootstrapVue);
+  localVue.filter('ellipsis', ellipsis);
   const wrapper = shallowMount(BookCard, {
+    localVue,
     propsData: {
       book,
     },
@@ -48,7 +54,7 @@ describe('BookCard', () => {
     expect(wrapper.find('.book-card__title > strong').text()).to.equal(book.title);
   });
   it('renders correct authors', () => {
-    expect(wrapper.find('b-badge').text()).to.equal(book.authors);
+    expect(wrapper.find('bbadge-stub').text()).to.equal(book.authors);
   });
   it('sets isLoaded to true after image load triggered', () => {
     wrapper.find('img').trigger('load');
