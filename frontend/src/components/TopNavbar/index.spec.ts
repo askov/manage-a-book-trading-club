@@ -63,8 +63,8 @@ describe('TopNavbar', () => {
   });
 
   it('renders b-nav-item with Log out ref for authorized users', () => {
-    const ref = buildWrapper(true).findAll('bnavitem-stub').at(3);
-    expect(ref.text()).to.be.equal('Log out');
+    const btn = buildWrapper(true).find('button[type="button"]');
+    expect(btn.text()).to.be.equal('Log out');
   });
 
   // @todo: does this even make any sense?
@@ -72,7 +72,7 @@ describe('TopNavbar', () => {
     const w = buildWrapper(true);
     const logOut = sinon.stub();
     w.setMethods({ logOut });
-    w.findAll('bnavitem-stub').at(3).trigger('click');
+    w.find('button[type="button"]').trigger('click');
     expect(logOut.calledOnce).to.be.true;
     w.destroy();
   });
@@ -82,7 +82,7 @@ describe('TopNavbar', () => {
     expect(ref.text()).to.be.equal('Register');
   });
 
-  it('renders b-nav-item with Log out ref for unauthorized users', () => {
+  it('renders b-nav-item with Log in ref for unauthorized users', () => {
     const ref = buildWrapper().findAll('bnavitem-stub').at(3);
     expect(ref.text()).to.be.equal('Log in');
   });

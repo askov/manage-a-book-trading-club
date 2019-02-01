@@ -41,13 +41,13 @@
 
   export default Vue.extend({
     name: 'ConciseBookCard',
-    data(): {
-      isLoaded: boolean;
-    } {
-      return {
-        isLoaded: false,
-      };
-    },
+    // data(): {
+    //   isLoaded: boolean;
+    // } {
+    //   return {
+    //     isLoaded: false,
+    //   };
+    // },
     props: {
       book: {
         type: Object as() => IBookResponse,

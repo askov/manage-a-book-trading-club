@@ -27,8 +27,13 @@
                       :size="'small'"
                       :title="'My profile'" />
         </b-nav-item>
-        <b-nav-item @click="logOut()"
-                    class="d-block">Log out</b-nav-item>
+        <li>
+          <button type="button"
+                  class="btn bnt-link nav-link"
+                  @click="logOut">
+            Log out
+          </button>
+        </li>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto"
                     v-else>
