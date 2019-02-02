@@ -161,42 +161,6 @@ const router = new Router({
         bc: 'Users',
       },
     },
-    // {
-    //   path: '/trade-requests',
-    //   component: () => import('./views/TradeRequests/TradeRequests.vue'),
-    //   redirect: '/trade-requests/incoming',
-    //   children: [
-    //     {
-    //       path: 'incoming',
-    //       name: 'incoming-tr',
-    //       component: () => import('./views/TradeRequests/Incoming.vue'),
-    //     },
-    //     {
-    //       path: 'outcoming',
-    //       name: 'outcoming-tr',
-    //       component: () => import('./views/TradeRequests/Outcoming.vue'),
-    //     },
-    //   ],
-    //   meta: {
-    //     requiresAuth: true,
-    //   },
-    // },
-    // {
-    //   path: '/book-store',
-    //   name: 'bookStore',
-    //   component: () => import('./views/BookStore/BookStore.vue'),
-    //   meta: {
-    //     requiresAuth: true,
-    //   },
-    // },
-    // {
-    //   path: '/my-books',
-    //   name: 'myBooks',
-    //   component: () => import('./views/MyBooks/MyBooks.vue'),
-    //   meta: {
-    //     requiresAuth: true,
-    //   },
-    // },
     {
       path: '/404',
       name: '404',

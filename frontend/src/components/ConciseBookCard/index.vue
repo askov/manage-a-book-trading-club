@@ -10,7 +10,7 @@
         <span role="button"
               class="concise-book-card__btn concise-book-card__btn--offers"
               v-b-tooltip.hover
-              title="Offers">todo</span>
+              title="Offers">{{book.offers}}</span>
         <span role="button"
               class="concise-book-card__btn"
               v-b-tooltip.hover
