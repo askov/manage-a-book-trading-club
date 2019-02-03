@@ -51,7 +51,7 @@ describe('UserCard', () => {
     expect(n.text()).to.be.equal(user.username);
   });
 
-  it('renders UserAvatar with correct prop contained in user details route', () => {
+  it('renders UserAvatar with correct avatar prop contained in user details route', () => {
     const r = wrapper.findAll(RouterLinkStub).at(0);
     expect(r.find('useravatar-stub').props('avatar')).to.be.equal(user.avatar);
   });

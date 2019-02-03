@@ -28,27 +28,11 @@
     components: {
       UserAvatar,
     },
-    // data(): {
-    //   isLoaded: boolean;
-    // } {
-    //   return {
-    //     isLoaded: false,
-    //   };
-    // },
     props: {
       user: {
         type: Object as() => IUserConciseInfo,
       },
     },
-    // computed: {},
-    // methods: {
-    //   handleImageLoadError(event: any) {
-    //     event.target.src = require('@/assets/avatar_placeholder.svg');
-    //   },
-    //   handleImageLoaded() {
-    //     this.isLoaded = true;
-    //   },
-    // },
   });
 
 </script>
